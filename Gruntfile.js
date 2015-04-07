@@ -28,24 +28,14 @@ module.exports = function (grunt) {
   grunt.initConfig(
     {
       pkg: grunt.file.readJSON('package.json'),
-      banner: '/*!\n' +
-        ' * Tacit v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-        ' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-        ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
-        ' */\n',
-      clean: {
-        dist: 'dist',
-        docs: 'docs/dist'
-      },
       sass: {
         dev: {
           options: {
             style: 'expanded',
-            banner: '<%= banner %>',
             compass: true
           },
           files: {
-            'scss/main.scss': 'main.css'
+            'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
           }
         },
         dist: {
@@ -54,7 +44,7 @@ module.exports = function (grunt) {
             compass: true
           },
           files: {
-            'scss/main.scss': 'main.css'
+            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
           }
         }
       },
@@ -67,6 +57,7 @@ module.exports = function (grunt) {
     }
   );
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
-  grunt.registerTask('default', ['sass:dev', 'watch']);
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.registerTask('default', ['sass:dist']);
 }
 
