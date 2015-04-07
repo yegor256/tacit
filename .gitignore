@@ -1,4 +1,5 @@
 target/
 .idea/
+.sass-cache/
 *.iml
 .DS_Store
