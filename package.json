@@ -22,6 +22,11 @@
   "bugs": {
     "url": "https://github.com/yegor256/tacit/issues"
   },
+  "files": [
+    "dist",
+    "Gruntfile.js",
+    "LICENSE"
+  ],
   "homepage": "https://github.com/yegor256/tacit",
   "devDependencies": {
     "grunt": "^0.4.5",
