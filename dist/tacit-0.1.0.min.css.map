@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AA0BA,CAAE,CACA,SAAS,CCHN,IAAI,CDMT,IAAK,CACH,OAAO,CCPJ,IAAI,CDQP,gBAAgB,CAAE,KAAK",
-"sources": ["../scss/main.scss","../scss/_defs.scss"],
-"names": [],
-"file": "tacit-0.1.0.min.css"
-}
