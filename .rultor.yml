@@ -1,0 +1,20 @@
+assets:
+  s3cfg: yegor256/home#assets/s3cfg
+install: |
+  sudo gem install pdd
+architect:
+- yegor256
+- davvd
+merge:
+  script: |
+    pdd --source=$(pwd) --verbose --file=/dev/null
+deploy:
+  script: |
+    pdd --source=$(pwd) --verbose --file=takes.xml
+    s3cmd --no-progress put takes.xml --config=../s3cfg s3://pdd.teamed.io/takes.xml
+  commanders:
+  - yegor256
+release:
+  script: |-
+    #mvn versions:set "-DnewVersion=${tag}"
+    #git commit -am "${tag}"

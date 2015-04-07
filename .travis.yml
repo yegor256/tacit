@@ -1,0 +1,3 @@
+language: ruby
+script:
+  - echo hi
