@@ -23,8 +23,15 @@ deploy:
 release:
   script: |-
     sed -i "s/1\.0\.0/${tag}/g" package.json
-    sed -i "s/1\.0\.0/${tag}/g" index.html
-    git commit -am "${tag}"
+    sed -i "s/VERSION/${tag}/g" index.html
     grunt
-    s3cmd --no-progress put dist/tacit-${tag}.min.css --config=../s3cfg s3://img.teamed.io/tacit/tacit-${tag}.min.css
-    s3cmd --no-progress put index.html --config=../s3cfg s3://img.teamed.io/tacit/index.html
+    git commit -am "${tag}"
+    mv dist/tacit-${tag}.min.css /tmp
+    mv index.html /tmp
+    git checkout gh-pages
+    mv /tmp/tacit-${tag}.min.css .
+    mv /tmp/index.html .
+    git add .
+    git commit -am "${tag}"
+    git push origin gh-pages
+    git checkout master
