@@ -31,11 +31,11 @@ module.exports = function (grunt) {
       sass: {
         dev: {
           options: {
-            style: 'expanded',
+            style: 'compressed',
             compass: true
           },
           files: {
-            'tacit-VERSION.css': 'scss/main.scss'
+            'tacit-VERSION.min.css': 'scss/main.scss'
           }
         },
         dist: {

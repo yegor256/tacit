@@ -1,20 +1,28 @@
 assets:
   s3cfg: yegor256/home#assets/s3cfg
 install: |
-  sudo gem install pdd
+  sudo gem install --no-ri pdd
+  sudo gem install --no-ri compass
+  npm install grunt-cli
 architect:
 - yegor256
 - davvd
 merge:
   script: |
+    grunt
     pdd --source=$(pwd) --verbose --file=/dev/null
 deploy:
   script: |
-    pdd --source=$(pwd) --verbose --file=takes.xml
-    s3cmd --no-progress put takes.xml --config=../s3cfg s3://pdd.teamed.io/takes.xml
+    grunt
+    pdd --source=$(pwd) --verbose --file=tacit.xml
+    s3cmd --no-progress put tacit.xml --config=../s3cfg s3://pdd.teamed.io/tacit.xml
   commanders:
   - yegor256
 release:
   script: |-
-    #mvn versions:set "-DnewVersion=${tag}"
-    #git commit -am "${tag}"
+    sed -i "s/1\.0\-snapshot/${tag}/g" package.json
+    sed -i "s/VERSION/${tag}/g" index.html
+    git commit -am "${tag}"
+    grunt
+    s3cmd --no-progress put dist/tacit-${tag}.min.css --config=../s3cfg s3://img.teamed.io/tacit/tacit-${tag}.min.css
+    s3cmd --no-progress put index.html --config=../s3cfg s3://img.teamed.io/tacit/index.html
