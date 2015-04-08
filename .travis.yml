@@ -6,7 +6,8 @@ node_js:
 before_install:
   - sudo apt-get install -y ruby
   - npm install -g grunt-cli
-  - gem install compass
+  - gem install --no-ri compass
+  - gem install --no-ri scss-lint
 install:
   - npm install
 

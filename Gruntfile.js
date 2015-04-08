@@ -53,12 +53,21 @@ module.exports = function (grunt) {
           files: 'scss/{,*/}*.scss',
           tasks: ['sass:dev']
         }
+      },
+      scsslint: {
+        allFiles: [
+          'scss/*.scss',
+        ],
+        options: {
+          colorizeOutput: true
+        },
       }
     }
   );
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.registerTask('default', ['sass:dist']);
-  grunt.registerTask('dev', ['sass:dev','watch']);
+  grunt.loadNpmTasks('grunt-scss-lint');
+  grunt.registerTask('default', ['scsslint', 'sass:dist']);
+  grunt.registerTask('dev', ['sass:dev', 'watch']);
 }
 
