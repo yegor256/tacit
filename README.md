@@ -28,6 +28,7 @@ they don't violate our quality standards. To avoid frustration, before
 sending us your pull request please run full Grunt build:
 
 ```
+$ npm install
 $ grunt
 ```
 
