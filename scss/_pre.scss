@@ -1,26 +1,24 @@
-/**
- * The MIT License (MIT)
- *
- * Copyright (c) 2015 Yegor Bugayenko
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included
- * in all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- */
+// The MIT License (MIT)
+//
+// Copyright (c) 2015 Yegor Bugayenko
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
 
 @import 'defs';
 
@@ -30,38 +28,41 @@ kbd,
 samp,
 var,
 output {
-  font-size: 90%;
   font-family: $monospace;
+  font-size: 90%;
 }
 
 pre {
-  margin-top: 1.65 * $em;
+  border-left: .1 * $em solid lighten($blue, 25);
   font-size: 100%;
   line-height: 1.4 * $em;
+  margin-top: 1.65 * $em;
   overflow: auto;
   padding-left: $em;
-  border-left: .1 * $em solid lighten($blue, 25);
+
+  code {
+    background: none;
+    border: 0;
+    font-size: 100%;
+    line-height: 1.65 * $em;
+    padding: 0;
+  }
 }
 
 code,
 samp,
 kbd {
-  padding: 3px 6px 2px 6px;
+  border-radius: .2 * $em;
   display: inline-block;
-  line-height: 1;
-  border-radius: 2px;
+  line-height: $em;
+  padding: 3px 6px 2px;
 }
+
 code {
-  background: #f4f4f4;
-  border: 1px solid #d4d4d4;
+  background: darken($white, 80);
+  border: .1 * $em solid lighten($dark, 40);
 }
-pre code {
-  font-size: 100%;
-  border: none;
-  padding: 0;
-  background: none;
-  line-height: 1.65 * $em;
-}
+
 var {
   color: rgba(0, 0, 0, .5);
 }
