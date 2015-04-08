@@ -1,0 +1,4 @@
+---
+linters:
+  QualifyingElement:
+    enabled: false

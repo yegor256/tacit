@@ -59,6 +59,7 @@ module.exports = function (grunt) {
           'scss/*.scss',
         ],
         options: {
+          config: '.scss-lint.yml',
           colorizeOutput: true
         },
       }
@@ -67,7 +68,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-scss-lint');
-  grunt.registerTask('default', ['sass:dist']);
+  grunt.registerTask('default', ['scsslint', 'sass:dist']);
   grunt.registerTask('dev', ['scsslint', 'sass:dev', 'watch']);
 }
 
