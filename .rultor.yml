@@ -35,5 +35,4 @@ release:
     mv /tmp/index.html .
     git add index.html
     git commit -am "${tag}"
-    git push origin gh-pages
     git checkout master
