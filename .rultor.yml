@@ -29,9 +29,11 @@ release:
     mv dist/tacit-${tag}.min.css /tmp
     mv index.html /tmp
     git checkout gh-pages
+    git clean -fd
     mv /tmp/tacit-${tag}.min.css .
+    git add tacit-${tag}.min.css
     mv /tmp/index.html .
-    git add .
+    git add index.html
     git commit -am "${tag}"
     git push origin gh-pages
     git checkout master
