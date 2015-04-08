@@ -69,8 +69,8 @@ address {
 section {
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
   max-width: 100%;
+  width: 50 * $em;
 }
 
 article {
@@ -93,6 +93,7 @@ nav {
 
   ul {
     list-style: none;
+    text-align: center;
 
     li {
       display: inline;
