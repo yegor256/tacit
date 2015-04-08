@@ -6,19 +6,10 @@
 
 **Tacit** is a primitive CSS framework for dummies, like myself, who
 don't know anything about graphic design but want their web services to
-look eatable. All you need is to add this line to your HTML5 layout:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="//img.teamed.io/tacit-0.1.0.min.css"/>
-  </head>
-</html>
-```
-
-That's all. No classes, no layouts. Just design plain and simple web pages
+look eatable. No classes, no layouts. Just design plain and simple web pages
 compliant with HTML5 and they will look OK.
+
+Details are here: [yegor256.github.io/tacit](http://yegor256.github.io/tacit/)
 
 ## How to contribute
 
