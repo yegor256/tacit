@@ -12,7 +12,7 @@ look eatable. All you need is to add this line to your HTML5 layout:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="//img.teamed.io/tacit.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//img.teamed.io/tacit-0.1.0.min.css"/>
   </head>
 </html>
 ```

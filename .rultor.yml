@@ -20,8 +20,8 @@ deploy:
   - yegor256
 release:
   script: |-
-    sed -i "s/1\.0\-snapshot/${tag}/g" package.json
-    sed -i "s/VERSION/${tag}/g" index.html
+    sed -i "s/1\.0\.0/${tag}/g" package.json
+    sed -i "s/1\.0\.0/${tag}/g" index.html
     git commit -am "${tag}"
     grunt
     s3cmd --no-progress put dist/tacit-${tag}.min.css --config=../s3cfg s3://img.teamed.io/tacit/tacit-${tag}.min.css
