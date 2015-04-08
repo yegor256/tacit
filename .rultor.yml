@@ -1,10 +1,10 @@
 assets:
   s3cfg: yegor256/home#assets/s3cfg
 install: |
+  sudo npm install -g grunt-cli
   sudo gem install --no-ri pdd
   sudo gem install --no-ri compass
   sudo gem install --no-ri scss-lint
-  sudo npm install -g grunt-cli
   sudo npm install
 architect:
 - yegor256
