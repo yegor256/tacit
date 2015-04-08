@@ -3,7 +3,7 @@ assets:
 install: |
   sudo gem install --no-ri pdd
   sudo gem install --no-ri compass
-  npm install -g grunt-cli
+  sudo npm install -g grunt-cli
 architect:
 - yegor256
 - davvd
