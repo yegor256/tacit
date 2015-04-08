@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
 
 **Tacit** is a primitive CSS framework for dummies, like myself, who
-don't know anything about web design but want their web services to
+don't know anything about graphic design but want their web services to
 look eatable. All you need is to add this line to your HTML5 layout:
 
 ```html
