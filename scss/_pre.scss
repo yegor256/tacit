@@ -29,12 +29,11 @@ samp,
 var,
 output {
   font-family: $monospace;
-  font-size: 90%;
+  font-size: .9 * $em;
 }
 
 pre {
   border-left: .1 * $em solid lighten($blue, 25);
-  font-size: 100%;
   line-height: 1.4 * $em;
   margin-top: 1.65 * $em;
   overflow: auto;
@@ -43,15 +42,12 @@ pre {
   code {
     background: none;
     border: 0;
-    font-size: 100%;
     line-height: 1.65 * $em;
     padding: 0;
   }
 }
 
-code,
-samp,
-kbd {
+code {
   border-radius: .2 * $em;
   display: inline-block;
   line-height: $em;
@@ -59,10 +55,6 @@ kbd {
 }
 
 code {
-  background: darken($white, 80);
-  border: .1 * $em solid lighten($black, 40);
-}
-
-var {
-  color: rgba(0, 0, 0, .5);
+  background: darken($white, 7);
+  border: .1 * $em solid lighten($black, 80);
 }

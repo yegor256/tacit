@@ -34,8 +34,9 @@
   box-sizing: border-box;
   font-family: $sans-serif;
   font-size: $em;
+  font-stretch: normal;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.65 * $em;
   margin: 0;
   outline: 0;
@@ -45,7 +46,7 @@
 }
 
 body {
-  background: $white;
+  background: darken($white, 4);
   color: lighten($black, 10);
   padding: 2 * $em;
 }
@@ -63,4 +64,36 @@ fieldset,
 figure,
 address {
   margin-bottom: 1.65 * $em;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+}
+
+article {
+  background: $white;
+  border: .1 * $em solid lighten($black, 85);
+  border-radius: .4 * $em;
+  padding: 2 * $em;
+}
+
+header {
+  margin-bottom: 2 * $em;
+}
+
+footer {
+  margin-top: 2 * $em;
+}
+
+nav {
+  text-align: center;
+  ul {
+    text-align: center;
+    list-style: none;
+    li {
+      display: inline;
+    }
+  }
 }
