@@ -25,10 +25,10 @@ compliant with HTML5 and they will look OK.
 Fork repository, make changes, send us a pull request. We will review
 your changes and apply them to the `master` branch shortly, provided
 they don't violate our quality standards. To avoid frustration, before
-sending us your pull request please run full Maven build:
+sending us your pull request please run full Grunt build:
 
 ```
-$ ...
+$ grunt
 ```
 
 ## Got questions?
