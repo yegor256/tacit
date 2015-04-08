@@ -15,7 +15,7 @@ merge:
     pdd --source=$(pwd) --verbose --file=/dev/null
 deploy:
   script: |
-    grunt
+    grunt --no-color
     pdd --source=$(pwd) --verbose --file=tacit.xml
     s3cmd --no-progress put tacit.xml --config=../s3cfg s3://pdd.teamed.io/tacit.xml
   commanders:
@@ -24,7 +24,7 @@ release:
   script: |-
     sed -i "s/1\.0\.0/${tag}/g" package.json
     sed -i "s/VERSION/${tag}/g" index.html
-    grunt
+    grunt --no-color
     git commit -am "${tag}"
     mv dist/tacit-${tag}.min.css /tmp
     mv index.html /tmp
