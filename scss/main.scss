@@ -23,12 +23,46 @@
  */
 
 @import 'defs';
+@import 'tables';
+@import 'forms';
+@import 'pre';
+@import 'headers';
+@import 'typography';
 
 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
   font-size: $em;
+  font-family: $sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.65 * $em;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  text-align: left;
+  border-spacing: 0;
+  border-collapse: separate;
 }
 
 body {
-  padding: $em;
-  background-color: white;
+  padding: 2 * $em;
+  color: $black;
+  background: $white;
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+form,
+fieldset,
+figure,
+address {
+  margin-bottom: 1.65 * $em;
 }

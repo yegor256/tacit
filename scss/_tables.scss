@@ -22,43 +22,14 @@
  * SOFTWARE.
  */
 
-module.exports = function (grunt) {
-  'use strict';
-  grunt.util.linefeed = '\n';
-  grunt.initConfig(
-    {
-      pkg: grunt.file.readJSON('package.json'),
-      sass: {
-        dev: {
-          options: {
-            style: 'expanded',
-            compass: true
-          },
-          files: {
-            'tacit-VERSION.css': 'scss/main.scss'
-          }
-        },
-        dist: {
-          options: {
-            style: 'compressed',
-            compass: true
-          },
-          files: {
-            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
-          }
-        }
-      },
-      watch: {
-        sass: {
-          files: 'scss/{,*/}*.scss',
-          tasks: ['sass:dev']
-        }
-      }
-    }
-  );
-  require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.registerTask('default', ['sass:dist']);
-  grunt.registerTask('dev', ['sass:dev','watch']);
+@import 'defs';
+
+th {
+  font-weight: 500;
+}
+
+td, th {
+  border-bottom: 1px solid $gray;
+  padding: .825 * $em $em;
 }
 

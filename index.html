@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="tacit-VERSION.css"/>
+  </head>
+  <body>
+    <h1>Tacit</h1>
+    <p>
+      Tacit is a CSS framework for <em>dummies</em>, who want their
+      web services look attractive but have almost zero
+      skills in graphic design, just like
+      <a href="https://github.com/yegor256">myself</a>.
+      This is how your website will look if just add this code to
+      your HTML:
+    </p>
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" type="text/css" href="//img.teamed.io/tacit-VERSION.min.css"/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;</pre>
+    <p>
+      You should <strong>not</strong> use any CSS classes to make your HTML code look nice. Just
+      make sure it is <a href="http://www.w3.org/TR/html5/">HTML5</a>
+      compliant and you'll be fine. Again, no classes,
+      just standard HTML elements, like <code>&lt;table&gt;</code> and <code>&lt;input&gt;</code>.
+    </p>
+    <h2>Forms</h2>
+    <p>
+      Here is a simple form:
+    </p>
+    <form method="get" action="">
+      <fieldset>
+        <label for="email">Your email:</label>
+        <input name="email" type="text" id="email" size="25" placeholder="must be unique"/>
+        <label for="address">Your full address:</label>
+        <textarea name="address" type="text" id="address" cols="40" rows="3" placeholder="PO box is not allowed"></textarea>
+        <button type="submit">Subscribe</button>
+      </fieldset>
+    </form>
+    <h2>Tables</h2>
+    <p>
+      A simple table would look like this:
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Make</th>
+          <th>Price</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BMW X6</td>
+          <td>$75,000</td>
+          <td>2013</td>
+        </tr>
+        <tr>
+          <td>Mercedes-Benz E350</td>
+          <td>$52,700</td>
+          <td>2014</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Work in progress</h2>
+    <p>
+      The framework is still in development. If you want to contribute,
+      fork it and submit a <a href="https://github.com/yegor256/tacit">pull request</a>.
+      Your help is always apprecitated.
+    </p>
+    <hr/>
+    <p>
+      <small>&#169; Yegor Bugayenko, 2015</small>
+    </p>
+  </body>
+</html>

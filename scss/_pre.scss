@@ -22,43 +22,46 @@
  * SOFTWARE.
  */
 
-module.exports = function (grunt) {
-  'use strict';
-  grunt.util.linefeed = '\n';
-  grunt.initConfig(
-    {
-      pkg: grunt.file.readJSON('package.json'),
-      sass: {
-        dev: {
-          options: {
-            style: 'expanded',
-            compass: true
-          },
-          files: {
-            'tacit-VERSION.css': 'scss/main.scss'
-          }
-        },
-        dist: {
-          options: {
-            style: 'compressed',
-            compass: true
-          },
-          files: {
-            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
-          }
-        }
-      },
-      watch: {
-        sass: {
-          files: 'scss/{,*/}*.scss',
-          tasks: ['sass:dev']
-        }
-      }
-    }
-  );
-  require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.registerTask('default', ['sass:dist']);
-  grunt.registerTask('dev', ['sass:dev','watch']);
+@import 'defs';
+
+pre,
+code,
+kbd,
+samp,
+var,
+output {
+  font-size: 90%;
+  font-family: $monospace;
 }
 
+pre {
+  margin-top: 1.65 * $em;
+  font-size: 100%;
+  line-height: 1.4 * $em;
+  overflow: auto;
+  padding-left: $em;
+  border-left: .1 * $em solid lighten($blue, 25);
+}
+
+code,
+samp,
+kbd {
+  padding: 3px 6px 2px 6px;
+  display: inline-block;
+  line-height: 1;
+  border-radius: 2px;
+}
+code {
+  background: #f4f4f4;
+  border: 1px solid #d4d4d4;
+}
+pre code {
+  font-size: 100%;
+  border: none;
+  padding: 0;
+  background: none;
+  line-height: 1.65 * $em;
+}
+var {
+  color: rgba(0, 0, 0, .5);
+}
