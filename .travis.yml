@@ -4,7 +4,9 @@ git:
 node_js:
   - "0.12"
 before_install:
+  - sudo apt-get install -y ruby
   - npm install -g grunt-cli
+  - gem install compass
 install:
   - npm install
 
