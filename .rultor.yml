@@ -4,6 +4,7 @@ install: |
   sudo gem install --no-ri pdd
   sudo gem install --no-ri compass
   sudo npm install -g grunt-cli
+  npm install
 architect:
 - yegor256
 - davvd
