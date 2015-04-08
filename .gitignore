@@ -5,3 +5,5 @@ target/
 .DS_Store
 node_modules/
 dist/
+tacit-VERSION.css
+tacit-VERSION.css.map
