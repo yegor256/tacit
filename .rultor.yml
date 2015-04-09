@@ -34,6 +34,8 @@ release:
     git checkout gh-pages
     mv /tmp/tacit-${tag}.min.css .
     git add tacit-${tag}.min.css
+    cp tacit-${tag}.min.css tacit.min.css
+    git add tacit.min.css
     mv /tmp/index.html .
     git add index.html
     git commit -am "${tag}"
