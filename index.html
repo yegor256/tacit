@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="tacit-0.2.0.min.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="css, html5, css framework"/>
+    <meta name="description" content="CSS Framework for Dummies"/>
+    <link rel="stylesheet" type="text/css" href="tacit-0.2.1.min.css"/>
+    <title>tacit</title>
+    <link rel="shortcut icon" type="image/gif" href="logo.gif"/>
   </head>
   <body>
     <section>
       <header>
         <nav>
           <ul>
-            <li><code>0.2.0</code></li>
+            <li><code>0.2.1</code></li>
           </ul>
         </nav>
       </header>
@@ -23,7 +29,7 @@
         <pre>&lt;!DOCTYPE html&gt;
   &lt;html&gt;
     &lt;head&gt;
-      &lt;link rel="stylesheet" type="text/css" href="//yegor256.github.io/tacit/tacit-0.2.0.min.css"/&gt;
+      &lt;link rel="stylesheet" type="text/css" href="//yegor256.github.io/tacit/tacit-0.2.1.min.css"/&gt;
     &lt;/head&gt;
   &lt;/html&gt;</pre>
         <p>
@@ -33,18 +39,21 @@
           just standard HTML elements, like <code>&lt;table&gt;</code> and <code>&lt;input&gt;</code>.
         </p>
         <p>
-          Check the source code of this page.
+          Check the source code of this page. By the way, it is checked
+          for W3C validator compliance:
+          <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fyegor256.github.io%2Ftacit%2F&amp;doctype=Inline">HTML</a> and
+          <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fyegor256.github.io%2Ftacit%2F&amp;profile=css3">CSS</a>.
         </p>
         <h2>Forms</h2>
         <p>
           Here is a simple form:
         </p>
-        <form method="get" action="">
+        <form method="get" action="#">
           <fieldset>
             <label for="email">Your email:</label>
             <input name="email" type="text" id="email" size="25" placeholder="must be unique"/>
             <label for="address">Your full address:</label>
-            <textarea name="address" type="text" id="address" cols="40" rows="3" placeholder="PO box is not allowed"></textarea>
+            <textarea name="address" id="address" cols="40" rows="3" placeholder="PO box is not allowed"></textarea>
             <button type="submit">Subscribe</button>
           </fieldset>
         </form>
@@ -83,10 +92,18 @@
       <footer>
         <nav>
           <ul>
-            <li><small>&#169; Yegor Bugayenko, 2015</small></li>
+            <li><small>&#169; <a href="http://www.yegor256.com">Yegor Bugayenko</a>, 2015</small></li>
           </ul>
         </nav>
       </footer>
     </section>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-1963507-39', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
