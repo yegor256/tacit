@@ -74,3 +74,10 @@ textarea {
   margin-bottom: $em;
   padding: .3 * $em .35 * $em;
 }
+
+input[type="checkbox"] {
+  float: left;
+  line-height: 2 * $em;
+  margin-right: .5 * $em;
+  margin-top: .45 * $em;
+}
