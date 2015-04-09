@@ -1,0 +1,24 @@
+{
+  "name": "tacit",
+  "version": "0.1.1",
+  "homepage": "https://github.com/yegor256/tacit",
+  "authors": [
+    "Yegor Bugayenko <yegor@teamed.io>"
+  ],
+  "description": "CSS Framework for Dummies",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
