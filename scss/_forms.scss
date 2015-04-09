@@ -38,13 +38,26 @@ label {
 input[type="submit"],
 input[type="reset"],
 button {
-  background: $blue;
+  background: darken($gray, 10);
   border-radius: .2 * $em;
   color: $white;
   cursor: pointer;
+  display: inline;
   margin-bottom: $em;
+  margin-right: .4 * $em;
   padding: .3625 * $em 1.3 * $em;
   text-align: center;
+
+  &:hover {
+    background: darken($gray, 15);
+    color: darken($white, 25);
+  }
+}
+
+input[type="submit"],
+button[type="submit"] {
+  background: $blue;
+  color: $white;
 
   &:hover {
     background: darken($blue, 15);
