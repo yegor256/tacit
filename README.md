@@ -25,6 +25,15 @@ $ npm install
 $ grunt
 ```
 
+To develop it locally, open `index.html` in a browser and then run:
+
+```
+$ grunt dev
+```
+
+Now you can make changes to `.scss` files and refresh the page in the browser.
+CSS will be recompiled automatically on every change you make.
+
 ## Got questions?
 
 If you have questions or general suggestions, don't hesitate to submit
