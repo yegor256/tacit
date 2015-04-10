@@ -11,7 +11,7 @@ architect:
 - davvd
 merge:
   script: |
-    grunt
+    grunt --no-color
     pdd --source=$(pwd) --verbose --file=/dev/null
 deploy:
   script: |
