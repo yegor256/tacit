@@ -31,7 +31,9 @@
     padding: $em;
   }
   
-  textarea, input, select {
+  textarea,
+  input,
+  select {
     max-width: 100%;
   }
   
@@ -39,7 +41,7 @@
     min-width: 0;
   }
   
-  /* Firefox bug fix */
+  // Firefox bug fix
   @-moz-document url-prefix() {
     fieldset {
       display: table-cell;
