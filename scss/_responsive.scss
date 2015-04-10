@@ -30,12 +30,20 @@
     margin: -$em;
     padding: $em;
   }
+  
   textarea, input, select {
     max-width: 100%;
   }
   
   fieldset {
     min-width: 0;
+  }
+  
+  /* Firefox bug fix */
+  @-moz-document url-prefix() {
+    fieldset {
+      display: table-cell;
+    }
   }
   
   section {
