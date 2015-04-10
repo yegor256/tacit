@@ -28,11 +28,11 @@ th {
 
 td,
 th {
-  border-bottom: 1px solid $gray;
+  border-bottom: (.06 * $em) solid $gray;
   padding: .825 * $em $em;
 }
 
 thead th {
-  border-bottom-width: 2px;
+  border-bottom-width: .12 * $em;
   padding-bottom: .35 * $em;
 }
