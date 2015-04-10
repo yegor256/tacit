@@ -30,4 +30,15 @@
     margin: -$em;
     padding: $em;
   }
+  textarea, input, select {
+    max-width: 100%;
+  }
+  
+  fieldset {
+    min-width: 0;
+  }
+  
+  section {
+    width: auto;
+  }
 }
