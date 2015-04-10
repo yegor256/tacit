@@ -20,20 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-// sizes
-$em: 18px;
-
-// fonts
-$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
-
-// colors
-$black: #000;
-$white: #fff;
-$gray: #ccc;
-$blue: #367ac3;
-$red: #db423c;
-$green: #3fa75f;
-
-// responsive
-$mobile-width: 767px;
+@media (max-width: $mobile-width) {
+  body {
+    padding: $em;
+  }
+  
+  article {
+    border-radius: 0;
+    margin: -$em;
+    padding: $em;
+  }
+}
