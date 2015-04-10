@@ -56,4 +56,10 @@
   section {
     width: auto;
   }
+  
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
 }
