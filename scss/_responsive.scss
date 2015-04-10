@@ -1,11 +1,11 @@
 @media (max-width: $mobile-width) {
-    body {
-        padding: $em;
-    }
-    
-    article {
-        border-radius: 0;
-        margin: -$em;
-        padding: $em;
-    }
+  body {
+    padding: $em;
+  }
+  
+  article {
+    border-radius: 0;
+    margin: -$em;
+    padding: $em;
+  }
 }
