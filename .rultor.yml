@@ -40,5 +40,5 @@ release:
     git add tacit.min.css
     mv /tmp/index.html .
     git add index.html
-    git commit -am "${tag}"
+    git commit --allow-empty -am "${tag}"
     git checkout master
