@@ -32,6 +32,8 @@ release:
     mv dist/tacit-${tag}.min.css /tmp
     mv index.html /tmp
     git checkout gh-pages
+    git reset --hard
+    git clean -fd
     mv /tmp/tacit-${tag}.min.css .
     git add tacit-${tag}.min.css
     cp tacit-${tag}.min.css tacit.min.css
