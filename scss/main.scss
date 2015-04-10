@@ -26,7 +26,6 @@
 @import 'pre';
 @import 'headers';
 @import 'typography';
-@import 'responsive';
 
 * {
   border: 0;
@@ -103,3 +102,5 @@ nav {
     }
   }
 }
+
+@import 'responsive';
