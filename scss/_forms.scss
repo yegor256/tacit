@@ -94,3 +94,11 @@ input[type="checkbox"] {
   margin-right: .5 * $em;
   margin-top: .45 * $em;
 }
+
+select:focus,
+textarea:focus,
+input:focus {
+  border-color: $formElementFocusGlow;
+  outline: 0px none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.09) inset, 0px 0px 8px $formElementFocusGlow;
+}
