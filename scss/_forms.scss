@@ -53,7 +53,7 @@ button {
     color: $black;
   }
 
-  &[disabled="true"] {
+  &[disabled] {
     background: darken($white, 10);
     color: darken($gray, 10);
   }
