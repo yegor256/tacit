@@ -36,3 +36,9 @@ thead th {
   border-bottom-width: .12 * $em;
   padding-bottom: .35 * $em;
 }
+  
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
