@@ -11,7 +11,7 @@ architect:
 - davvd
 merge:
   script: |
-    grunt
+    grunt --no-color
     pdd --source=$(pwd) --verbose --file=/dev/null
 deploy:
   script: |
@@ -32,11 +32,13 @@ release:
     mv dist/tacit-${tag}.min.css /tmp
     mv index.html /tmp
     git checkout gh-pages
+    git reset --hard
+    sudo git clean -fd
     mv /tmp/tacit-${tag}.min.css .
     git add tacit-${tag}.min.css
     cp tacit-${tag}.min.css tacit.min.css
     git add tacit.min.css
     mv /tmp/index.html .
     git add index.html
-    git commit -am "${tag}"
+    git commit --allow-empty -am "${tag}"
     git checkout master

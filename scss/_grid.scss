@@ -20,25 +20,78 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-// sizes
-$em: 18px;
+* {
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-sizing: border-box;
+  font-family: $sans-serif;
+  font-size: $em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.65 * $em;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: baseline;
+}
 
-// fonts
-$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
+body {
+  background: darken($white, 4);
+  color: lighten($black, 10);
+  padding: 2 * $em;
+}
 
-// colors
-$black: #000;
-$white: #fff;
-$gray: #ccc;
-$blue: #367ac3;
-$red: #db423c;
-$green: #3fa75f;
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+form,
+fieldset,
+figure,
+address {
+  margin-bottom: 1.65 * $em;
+}
 
+section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 50 * $em;
+}
 
-// Form control focus colour
-$formElementFocusGlow: $blue;
+article {
+  background: $white;
+  border: .1 * $em solid lighten($black, 85);
+  border-radius: .4 * $em;
+  padding: 2.4 * $em;
+}
 
-// responsive
-$mobile-width: 767px;
+header {
+  margin-bottom: 2 * $em;
+}
 
+footer {
+  margin-top: 2 * $em;
+}
+
+nav {
+  text-align: center;
+
+  ul {
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline;
+      margin-left: .5 * $em;
+      margin-right: .5 * $em;
+    }
+  }
+}
