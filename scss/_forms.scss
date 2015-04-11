@@ -98,7 +98,7 @@ input[type="checkbox"] {
 select:focus,
 textarea:focus,
 input:focus {
-  border-color: $formElementFocusGlow;
-  outline: 0px none;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.09) inset, 0px 0px 8px $formElementFocusGlow;
+  border-color: $form-element-focus-glow;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .09) inset, 0 0 8px $form-element-focus-glow;
+  outline: 0 none;
 }
