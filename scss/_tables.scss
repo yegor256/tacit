@@ -23,12 +23,22 @@
 @import 'defs';
 
 th {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 td,
 th {
-  border-bottom: 1px solid $gray;
+  border-bottom: (.06 * $em) solid $gray;
   padding: .825 * $em $em;
 }
 
+thead th {
+  border-bottom-width: .12 * $em;
+  padding-bottom: .35 * $em;
+}
+  
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
