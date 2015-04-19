@@ -38,6 +38,12 @@
   vertical-align: baseline;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background: darken($white, 4);
   color: lighten($black, 10);
