@@ -55,16 +55,16 @@ h4 {
 }
 
 h5 {
-  font-size: 0.8 * $em;
+  font-size: .8 * $em;
   font-weight: bold;
-  text-transform: uppercase;
   margin-top: $em;
+  text-transform: uppercase;
 }
 
 h6 {
-  font-size: 0.8 * $em;
+  font-size: .8 * $em;
   font-weight: bold;
-  text-transform: uppercase;
   margin-top: $em;
+  text-transform: uppercase;
   color: $gray;
 }
