@@ -31,7 +31,6 @@ release:
     git commit -am "${tag}"
     mv dist/tacit-${tag}.min.css /tmp
     mv index.html /tmp
-    git fetch --all
     git checkout gh-pages
     git reset --hard
     sudo git clean -fd
