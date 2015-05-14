@@ -38,9 +38,9 @@ label {
 input[type="submit"],
 input[type="reset"],
 button {
-  background: darken($gray, 10);
+  background: darken($white, 5);
   border-radius: .2 * $em;
-  color: $white;
+  color: darken($gray, 25);
   cursor: pointer;
   display: inline;
   margin-bottom: $em;
@@ -49,9 +49,15 @@ button {
   text-align: center;
 
   &:hover {
-    background: darken($gray, 15);
-    color: darken($white, 25);
+    background: darken($white, 15);
+    color: $black;
   }
+
+  &[disabled] {
+    background: darken($white, 10);
+    color: darken($gray, 10);
+  }
+
 }
 
 input[type="submit"],
@@ -63,6 +69,7 @@ button[type="submit"] {
     background: darken($blue, 15);
     color: darken($white, 25);
   }
+
 }
 
 input[type="text"],
