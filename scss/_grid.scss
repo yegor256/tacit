@@ -109,3 +109,15 @@ nav {
     }
   }
 }
+
+ol,
+ul {
+  margin-left: 1.65 * $em;
+}
+
+li {
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
+}
