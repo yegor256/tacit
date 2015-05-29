@@ -98,6 +98,14 @@ nav {
       display: inline;
       margin-left: .5 * $em;
       margin-right: .5 * $em;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
