@@ -95,7 +95,8 @@ textarea {
   padding: .3 * $em .35 * $em;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   float: left;
   line-height: 2 * $em;
   margin-right: .5 * $em;
