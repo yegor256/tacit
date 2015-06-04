@@ -26,6 +26,11 @@ release:
     sed -i "s/1\.0\.0/${tag}/g" bower.json
     sed -i "s/VERSION/${tag}/g" index.html
     grunt rultor --no-color
+    git rm -rf dist/
+    git add -f dist/tacit-${tag}.min.css
+    git add -f dist/tacit-${tag}.min.css.map
+    git add -f dist/tacit-${tag}.css
+    git commit -am "${tag}"
     cp dist/tacit-${tag}.min.css .
     git add tacit-${tag}.min.css
     git commit -am "${tag}"
