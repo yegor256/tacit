@@ -31,9 +31,6 @@ release:
     git add -f dist/tacit-${tag}.min.css.map
     git add -f dist/tacit-${tag}.css
     git commit -am "${tag}"
-    cp dist/tacit-${tag}.min.css .
-    git add tacit-${tag}.min.css
-    git commit -am "${tag}"
     mv dist/tacit-${tag}.min.css /tmp
     mv index.html /tmp
     git checkout gh-pages
