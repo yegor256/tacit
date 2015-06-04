@@ -25,7 +25,7 @@ release:
     sed -i "s/1\.0\.0/${tag}/g" package.json
     sed -i "s/1\.0\.0/${tag}/g" bower.json
     sed -i "s/VERSION/${tag}/g" index.html
-    grunt --no-color
+    grunt rultor --no-color
     cp dist/tacit-${tag}.min.css .
     git add tacit-${tag}.min.css
     git commit -am "${tag}"

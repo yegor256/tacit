@@ -46,6 +46,16 @@ module.exports = function (grunt) {
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
           }
+        },
+        uncompressed: {
+          options: {
+            compass: true,
+            sourcemap: 'none',
+            style: 'expanded'
+          },
+          files: {
+            'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
+          }
         }
       },
       watch: {
@@ -69,6 +79,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-scss-lint');
   grunt.registerTask('default', ['scsslint', 'sass:dist']);
+  grunt.registerTask('rultor', ['scsslint', 'sass:dist', 'sass:uncompressed']);
   grunt.registerTask('dev', ['scsslint', 'sass:dev', 'watch']);
 }
 
