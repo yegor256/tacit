@@ -25,7 +25,7 @@ release:
     sed -i "s/1\.0\.0/${tag}/g" package.json
     sed -i "s/1\.0\.0/${tag}/g" bower.json
     sed -i "s/VERSION/${tag}/g" index.html
-    git rm -rf dist/
+    git rm -rf dist/ --ignore-unmatch
     grunt rultor --no-color
     git add -f dist/tacit-${tag}.min.css
     git add -f dist/tacit-${tag}.min.css.map
