@@ -21,25 +21,41 @@ deploy:
   - yegor256
 release:
   script: |-
+    # Change proper version for all necessary filers
     sed -i "s/1\.0\.0/${tag}/g" package.json
     sed -i "s/1\.0\.0/${tag}/g" bower.json
     sed -i "s/VERSION/${tag}/g" index.html
+
+    # Perform build
     git rm -rf dist/ --ignore-unmatch
     npm run rultor --no-color
+
+    # Current branch is __rultor
+
+    # Add built files to git and commit
     git add -f dist/tacit-${tag}.min.css
     git add -f dist/tacit-${tag}.min.css.map
     git add -f dist/tacit-${tag}.css
     git commit -am "${tag}"
+
+    # We'll gonna need these files later...
     mv dist/tacit-${tag}.min.css /tmp
     mv index.html /tmp
+
+    # Checkout to gh-pages and reset any modifications
     git checkout gh-pages
     git reset --hard
     sudo /bin/bash -c "cd '$(pwd)'; git clean -fd"
+
+    # Add the current, minified css file to the gh-pages branch
     mv /tmp/tacit-${tag}.min.css .
-    git add tacit-${tag}.min.css
     cp tacit-${tag}.min.css tacit.min.css
-    git add tacit.min.css
     mv /tmp/index.html .
+
+    git add tacit-${tag}.min.css
+    git add tacit.min.css
     git add index.html
+
+    # Commit and change the branch to master
     git commit --allow-empty -am "${tag}"
     git checkout master
