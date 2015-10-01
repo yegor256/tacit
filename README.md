@@ -13,6 +13,18 @@ compliant with HTML5 and they will look OK.
 
 Details are here: [yegor256.github.io/tacit](http://yegor256.github.io/tacit/)
 
+Or simply download [`tacit.min.css`](http://yegor256.github.io/tacit/tacit.min.css)
+and use together with your HTML by adding:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="tacit.min.css"/>
+  </head>
+</html>
+```
+
 ## How to contribute
 
 Fork repository, make changes, send us a pull request. We will review
