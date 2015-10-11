@@ -25,6 +25,9 @@ and use together with your HTML by adding:
 </html>
 ```
 
+This blog post explains it in even more details:
+[Tacit, a CSS Framework Without Classes](http://www.yegor256.com/2015/04/13/tacit-css-framework-for-dummies.html).
+
 ## How to contribute
 
 Fork repository, make changes, send us a pull request. We will review
