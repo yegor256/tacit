@@ -20,7 +20,7 @@ and use together with your HTML by adding:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="tacit.min.css"/>
+    <link rel="stylesheet" href="tacit.min.css"/>
   </head>
 </html>
 ```
