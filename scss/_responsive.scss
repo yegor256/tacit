@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015 Yegor Bugayenko
+// Copyright (c) 2015-2016 Yegor Bugayenko
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,30 +24,30 @@
   body {
     padding: $em;
   }
-  
+
   article {
     border-radius: 0;
     margin: -$em;
     padding: $em;
   }
-  
+
   textarea,
   input,
   select {
     max-width: 100%;
   }
-  
+
   fieldset {
     // The following line fixes fieldset overflow in webkit browsers.
     // For further info see:
     // http://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content/17863685#17863685
     min-width: 0;
   }
-  
+
   section {
     width: auto;
   }
-  
+
   fieldset,
   x:-moz-any-link {
     // The following lines fixes fieldset overflow bug in Firefox browser.
