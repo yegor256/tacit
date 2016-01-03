@@ -8,13 +8,13 @@ branches:
     - gh-pages
 os: Windows Server 2012
 install:
-  - cmd: SET PATH=C:\Ruby200\bin;C:\msys64\usr\bin;%PATH%
-  - cmd: bash --login -c "pacman -S --needed --noconfirm base-devel"
+  - cmd: SET PATH=C:\Ruby200\bin;%PATH%
   - cmd: ruby --version
 build_script:
   - npm install -g grunt-cli
   - gem install --no-ri compass
   - gem install --no-ri scss-lint
+  - npm install
 test_script:
   - grunt
 cache:
