@@ -2,10 +2,10 @@
 [![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/tacit)](http://www.rultor.com/p/yegor256/tacit)
 
 [![Build Status](https://img.shields.io/travis/yegor256/tacit/master.svg)](https://travis-ci.org/yegor256/tacit)
+[![Build status](https://ci.appveyor.com/api/projects/status/9imw0l5gu82awubp?svg=true)](https://ci.appveyor.com/project/yegor256/tacit)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
 [![Bower](https://img.shields.io/bower/v/tacit.svg)](https://github.com/yegor256/tacit/releases)
 [![Dependencies](https://www.versioneye.com/user/projects/561ac7cea193340f2f00122f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561ac7cea193340f2f00122f)
-
 
 **Tacit** is a primitive CSS framework for dummies, like myself, who
 don't know anything about graphic design but want their web services to
