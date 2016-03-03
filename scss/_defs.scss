@@ -37,3 +37,12 @@ $green: #3fa75f;
 
 // responsive
 $mobile-width: 767px;
+
+%sans-serif {
+  font-family: $sans-serif;
+  font-size: $em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.65 * $em;
+}

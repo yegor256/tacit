@@ -26,6 +26,7 @@ input,
 textarea,
 select,
 button {
+  @extend %sans-serif;
   display: block;
   padding: .55 * $em;
 }
