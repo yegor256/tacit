@@ -57,6 +57,7 @@ button {
   &[disabled] {
     background: darken($white, 10);
     color: darken($gray, 10);
+    cursor: not-allowed;
   }
 
 }
