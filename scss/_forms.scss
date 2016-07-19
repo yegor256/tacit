@@ -28,6 +28,7 @@ select,
 button {
   @extend %sans-serif;
   display: block;
+  max-width: 100%;
   padding: .55 * $em;
 }
 
