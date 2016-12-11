@@ -22,12 +22,11 @@
 
 @media (max-width: $mobile-width) {
   body {
-    padding: $em;
+    padding: $em 0;
   }
 
   article {
     border-radius: 0;
-    margin: -$em;
     padding: $em;
   }
 
@@ -35,6 +34,7 @@
   input,
   select {
     max-width: 100%;
+    min-width: 0;
   }
 
   fieldset {
@@ -42,13 +42,17 @@
     // For further info see:
     // http://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content/17863685#17863685
     min-width: 0;
+
+    * {
+      page-break-before: auto;
+      flex-grow: 1;
+    }
   }
 
   section {
     width: auto;
   }
 
-  fieldset,
   x:-moz-any-link {
     // The following lines fixes fieldset overflow bug in Firefox browser.
     // For further info, see:
