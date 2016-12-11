@@ -24,8 +24,8 @@
 
 fieldset {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 input,
@@ -33,14 +33,14 @@ textarea,
 select,
 button {
   @extend %sans-serif;
+  border-radius: .2 * $em;
   display: inline-block;
   max-width: 100%;
   padding: .55 * $em;
-  border-radius: .2 * $em;
 
-  & + label,
-  & + input[type="checkbox"],
-  & + input[type="radio"] {
+  + label,
+  + input[type="checkbox"],
+  + input[type="radio"] {
     page-break-before: always;
   }
 }
@@ -54,7 +54,7 @@ label {
   display: inline-block;
   margin-bottom: .82 * $em;
 
-  & + * {
+  + * {
     page-break-before: always;
   }
 }
@@ -122,11 +122,11 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
+  flex-grow: 0;
   height: 1.65 * $em;
   margin-right: .5 * $em;
-  flex-grow: 0;
 
-  & + label {
+  + label {
     page-break-before: avoid;
   }
 }

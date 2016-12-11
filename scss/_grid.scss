@@ -129,15 +129,15 @@ dt {
 
 dd {
   padding: 0 $em (.25 * $em);
-}
 
-dd:last-of-type {
-  border-bottom: (.06 * $em) solid $gray;
-}
+  &:last-of-type {
+    border-bottom: (.06 * $em) solid $gray;
+  }
 
-dd + dt {
-  padding-top: .5 * $em;
-  border-top: (.06 * $em) solid $gray;
+  + dt {
+    border-top: (.06 * $em) solid $gray;
+    padding-top: .5 * $em;
+  }
 }
 
 blockquote {
@@ -145,16 +145,16 @@ blockquote {
   padding: (.25 * $em) $em (.25 * $em) (.88 * $em);
 
   footer {
-    font-size: .75 * $em;
     color: $gray;
+    font-size: .75 * $em;
     margin: 0;
   }
 }
 
 img {
-  max-width: 100%;
   height: auto;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 figure {

@@ -49,8 +49,8 @@ pre {
 code,
 kbd {
   background: lighten($green, 43);
-  color: $green;
   border-radius: .2 * $em;
+  color: $green;
   display: inline-block;
   line-height: $em;
   padding: (.2 * $em) (.35 * $em) (.15 * $em);
