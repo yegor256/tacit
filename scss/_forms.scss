@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015 Yegor Bugayenko
+// Copyright (c) 2015-2016 Yegor Bugayenko
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -26,7 +26,9 @@ input,
 textarea,
 select,
 button {
+  @extend %sans-serif;
   display: block;
+  max-width: 100%;
   padding: .55 * $em;
 }
 
@@ -56,6 +58,7 @@ button {
   &[disabled] {
     background: darken($white, 10);
     color: darken($gray, 10);
+    cursor: not-allowed;
   }
 
 }
@@ -82,6 +85,7 @@ input[type="number"],
 input[type="datetime"],
 input[type="date"],
 input[type="month"],
+input[type="week"],
 input[type="color"],
 input[type="time"],
 input[type="search"],

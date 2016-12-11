@@ -6,7 +6,6 @@ install: |
   sudo gem install --no-ri compass
   sudo gem install --no-ri scss-lint
   sudo npm install
-  sudo ln -s /usr/bin/nodejs /usr/bin/node
 architect:
 - yegor256
 - davvd

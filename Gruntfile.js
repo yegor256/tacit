@@ -1,7 +1,7 @@
 /**
  * The MIT License (MIT)
  *
- * Copyright (c) 2015 Yegor Bugayenko
+ * Copyright (c) 2015-2016 Yegor Bugayenko
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -72,14 +72,23 @@ module.exports = function (grunt) {
           config: '.scss-lint.yml',
           colorizeOutput: true
         },
+      },
+      shell: {
+        target: {
+          command: 'grep -q -r 2015-' + new Date().getFullYear()
+            + ' --include "*.scss"'
+            + ' --include "*.js"'
+            + ' .'
+        }
       }
     }
   );
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-scss-lint');
-  grunt.registerTask('default', ['scsslint', 'sass:dist']);
-  grunt.registerTask('rultor', ['scsslint', 'sass:dist', 'sass:uncompressed']);
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.registerTask('default', ['scsslint', 'sass:dist', 'shell']);
+  grunt.registerTask('rultor', ['scsslint', 'sass:dist', 'sass:uncompressed', 'shell']);
   grunt.registerTask('dev', ['scsslint', 'sass:dev', 'watch']);
 }
 

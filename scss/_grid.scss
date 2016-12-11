@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015 Yegor Bugayenko
+// Copyright (c) 2015-2016 Yegor Bugayenko
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,12 +25,6 @@
   border-collapse: separate;
   border-spacing: 0;
   box-sizing: border-box;
-  font-family: $sans-serif;
-  font-size: $em;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.65 * $em;
   margin: 0;
   outline: 0;
   padding: 0;
@@ -40,6 +34,7 @@
 
 html,
 body {
+  @extend %sans-serif;
   height: 100%;
   width: 100%;
 }
