@@ -29,13 +29,12 @@ samp,
 var,
 output {
   font-family: $monospace;
-  font-size: .9 * $em;
+  font-size: .8 * $em;
 }
 
 pre {
-  border-left: .1 * $em solid lighten($blue, 25);
+  border-left: .1 * $em solid lighten($green, 25);
   line-height: 1.4 * $em;
-  margin-top: 1.65 * $em;
   overflow: auto;
   padding-left: $em;
 
@@ -47,11 +46,22 @@ pre {
   }
 }
 
-code {
-  background: darken($white, 7);
-  border: .1 * $em solid lighten($black, 80);
+code,
+kbd {
+  background: lighten($green, 43);
+  color: $green;
   border-radius: .2 * $em;
   display: inline-block;
   line-height: $em;
-  padding: 3px 6px 2px;
+  padding: (.2 * $em) (.35 * $em) (.15 * $em);
+}
+
+kbd {
+  background: $green;
+  color: $white;
+}
+
+mark {
+  background: $yellow;
+  padding: 0 (.2 * $em);
 }
