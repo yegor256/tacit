@@ -35,16 +35,33 @@ hr {
   border-bottom: 1px solid $gray;
 }
 
+figcaption,
 small {
   font-size: .85 * $em;
 }
 
+figcaption {
+  color: $gray;
+}
+
+var,
 em,
 i {
   font-style: italic;
 }
 
+dt,
 strong,
 b {
   font-weight: 600;
+}
+
+del,
+s {
+  text-decoration: line-through;
+}
+
+ins,
+u {
+  text-decoration: underline;
 }
