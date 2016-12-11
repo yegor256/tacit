@@ -108,12 +108,57 @@ nav {
 
 ol,
 ul {
-  margin-left: 1.65 * $em;
+  margin-left: 1.75 * $em;
 }
 
 li {
+  dl,
   ol,
   ul {
     margin-bottom: 0;
+  }
+}
+
+dl {
+  display: inline-block;
+}
+
+dt {
+  padding: 0 $em;
+}
+
+dd {
+  padding: 0 $em (.25 * $em);
+}
+
+dd:last-of-type {
+  border-bottom: (.06 * $em) solid $gray;
+}
+
+dd + dt {
+  padding-top: .5 * $em;
+  border-top: (.06 * $em) solid $gray;
+}
+
+blockquote {
+  border-left: (.12 * $em) solid $gray;
+  padding: (.25 * $em) $em (.25 * $em) (.88 * $em);
+
+  footer {
+    font-size: .75 * $em;
+    color: $gray;
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+figure {
+  img {
+    display: block;
   }
 }
