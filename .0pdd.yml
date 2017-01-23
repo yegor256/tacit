@@ -1,5 +1,5 @@
 errors:
   - yegor256@gmail.com
-alerts:
-  github:
-    - yegor256
+# alerts:
+#   github:
+#     - yegor256
