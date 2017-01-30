@@ -20,12 +20,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-@import 'defs';
-@import 'tables';
-@import 'forms';
-@import 'pre';
-@import 'headings';
-@import 'typography';
-@import 'grid';
-@import 'responsive';
-@import 'media';
+img {
+  max-width: 100%;
+}
