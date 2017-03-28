@@ -14,7 +14,7 @@
       <header>
         <nav>
           <ul>
-            <li><code>0.6.1</code></li>
+            <li><code>0.7</code></li>
           </ul>
         </nav>
       </header>
@@ -35,7 +35,7 @@
         <p>
           You should <strong>not</strong> use any CSS classes to make your HTML code look nice. Just
           make sure it is <a href="http://www.w3.org/TR/html5/">HTML5</a>
-          compliant and you'll be fine. Again, no classes,
+          compliant and you'll be fine. Again, <mark>no classes</mark>,
           just standard HTML elements, like <code>&lt;table&gt;</code> and <code>&lt;input&gt;</code>.
         </p>
         <p>
@@ -66,7 +66,7 @@
             <input type="radio" id="over" name="age"/>
             <label for="over">I'm over 18</label>
             <label for="address">Your full address:</label>
-            <textarea name="address" id="address" cols="40" rows="3" placeholder="PO box is not allowed"></textarea>
+            <textarea name="address" id="address" placeholder="PO box is not allowed"></textarea>
             <input type="checkbox" name="consent" id="consent" value="test"/>
             <label for="consent">I agree with all possible terms and conditions</label>
             <button type="submit">Subscribe</button>
@@ -114,7 +114,7 @@
         <h6>This is &lt;h6&gt;</h6>
         <p>I would recommend to avoid this type of heading at all.</p>
         <h2>Lists</h2>
-        <p>Just use standard <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags:
+        <p>Just use standard <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> and <code>&lt;dl&gt;</code> tags:
         <ul>
           <li>Orange</li>
           <li>
@@ -133,8 +133,29 @@
               <li>Third</li>
             </ol>
           </li>
-          <li>Appricot</li>
+          <li>Apricot</li>
         </ul>
+        <dl>
+          <dt>Banana</dt>
+          <dd>A yellow fruit that is easy to peel.</dd>
+          <dd>Which also grows on a tree.</dd>
+          <dt>Cashew</dt>
+          <dd>A tan nut without a peel.</dd>
+          <dt>Cherry</dt>
+          <dd>A red fruit that is hard to peel.</dd>
+        </dl>
+        <h2>Blockquote</h2>
+        <blockquote>
+          Use this to emphasize a quote
+          <footer>&mdash; Author Name, Publication</footer>
+        </blockquote>
+        <h2>Keyboard</h2>
+        <p>Sometimes you want to let people know they should press a keyboard command like <kbd>ctrl + l</kbd>.</p>
+        <h2>Images</h2>
+        <figure>
+          <img src="http://placehold.it/900x500" />
+          <figcaption>A photo placeholder text</figcaption>
+        </figure>
         <h2>Work in progress</h2>
         <p>
           The framework is still in development. If you want to contribute,
@@ -153,7 +174,7 @@
         <nav>
           <ul>
             <li><small><a href="https://github.com/yegor256/tacit">GitHub</a></small></li>
-            <li><small><a href="http://yegor256.github.io/tacit/tacit-0.6.1.min.css">Download</a></small></li>
+            <li><small><a href="http://yegor256.github.io/tacit/tacit-0.7.min.css">Download</a></small></li>
             <li><small><a href="http://opensource.org/licenses/MIT">MIT license</a></small></li>
           </ul>
         </nav>
