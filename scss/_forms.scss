@@ -26,7 +26,7 @@ input,
 textarea,
 select,
 button {
-  @extend %sans-serif;
+  @extend %mono;
   display: block;
   max-width: 100%;
   padding: .55 * $em;
@@ -40,39 +40,52 @@ label {
 input[type="submit"],
 input[type="reset"],
 button {
-  background: darken($white, 5);
-  border-radius: .2 * $em;
-  color: darken($gray, 25);
+  @include emboss($gray);
+  background: $gray;
+  color: $white;
   cursor: pointer;
+  border-radius: $rounded;
   display: inline;
   margin-bottom: $em;
   margin-right: .4 * $em;
   padding: .3625 * $em 1.3 * $em;
   text-align: center;
+  position: relative;
 
   &:hover {
-    background: darken($white, 15);
-    color: $black;
+    background: darken($gray, 5);
+    box-shadow: inset 0 0 3px fade-out($white, .8);
   }
 
   &[disabled] {
-    background: darken($white, 10);
-    color: darken($gray, 10);
+    @include pressed($background);
+    background: $background;
     cursor: not-allowed;
+    color: lighten($gray, 5);
+    text-shadow: 0 -1px 1px $white;
   }
 
+  &:active {
+    top: 1px;
+  }
 }
 
 input[type="submit"],
 button[type="submit"] {
+  @include emboss($blue);
   background: $blue;
+  border-radius: $rounded;
   color: $white;
+  position: relative;
 
   &:hover {
-    background: darken($blue, 15);
-    color: darken($white, 25);
+    background: darken($blue, 5);
+    box-shadow: inset 0 0 3px fade-out($white, .8);
   }
 
+  &:active {
+    top: 1px;
+  }
 }
 
 input[type="text"],
@@ -94,9 +107,22 @@ input[type="file"],
 input[type="datetime-local"],
 select,
 textarea {
-  border: 1px solid $gray;
+  border-top: .1 * $em solid darken($white, 4);
+  border-left: .1 * $em solid darken($white, 4);
+  border-right: .1 * $em solid darken($white, 8);
+  border-bottom: .1 * $em solid darken($white, 8);
   margin-bottom: $em;
-  padding: .3 * $em .35 * $em;
+  padding: $em * 0.6;
+  border-radius: $rounded / 1.5;
+  background-color: $white;
+
+  &:focus {
+    border-top: .1 * $em solid darken($white, 8);
+    border-left: .1 * $em solid darken($white, 8);
+    border-right: .1 * $em solid darken($white, 8);
+    border-bottom: .1 * $em solid darken($white, 8);
+    box-shadow: inset 0 0 $em/2 lighten($gray, 18);
+  }
 }
 
 input[type="checkbox"],
@@ -105,4 +131,10 @@ input[type="radio"] {
   line-height: 2 * $em;
   margin-right: .5 * $em;
   margin-top: .45 * $em;
+}
+
+input[type="submit"],
+input[type="reset"],
+button {
+  font-weight: bold !important;
 }

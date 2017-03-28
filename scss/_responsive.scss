@@ -31,10 +31,19 @@
     padding: $em;
   }
 
+  label,
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: auto;
+    //display: inline-block;
+    //float: none;
+  }
+
   textarea,
   input,
   select {
     max-width: 100%;
+    width: 100%;
   }
 
   fieldset {
@@ -55,6 +64,6 @@
     // http://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content/17863685#17863685
     // Changed the original `@-moz-document url-prefix` code to simpler
     // `-moz-any-link` hack so W3C CSS validator will pass it.
-    display: table-cell;
+    //display: table-cell;
   }
 }

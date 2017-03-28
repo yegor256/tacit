@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    color: darken($blue, 20);
   }
 }
 
@@ -36,15 +36,32 @@ hr {
 }
 
 small {
-  font-size: .85 * $em;
+  font-size: .90 * $em;
 }
 
 em,
 i {
   font-style: italic;
+  color: lighten($text, 15);
 }
 
 strong,
 b {
   font-weight: 600;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px $white;
 }
+
+@mixin emboss($color, $sign: 1) {
+  text-shadow: $sign * 1px 0 0 darken($color, 5);
+  border-right: 1px solid darken($color, 10);
+  border-bottom: 1px solid darken($color, 10);
+}
+
+@mixin pressed($color) {
+  border-bottom: 1px solid $color;
+  border-right: 1px solid $color;
+  border-top: 1px solid darken($color, 4);
+  border-left: 1px solid darken($color, 4);
+}
+

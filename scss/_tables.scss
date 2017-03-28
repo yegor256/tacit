@@ -24,21 +24,27 @@
 
 th {
   font-weight: 600;
+  font-weight: bold;
 }
 
 td,
 th {
-  border-bottom: (.06 * $em) solid $gray;
-  padding: .825 * $em $em;
+  border-bottom: 1px solid lighten($background, 2);
+  padding: $em;
+}
+
+td:nth-child(1),
+th:nth-child(1){
+  padding-left: 0;
 }
 
 thead th {
-  border-bottom-width: .12 * $em;
   padding-bottom: .35 * $em;
 }
 
 table {
-  display: block;
+  //display: block;
   max-width: 100%;
+  width: 100%;
   overflow-x: auto;
 }
