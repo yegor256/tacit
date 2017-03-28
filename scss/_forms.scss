@@ -22,26 +22,47 @@
 
 @import 'defs';
 
+fieldset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 input,
 textarea,
 select,
 button {
   @extend %sans-serif;
-  display: block;
+  border-radius: .2 * $em;
+  display: inline-block;
   max-width: 100%;
   padding: .55 * $em;
+
+  + label,
+  + input[type="checkbox"],
+  + input[type="radio"] {
+    page-break-before: always;
+  }
+}
+
+textarea {
+  min-height: 5 * $em;
+  min-width: 20 * $em;
 }
 
 label {
-  display: block;
+  display: inline-block;
   margin-bottom: .82 * $em;
+
+  + * {
+    page-break-before: always;
+  }
 }
 
 input[type="submit"],
 input[type="reset"],
 button {
   background: darken($white, 5);
-  border-radius: .2 * $em;
   color: darken($gray, 25);
   cursor: pointer;
   display: inline;
@@ -101,8 +122,11 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  float: left;
-  line-height: 2 * $em;
+  flex-grow: 0;
+  height: 1.65 * $em;
   margin-right: .5 * $em;
-  margin-top: .45 * $em;
+
+  + label {
+    page-break-before: avoid;
+  }
 }
