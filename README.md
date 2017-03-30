@@ -15,6 +15,17 @@ compliant with HTML5 and they will look OK.
 
 Details are here: [yegor256.github.io/tacit](http://yegor256.github.io/tacit/)
 
+Just add it to your HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="http://yegor256.github.io/tacit/tacit.min.css"/>
+  </head>
+</html>
+```
+
 Or simply download [`tacit.min.css`](http://yegor256.github.io/tacit/tacit.min.css)
 and use together with your HTML by adding:
 

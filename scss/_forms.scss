@@ -40,17 +40,20 @@ label {
 input[type="submit"],
 input[type="reset"],
 button {
-  @include emboss($gray);
   background: $gray;
+  border-bottom: .1 * $em solid darken($gray, 10);
+  border-radius: $rounded;
+  border-right: .1 * $em solid darken($gray, 10);
   color: $white;
   cursor: pointer;
-  border-radius: $rounded;
   display: inline;
+  font-weight: bold;
   margin-bottom: $em;
   margin-right: .4 * $em;
   padding: .3625 * $em 1.3 * $em;
-  text-align: center;
   position: relative;
+  text-align: center;
+  text-shadow: .1 * $em 0 0 darken($gray, 5);
 
   &:hover {
     background: darken($gray, 5);
@@ -58,10 +61,13 @@ button {
   }
 
   &[disabled] {
-    @include pressed($background);
     background: $background;
-    cursor: not-allowed;
+    border-bottom: .1 * $em  solid $background;
+    border-left: .1 * $em  solid darken($background, 4);
+    border-right: .1 * $em  solid $background;
+    border-top: .1 * $em  solid darken($background, 4);
     color: lighten($gray, 5);
+    cursor: not-allowed;
     text-shadow: 0 -1px 1px $white;
   }
 
@@ -72,11 +78,13 @@ button {
 
 input[type="submit"],
 button[type="submit"] {
-  @include emboss($blue);
   background: $blue;
+  border-bottom: .1 * $em solid darken($blue, 10);
   border-radius: $rounded;
+  border-right: .1 * $em solid darken($blue, 10);
   color: $white;
   position: relative;
+  text-shadow: .1 * $em 0 0 darken($blue, 5);
 
   &:hover {
     background: darken($blue, 5);
@@ -107,21 +115,21 @@ input[type="file"],
 input[type="datetime-local"],
 select,
 textarea {
-  border-top: .1 * $em solid darken($white, 4);
-  border-left: .1 * $em solid darken($white, 4);
-  border-right: .1 * $em solid darken($white, 8);
+  background: $white;
   border-bottom: .1 * $em solid darken($white, 8);
-  margin-bottom: $em;
-  padding: $em * 0.6;
+  border-left: .1 * $em solid darken($white, 4);
   border-radius: $rounded / 1.5;
-  background-color: $white;
+  border-right: .1 * $em solid darken($white, 8);
+  border-top: .1 * $em solid darken($white, 4);
+  margin-bottom: $em;
+  padding: $em * .6;
 
   &:focus {
-    border-top: .1 * $em solid darken($white, 8);
+    border-bottom: .1 * $em solid darken($white, 8);
     border-left: .1 * $em solid darken($white, 8);
     border-right: .1 * $em solid darken($white, 8);
-    border-bottom: .1 * $em solid darken($white, 8);
-    box-shadow: inset 0 0 $em/2 lighten($gray, 18);
+    border-top: .1 * $em solid darken($white, 8);
+    box-shadow: inset 0 0 $em / 2 lighten($gray, 18);
   }
 }
 
@@ -131,10 +139,4 @@ input[type="radio"] {
   line-height: 2 * $em;
   margin-right: .5 * $em;
   margin-top: .45 * $em;
-}
-
-input[type="submit"],
-input[type="reset"],
-button {
-  font-weight: bold !important;
 }

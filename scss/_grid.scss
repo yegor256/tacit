@@ -116,12 +116,57 @@ nav {
 
 ol,
 ul {
-  margin-left: 1.65 * $em;
+  margin-left: 1.75 * $em;
 }
 
 li {
+  dl,
   ol,
   ul {
     margin-bottom: 0;
+  }
+}
+
+dl {
+  display: inline-block;
+}
+
+dt {
+  padding: 0 $em;
+}
+
+dd {
+  padding: 0 $em (.25 * $em);
+
+  &:last-of-type {
+    border-bottom: (.06 * $em) solid $gray;
+  }
+
+  + dt {
+    border-top: (.06 * $em) solid $gray;
+    padding-top: .5 * $em;
+  }
+}
+
+blockquote {
+  border-left: (.12 * $em) solid $gray;
+  padding: (.25 * $em) $em (.25 * $em) (.88 * $em);
+
+  footer {
+    color: $gray;
+    font-size: .75 * $em;
+    margin: 0;
+  }
+}
+
+img {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+figure {
+  img {
+    display: block;
   }
 }
