@@ -116,9 +116,9 @@ input[type="datetime-local"],
 select,
 textarea {
   @include hover($white);
-  border-radius: $rounded;
   background: $white;
   border: .1 * $em solid darken($white, 3);
+  border-radius: $rounded;
   margin-bottom: $em;
 
   &:hover {
