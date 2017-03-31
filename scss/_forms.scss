@@ -33,10 +33,10 @@ textarea,
 select,
 button {
   @extend %sans-serif;
-  border-radius: .2 * $em;
+  @include paddings;
+  border-radius: $rounded;
   display: inline-block;
   max-width: 100%;
-  padding: .55 * $em;
 
   + label,
   + input[type="checkbox"],
@@ -51,7 +51,7 @@ textarea {
 }
 
 label {
-  display: block;
+  display: inline;
   margin-bottom: .82 * $em;
 
   + * {
@@ -62,56 +62,34 @@ label {
 input[type="submit"],
 input[type="reset"],
 button {
-  background: $gray;
-  border-bottom: .1 * $em solid darken($gray, 10);
+  @include hover($gray);
   border-radius: $rounded;
-  border-right: .1 * $em solid darken($gray, 10);
   color: $white;
   cursor: pointer;
   display: inline;
   font-weight: bold;
   margin-bottom: $em;
   margin-right: .4 * $em;
-  padding: .3625 * $em 1.3 * $em;
   position: relative;
   text-align: center;
-  text-shadow: .1 * $em 0 0 darken($gray, 5);
 
-  &:hover {
-    background: darken($gray, 5);
-    box-shadow: inset 0 0 3px fade-out($white, .8);
+  &:active {
+    top: 1px;
   }
 
   &[disabled] {
     background: $background;
-    border-bottom: .1 * $em  solid $background;
-    border-left: .1 * $em  solid darken($background, 4);
-    border-right: .1 * $em  solid $background;
-    border-top: .1 * $em  solid darken($background, 4);
-    color: lighten($gray, 5);
+    color: $gray;
     cursor: not-allowed;
     text-shadow: 0 -1px 1px $white;
-  }
-
-  &:active {
-    top: 1px;
   }
 }
 
 input[type="submit"],
 button[type="submit"] {
-  background: $blue;
-  border-bottom: .1 * $em solid darken($blue, 10);
-  border-radius: $rounded;
-  border-right: .1 * $em solid darken($blue, 10);
+  @include hover($blue);
   color: $white;
   position: relative;
-  text-shadow: .1 * $em 0 0 darken($blue, 5);
-
-  &:hover {
-    background: darken($blue, 5);
-    box-shadow: inset 0 0 3px fade-out($white, .8);
-  }
 
   &:active {
     top: 1px;
@@ -137,21 +115,18 @@ input[type="file"],
 input[type="datetime-local"],
 select,
 textarea {
+  @include hover($white);
+  border-radius: $rounded;
   background: $white;
-  border-bottom: .1 * $em solid darken($white, 8);
-  border-left: .1 * $em solid darken($white, 4);
-  border-radius: $rounded / 1.5;
-  border-right: .1 * $em solid darken($white, 8);
-  border-top: .1 * $em solid darken($white, 4);
+  border: .1 * $em solid darken($white, 3);
   margin-bottom: $em;
-  padding: $em * .6;
+
+  &:hover {
+    background: darken($white, 1);
+  }
 
   &:focus {
-    border-bottom: .1 * $em solid darken($white, 8);
-    border-left: .1 * $em solid darken($white, 8);
-    border-right: .1 * $em solid darken($white, 8);
-    border-top: .1 * $em solid darken($white, 8);
-    box-shadow: inset 0 0 $em / 2 lighten($gray, 20);
+    background: darken($white, 2);
   }
 }
 
