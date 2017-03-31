@@ -1,7 +1,6 @@
 assets:
   s3cfg: zerocracy/home#assets/s3cfg
 install: |
-  sudo npm install -g grunt-cli
   sudo gem install --no-ri pdd
   sudo gem install --no-ri compass
   sudo gem install --no-ri scss-lint
@@ -11,11 +10,11 @@ architect:
 - davvd
 merge:
   script: |
-    grunt --no-color
+    npm test
     pdd --source=$(pwd) --verbose --file=/dev/null
 deploy:
   script: |
-    grunt --no-color
+    npm test
     pdd --source=$(pwd) --verbose --file=tacit.xml
     s3cmd --no-progress put tacit.xml --config=../s3cfg s3://pdd.teamed.io/tacit.xml
   commanders:
@@ -26,7 +25,7 @@ release:
     sed -i "s/1\.0\.0/${tag}/g" bower.json
     sed -i "s/VERSION/${tag}/g" index.html
     git rm -rf dist/ --ignore-unmatch
-    grunt rultor --no-color
+    npm run rultor --no-color
     git add -f dist/tacit-${tag}.min.css
     git add -f dist/tacit-${tag}.min.css.map
     git add -f dist/tacit-${tag}.css

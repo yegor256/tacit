@@ -11,12 +11,11 @@ install:
   - cmd: SET PATH=C:\Ruby200\bin;%PATH%
   - cmd: ruby --version
 build_script:
-  - npm install -g grunt-cli
   - gem install --no-ri compass
   - gem install --no-ri scss-lint
   - npm install
 test_script:
-  - grunt
+  - npm test
 cache:
   - C:\Ruby200\bin -> Gemfile
   - C:\Ruby200\lib\ruby\gems\2.0.0 -> Gemfile

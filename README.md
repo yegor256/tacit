@@ -50,13 +50,13 @@ sending us your pull request please run full Grunt build:
 
 ```
 $ npm install
-$ grunt
+$ npm test
 ```
 
 To develop it locally, open `index.html` in a browser and then run:
 
 ```
-$ grunt dev
+$ npm run dev
 ```
 
 Now you can make changes to `.scss` files and refresh the page in the browser.
