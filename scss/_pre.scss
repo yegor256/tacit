@@ -29,14 +29,23 @@ samp,
 var,
 output {
   font-family: $monospace;
-  font-size: .8 * $em;
+  font-size: $em;
 }
 
 pre {
-  border-left: .1 * $em solid lighten($green, 25);
+  @include pressed($background);
+  background-color: rgba($gray, .1);
+  color: lighten($text, 10);
+  text-shadow: 1px 1px 0 lighten($text, 80);
   line-height: 1.4 * $em;
+  margin-top: 1.65 * $em;
   overflow: auto;
-  padding-left: $em;
+  padding: $em * 2;
+  border-radius: $rounded;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   code {
     background: none;
@@ -46,22 +55,12 @@ pre {
   }
 }
 
-code,
-kbd {
-  background: lighten($green, 43);
-  border-radius: .2 * $em;
-  color: $green;
+code {
+  background: $background;
+  border-radius: $rounded / 2;
   display: inline-block;
   line-height: $em;
-  padding: (.2 * $em) (.35 * $em) (.15 * $em);
-}
-
-kbd {
-  background: $green;
-  color: $white;
-}
-
-mark {
-  background: $yellow;
-  padding: 0 (.2 * $em);
+  padding: 3px 6px;
+  text-shadow: 1px 1px 1px $white;
+  @include pressed($background);
 }

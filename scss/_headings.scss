@@ -28,37 +28,41 @@ h3,
 h4,
 h5,
 h6 {
-  color: $black;
+  color: lighten($text, 20);
+  font-weight: bold;
   margin-bottom: $em;
+  text-shadow: 1px 1px 1px $white;
 }
 
 h1 {
   font-size: 2 * $em;
-  font-weight: 500;
+  margin-top: 2 * $em;
 }
 
 h2 {
   font-size: 1.4 * $em;
-  font-weight: 400;
+  margin-top: 1.5 * $em;
 }
 
 h3 {
   font-size: 1.2 * $em;
+  margin-top: 1.2 * $em;
 }
 
 h4 {
   font-size: $em;
+  margin-top: $em;
 }
 
 h5 {
   font-size: .8 * $em;
-  font-weight: bold;
+  margin-top: $em;
   text-transform: uppercase;
 }
 
 h6 {
   color: $gray;
   font-size: .8 * $em;
-  font-weight: bold;
+  margin-top: $em;
   text-transform: uppercase;
 }

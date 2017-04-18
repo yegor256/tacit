@@ -29,20 +29,27 @@
   outline: 0;
   padding: 0;
   text-align: left;
+  line-height: $em * 1.6;
   vertical-align: baseline;
 }
 
+*::selection {
+  text-shadow: 0 0 0 lighten($blue, 20);
+  background: lighten($blue, 30);
+}
+
+
 html,
 body {
-  @extend %sans-serif;
+  @extend %mono;
   height: 100%;
   width: 100%;
 }
 
 body {
-  background: darken($white, 4);
-  color: lighten($black, 10);
+  color: $text;
   padding: 2 * $em;
+  background: $background;
 }
 
 p,
@@ -64,14 +71,15 @@ section {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  width: 50 * $em;
+  width: 60 * $em;
 }
 
 article {
-  background: $white;
-  border: .1 * $em solid lighten($black, 85);
-  border-radius: .4 * $em;
-  padding: 2.4 * $em;
+  border-right: 1px solid darken($background, 10);
+  border-bottom: 1px solid darken($background, 10);
+  background: lighten($background, 4);
+  border-radius: $rounded;
+  padding: 3.4 * $em;
 }
 
 header {

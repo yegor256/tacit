@@ -22,78 +22,78 @@
 
 @import 'defs';
 
-fieldset {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 input,
 textarea,
 select,
 button {
-  @extend %sans-serif;
-  border-radius: .2 * $em;
-  display: inline-block;
+  @extend %mono;
+  display: block;
   max-width: 100%;
   padding: .55 * $em;
-
-  + label,
-  + input[type="checkbox"],
-  + input[type="radio"] {
-    page-break-before: always;
-  }
-}
-
-textarea {
-  min-height: 5 * $em;
-  min-width: 20 * $em;
 }
 
 label {
-  display: inline-block;
+  display: block;
   margin-bottom: .82 * $em;
-
-  + * {
-    page-break-before: always;
-  }
 }
 
 input[type="submit"],
 input[type="reset"],
 button {
-  background: darken($white, 5);
-  color: darken($gray, 25);
+  background: $gray;
+  border-bottom: .1 * $em solid darken($gray, 10);
+  border-radius: $rounded;
+  border-right: .1 * $em solid darken($gray, 10);
+  color: $white;
   cursor: pointer;
   display: inline;
+  font-weight: bold;
   margin-bottom: $em;
   margin-right: .4 * $em;
   padding: .3625 * $em 1.3 * $em;
+  position: relative;
   text-align: center;
+  text-shadow: .1 * $em 0 0 darken($gray, 5);
 
   &:hover {
-    background: darken($white, 15);
-    color: $black;
+    background: darken($gray, 5);
+    box-shadow: inset 0 0 3px fade-out($white, .8);
   }
 
   &[disabled] {
-    background: darken($white, 10);
-    color: darken($gray, 10);
+    background: $background;
+    border-bottom: .1 * $em  solid $background;
+    border-left: .1 * $em  solid darken($background, 4);
+    border-right: .1 * $em  solid $background;
+    border-top: .1 * $em  solid darken($background, 4);
+    color: lighten($gray, 5);
     cursor: not-allowed;
+    text-shadow: 0 -1px 1px $white;
   }
 
+  &:active {
+    top: 1px;
+  }
 }
 
 input[type="submit"],
 button[type="submit"] {
   background: $blue;
+  border-bottom: .1 * $em solid darken($blue, 10);
+  border-radius: $rounded;
+  border-right: .1 * $em solid darken($blue, 10);
   color: $white;
+  position: relative;
+  text-shadow: .1 * $em 0 0 darken($blue, 5);
 
   &:hover {
-    background: darken($blue, 15);
-    color: darken($white, 25);
+    background: darken($blue, 5);
+    box-shadow: inset 0 0 3px fade-out($white, .8);
   }
 
+  &:active {
+    top: 1px;
+  }
 }
 
 input[type="text"],
@@ -115,18 +115,28 @@ input[type="file"],
 input[type="datetime-local"],
 select,
 textarea {
-  border: 1px solid $gray;
+  background: $white;
+  border-bottom: .1 * $em solid darken($white, 8);
+  border-left: .1 * $em solid darken($white, 4);
+  border-radius: $rounded / 1.5;
+  border-right: .1 * $em solid darken($white, 8);
+  border-top: .1 * $em solid darken($white, 4);
   margin-bottom: $em;
-  padding: .3 * $em .35 * $em;
+  padding: $em * .6;
+
+  &:focus {
+    border-bottom: .1 * $em solid darken($white, 8);
+    border-left: .1 * $em solid darken($white, 8);
+    border-right: .1 * $em solid darken($white, 8);
+    border-top: .1 * $em solid darken($white, 8);
+    box-shadow: inset 0 0 $em / 2 lighten($gray, 18);
+  }
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-  flex-grow: 0;
-  height: 1.65 * $em;
+  float: left;
+  line-height: 2 * $em;
   margin-right: .5 * $em;
-
-  + label {
-    page-break-before: avoid;
-  }
+  margin-top: .45 * $em;
 }
