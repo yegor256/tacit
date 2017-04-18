@@ -5,7 +5,9 @@
   "description": "CSS Framework for Dummies",
   "main": "index.js",
   "scripts": {
-    "test": "grunt --no-color"
+    "test": "grunt --no-color",
+    "rultor": "grunt rultor --no-color",
+    "dev": "grunt dev"
   },
   "repository": {
     "type": "git",
@@ -29,9 +31,9 @@
   ],
   "homepage": "https://github.com/yegor256/tacit",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-sass": "0.9.2",
-    "grunt-contrib-watch": "0.6.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "1.0.0",
+    "grunt-contrib-watch": "1.0.0",
     "grunt-scss-lint": "0.3.8",
     "grunt-shell": "1.1.2",
     "load-grunt-tasks": "3.4.0"

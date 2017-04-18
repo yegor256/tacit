@@ -8,7 +8,6 @@ addons:
     packages:
       - ruby
 before_install:
-  - npm install -g grunt-cli
   - gem install --no-ri compass
   - gem install --no-ri scss-lint
 install:
