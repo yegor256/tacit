@@ -1,6 +1,6 @@
 {
   "name": "tacit",
-  "version": "1.0.0",
+  "version": "0.8.0",
   "copyright": "2015",
   "description": "CSS Framework for Dummies",
   "main": "index.js",
@@ -32,8 +32,8 @@
   "homepage": "https://github.com/yegor256/tacit",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-sass": "1.0.0",
-    "grunt-contrib-watch": "1.0.0",
+    "grunt-contrib-sass": "0.8.0",
+    "grunt-contrib-watch": "0.8.0",
     "grunt-scss-lint": "0.3.8",
     "grunt-shell": "1.1.2",
     "load-grunt-tasks": "3.4.0"
