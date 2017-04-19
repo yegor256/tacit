@@ -26,6 +26,10 @@ fieldset {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  legend {
+    margin: $em 0;
+  }
 }
 
 input,
@@ -43,6 +47,14 @@ button {
   + input[type="radio"] {
     page-break-before: always;
   }
+}
+
+select[multiple] {
+  min-width: 15 * $em;
+}
+
+option {
+  @extend %sans-serif;
 }
 
 textarea {
@@ -124,6 +136,7 @@ input[type="checkbox"],
 input[type="radio"] {
   flex-grow: 0;
   height: 1.65 * $em;
+  margin-left: 0;
   margin-right: .5 * $em;
 
   + label {
