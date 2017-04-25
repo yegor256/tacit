@@ -21,12 +21,12 @@ Just add it to your HTML:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="http://yegor256.github.io/tacit/tacit.min.css"/>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit.min.css"/>
   </head>
 </html>
 ```
 
-Or simply download [`tacit.min.css`](http://yegor256.github.io/tacit/tacit.min.css)
+Or simply download [`tacit.min.css`](https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit.min.css)
 and use together with your HTML by adding:
 
 ```html
