@@ -15,18 +15,19 @@ compliant with HTML5 and they will look OK.
 
 Details are here: [yegor256.github.io/tacit](http://yegor256.github.io/tacit/)
 
-Just add it to your HTML:
+Just add it to your HTML (replace `VERSION` with the latest version number,
+which you can find [here](https://github.com/yegor256/tacit/releases)):
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit.min.css"/>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-VERSION.min.css"/>
   </head>
 </html>
 ```
 
-Or simply download [`tacit.min.css`](https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit.min.css)
+Or simply download [`tacit.min.css`](https://raw.githubusercontent.com/yegor256/tacit/gh-pages/tacit.min.css)
 and use together with your HTML by adding:
 
 ```html
