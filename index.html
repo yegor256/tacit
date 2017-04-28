@@ -14,7 +14,7 @@
       <header>
         <nav>
           <ul>
-            <li><code>0.8.0</code></li>
+            <li><code>0.8.1</code></li>
           </ul>
         </nav>
       </header>
@@ -29,7 +29,7 @@
         <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-    &lt;link rel="stylesheet" href="https://yegor256.github.io/tacit/tacit.min.css"/&gt;
+    &lt;link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-0.8.1.min.css"/&gt;
   &lt;/head&gt;
 &lt;/html&gt;</pre>
         <p>
@@ -48,11 +48,9 @@
           <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyegor256.github.io%2Ftacit%2F&amp;profile=css3">CSS</a>.
         </p>
         <h2>Forms</h2>
-        <p>
-          Here is a simple form:
-        </p>
         <form method="get" action="#">
           <fieldset>
+            <legend>Here is a simple form:</legend>
             <label for="email">Your email:</label>
             <input name="email" type="text" id="email" size="25" placeholder="must be unique"/>
             <label for="sex">Your gender:</label>
@@ -61,10 +59,21 @@
               <option value="female">female</option>
               <option value="male">male</option>
             </select>
-            <input type="radio" id="under" name="age"/>
-            <label for="under">I'm under 18</label>
-            <input type="radio" id="over" name="age"/>
-            <label for="over">I'm over 18</label>
+            <label for="sex">Your age:</label>
+            <input type="radio" id="under" name="age"/> <span>I'm under 18</span>
+            <input type="radio" id="over" name="age"/> <span>I'm over 18</span>
+            <label for="sex">Your favorite food:</label>
+            <select multiple="multiple" name="food">
+              <optgroup label="Italian">
+                <option value="1">Pizza</option>
+                <option value="2">Spaghetti</option>
+              </optgroup>
+              <optgroup label="Asian">
+                <option value="4">Sushi</option>
+              </optgroup>
+              <option value="3">Hamburger</option>
+              <option value="5">Borsht</option>
+            </select>
             <label for="address">Your full address:</label>
             <textarea name="address" id="address" placeholder="PO box is not allowed"></textarea>
             <input type="checkbox" name="consent" id="consent" value="test"/>
@@ -174,7 +183,7 @@
         <nav>
           <ul>
             <li><small><a href="https://github.com/yegor256/tacit">GitHub</a></small></li>
-            <li><small><a href="https://yegor256.github.io/tacit/tacit-0.8.0.min.css">Download</a></small></li>
+            <li><small><a href="https://yegor256.github.io/tacit/tacit-0.8.1.min.css">Download</a></small></li>
             <li><small><a href="https://opensource.org/licenses/MIT">MIT license</a></small></li>
           </ul>
         </nav>
