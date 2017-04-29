@@ -4,14 +4,13 @@ install: |
   sudo gem install --no-ri pdd
   sudo gem install --no-ri compass
   sudo gem install --no-ri scss-lint
-  npm config set color false
-  npm install
+  npm install --no-color
 architect:
 - yegor256
 - davvd
 merge:
   script: |
-    npm test
+    npm run rultor --no-color
     pdd --source=$(pwd) --verbose --file=/dev/null
 deploy:
   script: |
