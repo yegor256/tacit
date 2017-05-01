@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords" content="css, html5, css framework"/>
@@ -8,105 +8,110 @@
     <link rel="stylesheet" href="tacit.min.css"/>
     <title>tacit</title>
     <link rel="shortcut icon" type="image/gif" href="logo.gif"/>
-  </head>
-  <body>
-    <section>
-      <header>
+</head>
+<body>
+<section>
+    <header>
         <nav>
-          <ul>
-            <li><code>VERSION</code></li>
-          </ul>
+            <ul>
+                <li><code>VERSION</code></li>
+            </ul>
         </nav>
-      </header>
-      <article>
+    </header>
+    <article>
         <p>
-          <strong>Tacit</strong> is a CSS framework for <em>dummies</em>, who want their
-          web services to look attractive but have almost zero
-          skills in graphic design, just like
-          <a href="https://github.com/yegor256">myself</a>.
-          This is how your website will look if you add just this code to your HTML:
+            <strong>Tacit</strong> is a CSS framework for <em>dummies</em>, who want their
+            web services to look attractive but have almost zero
+            skills in graphic design, just like
+            <a href="https://github.com/yegor256">myself</a>.
+            This is how your website will look if you add just this code to your HTML:
         </p>
         <pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="en"&gt;
   &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
     &lt;link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-VERSION.min.css"/&gt;
   &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Webpage content goes here --&gt;
 &lt;/html&gt;</pre>
         <p>
-          You should <strong>not</strong> use any CSS classes to make your HTML code look nice. Just
-          make sure it is <a href="http://www.w3.org/TR/html5/">HTML5</a>
-          compliant and you'll be fine. Again, <mark>no classes</mark>,
-          just standard HTML elements, like <code>&lt;table&gt;</code> and <code>&lt;input&gt;</code>.
+            You should <strong>not</strong> use any CSS classes to make your HTML code look nice. Just
+            make sure it is <a href="http://www.w3.org/TR/html5/">HTML5</a>
+            compliant and you'll be fine. Again, <mark>no classes</mark>,
+            just standard HTML elements, like <code>&lt;table&gt;</code> and <code>&lt;input&gt;</code>.
         </p>
         <p>
-          Check the source code of this page.
+            Check the source code of this page.
         </p>
         <p>
-          By the way, Tacit is compliant with
-          W3C validator requirements:
-          <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fyegor256.github.io%2Ftacit%2F&amp;doctype=Inline">HTML</a> and
-          <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyegor256.github.io%2Ftacit%2F&amp;profile=css3">CSS</a>.
+            By the way, Tacit is compliant with
+            W3C validator requirements:
+            <a href="https://validator.w3.org/check?uri=https%3A%2F%2Fyegor256.github.io%2Ftacit%2F&amp;doctype=Inline">HTML</a> and
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyegor256.github.io%2Ftacit%2F&amp;profile=css3">CSS</a>.
         </p>
         <h2>Forms</h2>
         <form method="get" action="#">
-          <fieldset>
-            <legend>Here is a simple form:</legend>
-            <label for="email">Your email:</label>
-            <input name="email" type="text" id="email" size="25" placeholder="must be unique"/>
-            <label for="sex">Your gender:</label>
-            <select name="sex" id="sex">
-              <option value="none">don't want to say</option>
-              <option value="female">female</option>
-              <option value="male">male</option>
-            </select>
-            <label for="sex">Your age:</label>
-            <input type="radio" id="under" name="age"/> <span>I'm under 18</span>
-            <input type="radio" id="over" name="age"/> <span>I'm over 18</span>
-            <label for="sex">Your favorite food:</label>
-            <select multiple="multiple" name="food">
-              <optgroup label="Italian">
-                <option value="1">Pizza</option>
-                <option value="2">Spaghetti</option>
-              </optgroup>
-              <optgroup label="Asian">
-                <option value="4">Sushi</option>
-              </optgroup>
-              <option value="3">Hamburger</option>
-              <option value="5">Borsht</option>
-            </select>
-            <label for="address">Your full address:</label>
-            <textarea name="address" id="address" placeholder="PO box is not allowed"></textarea>
-            <input type="checkbox" name="consent" id="consent" value="test"/>
-            <label for="consent">I agree with all possible terms and conditions</label>
-            <button type="submit">Subscribe</button>
-            <button type="reset">Reset</button>
-            <button disabled>Can't click</button>
-          </fieldset>
+            <fieldset>
+                <legend>Here is a simple form:</legend>
+                <label for="email">Your email:</label>
+                <input name="email" type="text" id="email" size="25" placeholder="must be unique"/>
+                <label for="sex">Your gender:</label>
+                <select name="sex" id="sex">
+                    <option value="none">don't want to say</option>
+                    <option value="female">female</option>
+                    <option value="male">male</option>
+                </select>
+                <h4>Your age :</h4>
+                <label for="under">I'm under 18</label>
+                <input type="radio" id="under" name="age"/>
+                <label for="over">I'm over 18</label>
+                <input type="radio" id="over" name="age"/>
+                <label for="food">Your favorite food:</label>
+                <select multiple="multiple" name="food" id="food">
+                    <optgroup label="Italian">
+                        <option value="1">Pizza</option>
+                        <option value="2">Spaghetti</option>
+                    </optgroup>
+                    <optgroup label="Asian">
+                        <option value="4">Sushi</option>
+                    </optgroup>
+                    <option value="3">Hamburger</option>
+                    <option value="5">Borsht</option>
+                </select>
+                <label for="address">Your full address:</label>
+                <textarea name="address" id="address" placeholder="PO box is not allowed"></textarea>
+                <input type="checkbox" name="consent" id="consent" value="test"/>
+                <label for="consent">I agree with all possible terms and conditions</label>
+                <button type="submit">Subscribe</button>
+                <button type="reset">Reset</button>
+                <button disabled>Can't click</button>
+            </fieldset>
         </form>
         <h2>Tables</h2>
         <p>
-          A simple table would look like this:
+            A simple table would look like this:
         </p>
         <table>
-          <thead>
+            <thead>
             <tr>
-              <th>Make</th>
-              <th>Price</th>
-              <th>Year</th>
+                <th>Make</th>
+                <th>Price</th>
+                <th>Year</th>
             </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
             <tr>
-              <td>BMW X6</td>
-              <td>$75,000</td>
-              <td>2013</td>
+                <td>BMW X6</td>
+                <td>$75,000</td>
+                <td>2013</td>
             </tr>
             <tr>
-              <td>Mercedes-Benz E350</td>
-              <td>$52,700</td>
-              <td>2014</td>
+                <td>Mercedes-Benz E350</td>
+                <td>$52,700</td>
+                <td>2014</td>
             </tr>
-          </tbody>
+            </tbody>
         </table>
         <h2>Headings</h2>
         <p>Just use standard <code>&lt;h1&gt;</code>...<code>&lt;h6&gt;</code> tags:
@@ -117,94 +122,94 @@
         <h3>This is &lt;h3&gt;</h3>
         <p>Use <code>&lt;h3&gt;</code> for sub-sections.</p>
         <h4>This is &lt;h4&gt;</h4>
-        <p>I would recommend to avoid this type of heading at all.</p>
+        <p>I would recommend to avoid this type of heading</p>
         <h5>This is &lt;h5&gt;</h5>
-        <p>I would recommend to avoid this type of heading at all.</p>
+        <p>I would recommend to avoid this type of heading</p>
         <h6>This is &lt;h6&gt;</h6>
-        <p>I would recommend to avoid this type of heading at all.</p>
+        <p>I would recommend to avoid this type of heading</p>
         <h2>Lists</h2>
         <p>Just use standard <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> and <code>&lt;dl&gt;</code> tags:
         <ul>
-          <li>Orange</li>
-          <li>
-            Apple
-            <ol>
-              <li>First</li>
-              <li>
-                Second
-                <ul>
-                  <li>Blue</li>
-                  <li>Yellow</li>
-                  <li>Green</li>
-                  <li>Red</li>
-                </ul>
-              </li>
-              <li>Third</li>
-            </ol>
-          </li>
-          <li>Apricot</li>
+            <li>Orange</li>
+            <li>
+                Apple
+                <ol>
+                    <li>First</li>
+                    <li>
+                        Second
+                        <ul>
+                            <li>Blue</li>
+                            <li>Yellow</li>
+                            <li>Green</li>
+                            <li>Red</li>
+                        </ul>
+                    </li>
+                    <li>Third</li>
+                </ol>
+            </li>
+            <li>Apricot</li>
         </ul>
         <dl>
-          <dt>Banana</dt>
-          <dd>A yellow fruit that is easy to peel.</dd>
-          <dd>Which also grows on a tree.</dd>
-          <dt>Cashew</dt>
-          <dd>A tan nut without a peel.</dd>
-          <dt>Cherry</dt>
-          <dd>A red fruit that is hard to peel.</dd>
+            <dt>Banana</dt>
+            <dd>A yellow fruit that is easy to peel.</dd>
+            <dd>Which also grows on a tree.</dd>
+            <dt>Cashew</dt>
+            <dd>A tan nut without a peel.</dd>
+            <dt>Cherry</dt>
+            <dd>A red fruit that is hard to peel.</dd>
         </dl>
         <h2>Blockquote</h2>
         <blockquote>
-          Use this to emphasize a quote
-          <footer>&mdash; Author Name, Publication</footer>
+            Use this to emphasize a quote
+            <footer>&mdash; Author Name, Publication</footer>
         </blockquote>
         <h2>Keyboard</h2>
         <p>Sometimes you want to let people know they should press a keyboard command like <kbd>ctrl + l</kbd>.</p>
         <h2>Images</h2>
         <figure>
-          <img src="http://placehold.it/900x500" />
-          <figcaption>A photo placeholder text</figcaption>
+            <img src="http://placehold.it/900x500" />
+            <figcaption>A photo placeholder text</figcaption>
         </figure>
         <h2>Work in progress</h2>
         <p>
-          The framework is still in development. If you want to contribute,
-          fork it and submit a <a href="https://github.com/yegor256/tacit">pull request</a>.
-          Your help is always appreciated.
+            The framework is still in development. If you want to contribute,
+            fork it and submit a <a href="https://github.com/yegor256/tacit">pull request</a>.
+            Your help is always appreciated.
         </p>
-      </article>
-      <footer>
+    </article>
+    <footer>
         <nav>
-          <ul>
-            <li>
-              <small>Made by <a href="http://www.yegor256.com">Yegor Bugayenko</a>, 2015</small>
-            </li>
-          </ul>
+            <ul>
+                <li>
+                    <small>Made by <a href="http://www.yegor256.com">Yegor Bugayenko</a>, 2015</small>
+                </li>
+            </ul>
         </nav>
         <nav>
-          <ul>
-            <li><small><a href="https://github.com/yegor256/tacit">GitHub</a></small></li>
-            <li><small><a href="https://yegor256.github.io/tacit/tacit-VERSION.min.css">Download</a></small></li>
-            <li><small><a href="https://opensource.org/licenses/MIT">MIT license</a></small></li>
-          </ul>
+            <ul>
+                <li><small><a href="https://github.com/yegor256/tacit">GitHub</a></small></li>
+                <li><small><a href="https://yegor256.github.io/tacit/tacit-VERSION.min.css">Download</a></small></li>
+                <li><small><a href="https://opensource.org/licenses/MIT">MIT license</a></small></li>
+            </ul>
         </nav>
         <nav>
-          <ul>
-            <li>
-              <a href="https://github.com/yegor256/tacit/stargazers">
-                <img src="https://img.shields.io/github/stars/yegor256/tacit.svg?style=flat-square" alt="github stars"/>
-              </a>
-            </li>
-          </ul>
+            <ul>
+                <li>
+                    <a href="https://github.com/yegor256/tacit/stargazers">
+                        <img src="https://img.shields.io/github/stars/yegor256/tacit.svg?style=flat-square" alt="github stars"/>
+                    </a>
+                </li>
+            </ul>
         </nav>
-      </footer>
-    </section>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-1963507-39', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </body>
+    </footer>
+</section>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-1963507-39', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
 </html>
