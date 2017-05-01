@@ -15,14 +15,14 @@ compliant with HTML5 and they will look OK.
 
 Details are here: [yegor256.github.io/tacit](http://yegor256.github.io/tacit/)
 
-Start with this basic HTML template and modify it to suit your needs
+Start with this basic HTML template and modify it to suit your needs. Just change the `VERSION` in the url to the latest version tag described in the [release section](https://github.com/yegor256/tacit/releases)
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-0.8.1.min.css"/>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-VERSION.min.css"/>
   </head>
   <body>
     <!-- Webpage content goes here -->
