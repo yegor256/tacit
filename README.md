@@ -13,7 +13,7 @@ don't know anything about graphic design but want their web services to
 look eatable. No classes, no layouts. Just design plain and simple web pages
 compliant with HTML5 and they will look OK.
 
-Details are here: [yegor256.github.io/tacit](http://yegor256.github.io/tacit/)
+Details are here: [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
 Just add it to your HTML (replace `VERSION` with the latest version number,
 which you can find [here](https://github.com/yegor256/tacit/releases)):
