@@ -22,6 +22,10 @@
 
 @import 'defs';
 
+html, body {
+  text-rendering: optimizeLegibility;
+}
+
 a {
   color: $blue;
   text-decoration: none;
