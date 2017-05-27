@@ -1,5 +1,6 @@
 assets:
   s3cfg: zerocracy/home#assets/s3cfg
+  npmrc: zerocracy/home#assets/npmrc
 install: |
   sudo gem install --no-ri pdd
   sudo gem install --no-ri compass
@@ -58,4 +59,9 @@ release:
 
     # Commit and change the branch to master
     git commit --allow-empty -am "${tag}"
+
+    # Deploy to NPMJS
+    chmod 600 ../npmrc
+    npm publish --userconfig=../npmrc
+
     git checkout master
