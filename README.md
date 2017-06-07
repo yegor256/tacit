@@ -16,27 +16,34 @@ compliant with HTML5 and they will look OK.
 
 Details are here: [yegor256.github.io/tacit](http://yegor256.github.io/tacit/)
 
-Just add it to your HTML (replace `VERSION` with the latest version number,
-which you can find [here](https://github.com/yegor256/tacit/releases)):
+Start with this basic HTML template and modify it to suit your needs. Just change the `VERSION` in the url to the latest version tag described in the [release section](https://github.com/yegor256/tacit/releases)
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-VERSION.min.css"/>
   </head>
+  <body>
+    <!-- Webpage content goes here -->
+  </body>
 </html>
 ```
 
-Or simply download [`tacit.min.css`](https://raw.githubusercontent.com/yegor256/tacit/gh-pages/tacit.min.css)
+Or simply download [`tacit.min.css`](https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-0.8.1.min.css)
 and use together with your HTML by adding:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="tacit.min.css"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="path/to/your/directory/tacit.min.css"/>
   </head>
+  <body>
+    <!-- Web contents goes here -->
+  </body>
 </html>
 ```
 
@@ -76,3 +83,5 @@ gem update --system && gem install scss_lint compass
 If you have questions or general suggestions, don't hesitate to submit
 a new [Github issue](https://github.com/yegor256/tacit/issues/new).
 
+## Thanks to 
+- [RawGit](https://rawgit.com/) for providing free CDN.
