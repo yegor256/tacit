@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://github.com/yegor256/tacit",
   "authors": [
-    "Yegor Bugayenko <yegor@teamed.io>"
+    "Yegor Bugayenko <yegor256@gmail.com>"
   ],
   "description": "CSS Framework for Dummies",
   "main": "index.html",
