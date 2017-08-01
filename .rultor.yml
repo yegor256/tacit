@@ -36,13 +36,14 @@ release:
     git add -f dist/tacit-css-${tag}.min.css
     git add -f dist/tacit-css-${tag}.min.css.map
     git add -f dist/tacit-css-${tag}.css
-    git commit -am "${tag}"
+    git commit -am "Added CSS files for ${tag}"
 
     # We'll gonna need these files later...
     mv dist/tacit-css-${tag}.min.css /tmp
     mv index.html /tmp
 
     # Checkout to gh-pages and reset any modifications
+    branch=$(git rev-parse --abbrev-ref HEAD)
     git checkout gh-pages
     git reset --hard
     sudo /bin/bash -c "cd '$(pwd)'; git clean -fd"
@@ -60,10 +61,8 @@ release:
 
     # Commit and change the branch to master
     git commit --allow-empty -am "${tag}"
-    git checkout master
+    git checkout "${branch}"
 
     # Deploy to NPMJS
     chmod 600 ../npmrc
     npm publish --no-color --userconfig=../npmrc
-
-    git checkout master
