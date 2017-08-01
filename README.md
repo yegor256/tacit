@@ -65,10 +65,10 @@ Now you can make changes to `.scss` files and refresh the page in the browser.
 CSS will be recompiled automatically on every change you make.
 
 If you have problems running the Grunt build you may need to install
-[scss-lint](https://github.com/brigade/scss-lint) and [compass](http://compass-style.org/):
+[scss-lint](https://github.com/brigade/scss-lint):
 
 ```
-gem update --system && gem install scss_lint compass
+gem update --system && gem install scss_lint
 ```
 
 ## Got questions?

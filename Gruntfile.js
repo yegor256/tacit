@@ -31,8 +31,7 @@ module.exports = function (grunt) {
       sass: {
         dev: {
           options: {
-            style: 'compressed',
-            compass: true
+            style: 'compressed'
           },
           files: {
             'tacit.min.css': 'scss/main.scss'
@@ -40,8 +39,7 @@ module.exports = function (grunt) {
         },
         dist: {
           options: {
-            style: 'compressed',
-            compass: true
+            style: 'compressed'
           },
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
@@ -49,7 +47,6 @@ module.exports = function (grunt) {
         },
         uncompressed: {
           options: {
-            compass: true,
             sourcemap: 'none',
             style: 'expanded'
           },
