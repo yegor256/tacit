@@ -63,6 +63,7 @@ release:
 
     # Deploy to NPMJS
     chmod 600 ../npmrc
+    ls -al
     npm install --no-color
     npm publish --no-color --userconfig=../npmrc
 
