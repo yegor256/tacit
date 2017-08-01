@@ -5,6 +5,7 @@ install: |
   sudo gem install --no-ri pdd
   sudo gem install --no-ri compass
   sudo gem install --no-ri scss-lint
+  sudo gem install --no-ri sass --version 3.2.18
   npm install --no-color
 architect:
 - yegor256
