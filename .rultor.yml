@@ -60,11 +60,10 @@ release:
 
     # Commit and change the branch to master
     git commit --allow-empty -am "${tag}"
+    git checkout master
 
     # Deploy to NPMJS
     chmod 600 ../npmrc
-    ls -al
-    npm install --no-color
     npm publish --no-color --userconfig=../npmrc
 
     git checkout master
