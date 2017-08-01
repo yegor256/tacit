@@ -23,12 +23,12 @@ which you can find [here](https://github.com/yegor256/tacit/releases)):
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-VERSION.min.css"/>
+    <link rel="stylesheet" href="//cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-VERSION.min.css"/>
   </head>
 </html>
 ```
 
-Or simply download [`tacit.min.css`](https://raw.githubusercontent.com/yegor256/tacit/gh-pages/tacit.min.css)
+Or simply download [`tacit.min.css`](https://raw.githubusercontent.com/yegor256/tacit/gh-pages/tacit-css.min.css)
 and use together with your HTML by adding:
 
 ```html
