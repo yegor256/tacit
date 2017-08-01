@@ -1,6 +1,6 @@
 {
   "name": "tacit-css",
-  "version": "1.0.0",
+  "version": "VERSION",
   "copyright": "2015",
   "description": "CSS Framework for Dummies",
   "main": "index.js",

@@ -22,9 +22,9 @@ deploy:
 release:
   script: |-
     # Change proper version for all necessary filers
-    sed -i "s/1\.0\.0/${tag}/g" package.json
-    sed -i "s/1\.0\.0/${tag}/g" bower.json
-    sed -i "s/VERSION/${tag}/g" index.html
+    sed -i "s|VERSION|${tag}|g" package.json
+    sed -i "s|VERSION|${tag}|g" bower.json
+    sed -i "s|VERSION|${tag}|g" index.html
 
     # Perform build
     git rm -rf dist/ --ignore-unmatch
