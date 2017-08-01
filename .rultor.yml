@@ -22,7 +22,7 @@ deploy:
 release:
   script: |-
     # Change proper version for all necessary filers
-    sed -i "s|VERSION|${tag}|g" package.json
+    npm version "${tag}"
     sed -i "s|VERSION|${tag}|g" bower.json
     sed -i "s|VERSION|${tag}|g" index.html
 
