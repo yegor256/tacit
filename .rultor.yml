@@ -34,13 +34,13 @@ release:
     # Current branch is __rultor
 
     # Add built files to git and commit
-    git add -f dist/tacit-${tag}.min.css
-    git add -f dist/tacit-${tag}.min.css.map
-    git add -f dist/tacit-${tag}.css
+    git add -f dist/tacit-css-${tag}.min.css
+    git add -f dist/tacit-css-${tag}.min.css.map
+    git add -f dist/tacit-css-${tag}.css
     git commit -am "${tag}"
 
     # We'll gonna need these files later...
-    mv dist/tacit-${tag}.min.css /tmp
+    mv dist/tacit-css-${tag}.min.css /tmp
     mv index.html /tmp
 
     # Checkout to gh-pages and reset any modifications
@@ -49,11 +49,13 @@ release:
     sudo /bin/bash -c "cd '$(pwd)'; git clean -fd"
 
     # Add the current, minified css file to the gh-pages branch
-    mv /tmp/tacit-${tag}.min.css .
-    cp tacit-${tag}.min.css tacit.min.css
+    mv /tmp/tacit-css-${tag}.min.css .
+    cp tacit-css-${tag}.min.css tacit-css.min.css
+    cp tacit-css-${tag}.min.css tacit.min.css
     mv /tmp/index.html .
 
-    git add tacit-${tag}.min.css
+    git add tacit-css-${tag}.min.css
+    git add tacit-css.min.css
     git add tacit.min.css
     git add index.html
 
