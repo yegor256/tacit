@@ -6,20 +6,25 @@ install: |
   sudo gem install --no-ri scss-lint
   npm install --no-color
 architect:
-- yegor256
-- davvd
+  - yegor256
+  - filfreire
 merge:
   script: |
     npm run rultor --no-color
     pdd --source=$(pwd) --verbose --file=/dev/null
+  commanders:
+    - yegor256
+    - filfreire
 deploy:
   script: |
     npm test
     pdd --source=$(pwd) --verbose --file=tacit.xml
     s3cmd --no-progress put tacit.xml --config=../s3cfg s3://pdd.teamed.io/tacit.xml
   commanders:
-  - yegor256
+    - yegor256
 release:
+  commanders:
+    - yegor256
   script: |-
     # Change proper version for all necessary filers
     npm version "${tag}"
