@@ -47,6 +47,27 @@ This blog post explains it in even more details:
 
 If you are interested in contributing please refer to [CONTRIBUTING.md](CONTRIBUTING.md)
 
+## Browser/OS Compatibility
+
+The following list is of tested browsers for compatibility.
+We don't have any guarantees of compatibility for other browsers,
+but as soon as possible will verify and add more to the list.
+Some of these browsers present minor issues that are reported in the
+our [issues](https://github.com/yegor256/tacit/issues) list.
+
+
+| Browser/OS        | Version | Compatible |
+|-------------------|---------|------------|
+| Chrome            | >= 60   | Yes        |
+| Firefox           | >= 56   | Yes        |
+| Safari            | >= 11   | Yes        |
+| Opera             | >= 48   | Yes        |
+| Edge              | >= 14   | Yes        |
+| Chrome (iOS)      | >= 60   | Yes        |
+| Safari (iOS)      | -       | Yes        |
+| Internet Explorer | >= 11   | Yes        |
+
+
 ## Got questions?
 
 If you have questions or general suggestions, don't hesitate to submit
