@@ -3,12 +3,5 @@ git:
   depth: 10
 node_js:
   - 4
-addons:
-  apt:
-    packages:
-      - ruby
-before_install:
-  - gem install --no-ri sass
 install:
   - npm install
-

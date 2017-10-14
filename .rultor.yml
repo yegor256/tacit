@@ -3,7 +3,6 @@ assets:
   npmrc: zerocracy/home#assets/npmrc
 install: |
   sudo gem install --no-ri pdd
-  sudo gem install --no-ri scss-lint
   npm install --no-color
 architect:
   - yegor256

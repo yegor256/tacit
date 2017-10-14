@@ -31,7 +31,8 @@ module.exports = function (grunt) {
       sass: {
         dev: {
           options: {
-            style: 'compressed'
+            sourceMap: true,
+            outputStyle: 'compressed'
           },
           files: {
             'tacit.min.css': 'scss/main.scss'
@@ -39,7 +40,8 @@ module.exports = function (grunt) {
         },
         dist: {
           options: {
-            style: 'compressed'
+            sourceMap: true,
+            outputStyle: 'compressed'
           },
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
@@ -47,8 +49,8 @@ module.exports = function (grunt) {
         },
         uncompressed: {
           options: {
-            sourcemap: 'none',
-            style: 'expanded'
+            sourceMap: false,
+            outputStyle: 'expanded'
           },
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
@@ -77,7 +79,6 @@ module.exports = function (grunt) {
     }
   );
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
-  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-shell');
   grunt.registerTask('default', ['sasslint', 'sass:dist', 'shell']);
   grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'shell']);
