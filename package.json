@@ -34,7 +34,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-sass": "1.0.0",
     "grunt-contrib-watch": "1.0.0",
-    "grunt-scss-lint": "0.3.8",
+    "grunt-sass-lint": "^0.2.4",
     "grunt-shell": "1.1.2",
     "load-grunt-tasks": "3.4.0"
   }

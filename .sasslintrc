@@ -1,0 +1,10 @@
+files:
+  include: scss/*.scss
+rules:
+  nesting-depth: 0
+  no-qualifying-elements: 0
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+  force-attribute-nesting: 0
+  no-vendor-prefixes: 0
+  quotes: 0
