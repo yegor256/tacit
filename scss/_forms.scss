@@ -49,10 +49,6 @@ button {
   }
 }
 
-select[multiple] {
-  min-width: 15 * $em;
-}
-
 option {
   @extend %sans-serif;
 }
@@ -143,3 +139,9 @@ input[type="radio"] {
     page-break-before: avoid;
   }
 }
+
+select[multiple] {
+  margin-bottom: 0;
+  min-width: 15 * $em;
+}
+
