@@ -21,20 +21,28 @@
 // SOFTWARE.
 
 // sizes
-$em: 18px;
+$em: 17px;
 
 // fonts
 $sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
-// colors
-$black: #000;
+// layout colors
+
+$text: #353535;
+$background: #f5f5f5;
+
+// colors to use in markup
 $white: #fff;
-$gray: #ccc;
-$blue: #367ac3;
-$red: #db423c;
-$green: #3fa75f;
-$yellow: #ffc;
+$gray: #c3c3c3;
+$blue: #329dcc;
+$red: #c9593f;
+$green: #419781;
+$yellow: #f6f7bb;
+$black: #353535;
+
+// round borders
+$rounded: $em * .2;
 
 // responsive
 $mobile-width: 767px;
@@ -47,3 +55,23 @@ $mobile-width: 767px;
   font-weight: 400;
   line-height: 1.65 * $em;
 }
+
+@mixin hover($original) {
+  background: $original;
+
+  &:hover {
+    background: darken($original, 3);
+  }
+
+  &:focus {
+    background: darken($original, 5);
+  }
+}
+
+@mixin paddings {
+
+  padding: .4 * $em .8 * $em;
+  height: $em + 1.8 * $em;
+
+}
+

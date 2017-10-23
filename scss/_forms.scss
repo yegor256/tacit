@@ -37,10 +37,10 @@ textarea,
 select,
 button {
   @extend %sans-serif;
-  border-radius: .2 * $em;
+  @include paddings;
+  border-radius: $rounded;
   display: inline-block;
   max-width: 100%;
-  padding: .55 * $em;
 
   + label,
   + input[type="checkbox"],
@@ -63,7 +63,7 @@ textarea {
 }
 
 label {
-  display: inline-block;
+  display: inline;
   margin-bottom: .82 * $em;
 
   + * {
@@ -74,38 +74,38 @@ label {
 input[type="submit"],
 input[type="reset"],
 button {
-  background: darken($white, 5);
-  color: darken($gray, 25);
+  @include hover($gray);
+  border-radius: $rounded;
+  color: $white;
   cursor: pointer;
   display: inline;
+  font-weight: bold;
   margin-bottom: $em;
   margin-right: .4 * $em;
-  padding: .3625 * $em 1.3 * $em;
+  position: relative;
   text-align: center;
 
-  &:hover {
-    background: darken($white, 15);
-    color: $black;
+  &:active {
+    top: 1px;
   }
 
   &[disabled] {
-    background: darken($white, 10);
-    color: darken($gray, 10);
+    background: $background;
+    color: $gray;
     cursor: not-allowed;
+    text-shadow: 0 -1px 1px $white;
   }
-
 }
 
 input[type="submit"],
 button[type="submit"] {
-  background: $blue;
+  @include hover($blue);
   color: $white;
+  position: relative;
 
-  &:hover {
-    background: darken($blue, 15);
-    color: darken($white, 25);
+  &:active {
+    top: 1px;
   }
-
 }
 
 input[type="text"],
@@ -127,9 +127,19 @@ input[type="file"],
 input[type="datetime-local"],
 select,
 textarea {
-  border: 1px solid $gray;
+  @include hover($white);
+  background: $white;
+  border: .1 * $em solid darken($white, 3);
+  border-radius: $rounded;
   margin-bottom: $em;
-  padding: .3 * $em .35 * $em;
+
+  &:hover {
+    background: darken($white, 1);
+  }
+
+  &:focus {
+    background: darken($white, 2);
+  }
 }
 
 input[type="checkbox"],
