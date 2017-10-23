@@ -69,17 +69,13 @@ module.exports = function (grunt) {
         ]
       },
       shell: {
-        target: {
-          command: 'grep -q -r 2015-' + new Date().getFullYear()
-            + ' --include "*.scss"'
-            + ' --include "*.js"'
-            + ' .'
+        checkYear: {
+	  command: 'git ls-files LICENSE "*.scss" "*.html" "*.js" | xargs -L1 grep -q 2015-' + new Date().getFullYear()
         }
       }
     }
   );
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
-  grunt.loadNpmTasks('grunt-shell');
   grunt.registerTask('default', ['sasslint', 'sass:dist', 'shell']);
   grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'shell']);
   grunt.registerTask('dev', ['sasslint', 'sass:dev', 'watch']);
