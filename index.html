@@ -60,8 +60,8 @@
               <option value="male">male</option>
             </select>
             Your age:
-            <input type="radio" id="under" name="age" value="under"/> <label for="under"> I'm under 18</label>
-            <input type="radio" id="over" name="age" value="over"/> <label for="over"> I'm over 18</label>
+            <label><input type="radio" id="under" name="age" value="under"/> I'm under 18</label>
+            <label><input type="radio" id="over" name="age" value="over"/> I'm over 18</label>
             <label for="sex">Your favorite food:</label>
             <select multiple="multiple" name="food">
               <optgroup label="Italian">
@@ -76,8 +76,7 @@
             </select>
             <label for="address">Your full address:</label>
             <textarea name="address" id="address" placeholder="PO box is not allowed"></textarea>
-            <input type="checkbox" name="consent" id="consent" value="test"/>
-            <label for="consent">I agree with all possible terms and conditions</label>
+            <label><input type="checkbox" name="consent" id="consent" value="test"/>I agree with all possible terms and conditions</label>
             <button type="submit">Subscribe</button>
             <button type="reset">Reset</button>
             <button disabled>Can't click</button>
