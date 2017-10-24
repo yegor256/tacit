@@ -1,4 +1,3 @@
-![Tacit logo](./images/tacit_logo.svg)
 <img src="./images/tacit_logo.svg">
 
 [![Managed by Zerocracy](http://www.0crat.com/badge/C7BNDNSNR.svg)](http://www.0crat.com/p/C7BNDNSNR)
