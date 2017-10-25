@@ -60,7 +60,7 @@ textarea {
 
 label {
   display: inline-block;
-  margin-bottom: .82 * $em;
+  margin-bottom: .7 * $em;
 
   + * {
     page-break-before: always;
@@ -134,6 +134,7 @@ input[type="radio"] {
   height: 1.65 * $em;
   margin-left: 0;
   margin-right: .5 * $em;
+  vertical-align: middle;
 
   + label {
     page-break-before: avoid;

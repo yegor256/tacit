@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -29,7 +29,7 @@
         <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-    &lt;link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-VERSION.min.css"/&gt;
+    &lt;link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-VERSION.min.css"/&gt;
   &lt;/head&gt;
 &lt;/html&gt;</pre>
         <p>
@@ -59,9 +59,9 @@
               <option value="female">female</option>
               <option value="male">male</option>
             </select>
-            <label for="sex">Your age:</label>
-            <input type="radio" id="under" name="age"/> <span>I'm under 18</span>
-            <input type="radio" id="over" name="age"/> <span>I'm over 18</span>
+            Your age:
+            <label><input type="radio" id="under" name="age" value="under"/> I'm under 18</label>
+            <label><input type="radio" id="over" name="age" value="over"/> I'm over 18</label>
             <label for="sex">Your favorite food:</label>
             <select multiple="multiple" name="food">
               <optgroup label="Italian">
@@ -76,8 +76,7 @@
             </select>
             <label for="address">Your full address:</label>
             <textarea name="address" id="address" placeholder="PO box is not allowed"></textarea>
-            <input type="checkbox" name="consent" id="consent" value="test"/>
-            <label for="consent">I agree with all possible terms and conditions</label>
+            <label><input type="checkbox" name="consent" id="consent" value="test"/>I agree with all possible terms and conditions</label>
             <button type="submit">Subscribe</button>
             <button type="reset">Reset</button>
             <button disabled>Can't click</button>
@@ -176,7 +175,7 @@
         <nav>
           <ul>
             <li>
-              <small>Made by <a href="http://www.yegor256.com">Yegor Bugayenko</a>, 2015 - 2017</small>
+              <small>Made by <a href="http://www.yegor256.com">Yegor Bugayenko</a>, 2015-2017</small>
             </li>
           </ul>
         </nav>
