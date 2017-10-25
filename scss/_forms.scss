@@ -65,6 +65,10 @@ label {
   + * {
     page-break-before: always;
   }
+
+  > input{
+    margin-bottom: 0;
+  }
 }
 
 input[type="submit"],
@@ -89,7 +93,6 @@ button {
     color: darken($gray, 10);
     cursor: not-allowed;
   }
-
 }
 
 input[type="submit"],
@@ -101,26 +104,9 @@ button[type="submit"] {
     background: darken($blue, 15);
     color: darken($white, 25);
   }
-
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"],
-input[type="phone"],
-input[type="tel"],
-input[type="number"],
-input[type="datetime"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="color"],
-input[type="time"],
-input[type="search"],
-input[type="range"],
-input[type="file"],
-input[type="datetime-local"],
+input,
 select,
 textarea {
   border: 1px solid $gray;
@@ -142,7 +128,5 @@ input[type="radio"] {
 }
 
 select[multiple] {
-  margin-bottom: 0;
   min-width: 15 * $em;
 }
-
