@@ -93,6 +93,7 @@ button {
     color: darken($gray, 10);
     cursor: not-allowed;
   }
+
 }
 
 input[type="submit"],
@@ -107,10 +108,30 @@ button[type="submit"] {
 }
 
 input,
+select {
+  margin-bottom: $em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="phone"],
+input[type="tel"],
+input[type="number"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="color"],
+input[type="time"],
+input[type="search"],
+input[type="range"],
+input[type="file"],
+input[type="datetime-local"],
 select,
 textarea {
   border: 1px solid $gray;
-  margin-bottom: $em;
   padding: .3 * $em .35 * $em;
 }
 
