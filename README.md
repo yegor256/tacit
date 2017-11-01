@@ -28,7 +28,7 @@ which you can find [here](https://github.com/yegor256/tacit/releases)):
 </html>
 ```
 
-Or simply download [`tacit-css.min.css`](http://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css.min.css)
+Or simply download [`tacit-css.min.css`](https://raw.githubusercontent.com/yegor256/tacit/gh-pages/tacit-css.min.css)
 and use together with your HTML by adding:
 
 ```html
@@ -45,31 +45,28 @@ This blog post explains it in even more details:
 
 ## How to contribute
 
-Fork repository, make changes, send us a pull request. We will review
-your changes and apply them to the `master` branch shortly, provided
-they don't violate our quality standards. To avoid frustration, before
-sending us your pull request please run full Grunt build:
+If you are interested in contributing please refer to [CONTRIBUTING.md](CONTRIBUTING.md)
 
-```
-$ npm install
-$ npm test
-```
+## Browser/OS Compatibility
 
-To develop it locally, open `index.html` in a browser and then run:
+The following list is of tested browsers for compatibility.
+We don't have any guarantees of compatibility for other browsers,
+but as soon as possible will verify and add more to the list.
+Some of these browsers present minor issues that are reported in the
+our [issues](https://github.com/yegor256/tacit/issues) list.
 
-```
-$ npm run dev
-```
 
-Now you can make changes to `.scss` files and refresh the page in the browser.
-CSS will be recompiled automatically on every change you make.
+| Browser/OS        | Version | Compatible |
+|-------------------|---------|------------|
+| Chrome            | >= 60   | Yes        |
+| Firefox           | >= 56   | Yes        |
+| Safari            | >= 11   | Yes        |
+| Opera             | >= 48   | Yes        |
+| Edge              | >= 14   | Yes        |
+| Chrome (iOS)      | >= 60   | Yes        |
+| Safari (iOS)      | -       | Yes        |
+| Internet Explorer | >= 11   | Yes        |
 
-If you have problems running the Grunt build you may need to install
-[scss-lint](https://github.com/brigade/scss-lint):
-
-```
-gem update --system && gem install scss_lint
-```
 
 ## Got questions?
 

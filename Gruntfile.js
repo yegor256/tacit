@@ -31,7 +31,8 @@ module.exports = function (grunt) {
       sass: {
         dev: {
           options: {
-            style: 'compressed'
+            sourceMap: true,
+            outputStyle: 'compressed'
           },
           files: {
             'tacit.min.css': 'scss/main.scss'
@@ -39,7 +40,8 @@ module.exports = function (grunt) {
         },
         dist: {
           options: {
-            style: 'compressed'
+            sourceMap: true,
+            outputStyle: 'compressed'
           },
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
@@ -47,8 +49,8 @@ module.exports = function (grunt) {
         },
         uncompressed: {
           options: {
-            sourcemap: 'none',
-            style: 'expanded'
+            sourceMap: false,
+            outputStyle: 'expanded'
           },
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
@@ -61,31 +63,21 @@ module.exports = function (grunt) {
           tasks: ['sass:dev']
         }
       },
-      scsslint: {
+      sasslint: {
         allFiles: [
-          'scss/*.scss',
-        ],
-        options: {
-          config: '.scss-lint.yml',
-          colorizeOutput: true
-        },
+          'scss/*.scss'
+        ]
       },
       shell: {
-        target: {
-          command: 'grep -q -r 2015-' + new Date().getFullYear()
-            + ' --include "*.scss"'
-            + ' --include "*.js"'
-            + ' .'
+        checkYear: {
+	  command: 'git ls-files LICENSE "*.scss" "*.html" "*.js" | xargs -L1 grep -q 2015-' + new Date().getFullYear()
         }
       }
     }
   );
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-scss-lint');
-  grunt.loadNpmTasks('grunt-shell');
-  grunt.registerTask('default', ['scsslint', 'sass:dist', 'shell']);
-  grunt.registerTask('rultor', ['scsslint', 'sass:dist', 'sass:uncompressed', 'shell']);
-  grunt.registerTask('dev', ['scsslint', 'sass:dev', 'watch']);
+  grunt.registerTask('default', ['sasslint', 'sass:dist', 'shell']);
+  grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'shell']);
+  grunt.registerTask('dev', ['sasslint', 'sass:dev', 'watch']);
 }
 

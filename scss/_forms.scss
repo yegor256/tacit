@@ -49,10 +49,6 @@ button {
   }
 }
 
-select[multiple] {
-  min-width: 15 * $em;
-}
-
 option {
   @extend %sans-serif;
 }
@@ -64,10 +60,14 @@ textarea {
 
 label {
   display: inline-block;
-  margin-bottom: .82 * $em;
+  margin-bottom: .7 * $em;
 
   + * {
     page-break-before: always;
+  }
+
+  > input{
+    margin-bottom: 0;
   }
 }
 
@@ -105,7 +105,12 @@ button[type="submit"] {
     background: darken($blue, 15);
     color: darken($white, 25);
   }
+}
 
+input,
+select,
+textarea{
+  margin-bottom: $em;
 }
 
 input[type="text"],
@@ -128,7 +133,6 @@ input[type="datetime-local"],
 select,
 textarea {
   border: 1px solid $gray;
-  margin-bottom: $em;
   padding: .3 * $em .35 * $em;
 }
 
@@ -138,8 +142,13 @@ input[type="radio"] {
   height: 1.65 * $em;
   margin-left: 0;
   margin-right: .5 * $em;
+  vertical-align: middle;
 
   + label {
     page-break-before: avoid;
   }
+}
+
+select[multiple] {
+  min-width: 15 * $em;
 }
