@@ -65,6 +65,10 @@ label {
   + * {
     page-break-before: always;
   }
+
+  > input{
+    margin-bottom: 0;
+  }
 }
 
 input[type="submit"],
@@ -101,7 +105,12 @@ button[type="submit"] {
     background: darken($blue, 15);
     color: darken($white, 25);
   }
+}
 
+input,
+select,
+textarea{
+  margin-bottom: $em;
 }
 
 input[type="text"],
@@ -124,7 +133,6 @@ input[type="datetime-local"],
 select,
 textarea {
   border: 1px solid $gray;
-  margin-bottom: $em;
   padding: .3 * $em .35 * $em;
 }
 
@@ -142,7 +150,5 @@ input[type="radio"] {
 }
 
 select[multiple] {
-  margin-bottom: 0;
   min-width: 15 * $em;
 }
-
