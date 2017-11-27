@@ -67,6 +67,9 @@ our [issues](https://github.com/yegor256/tacit/issues) list.
 | Safari (iOS)      | -       | Yes        |
 | Internet Explorer | >= 11   | Yes        |
 
+## Built with Tacit framework
+
+- [whoismining.com](http://whoismining.com) Who is mining checks if a website is mining crypto currency
 
 ## Got questions?
 
