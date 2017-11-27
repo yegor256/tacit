@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -14,7 +14,7 @@
       <header>
         <nav>
           <ul>
-            <li><code>1.1.1</code></li>
+            <li><code>1.2.0</code></li>
           </ul>
         </nav>
       </header>
@@ -29,7 +29,7 @@
         <pre>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
-    &lt;link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-1.1.1.min.css"/&gt;
+    &lt;link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.2.0.min.css"/&gt;
   &lt;/head&gt;
 &lt;/html&gt;</pre>
         <p>
@@ -59,11 +59,11 @@
               <option value="female">female</option>
               <option value="male">male</option>
             </select>
-            <label for="sex">Your age:</label>
-            <input type="radio" id="under" name="age"/> <span>I'm under 18</span>
-            <input type="radio" id="over" name="age"/> <span>I'm over 18</span>
-            <label for="sex">Your favorite food:</label>
-            <select multiple="multiple" name="food">
+            Your age:
+            <label><input type="radio" id="under" name="age" value="under"/> I'm under 18</label>
+            <label><input type="radio" id="over" name="age" value="over"/> I'm over 18</label>
+            <label for="food">Your favorite food:</label>
+            <select multiple="multiple" name="food" id="food">
               <optgroup label="Italian">
                 <option value="1">Pizza</option>
                 <option value="2">Spaghetti</option>
@@ -76,8 +76,7 @@
             </select>
             <label for="address">Your full address:</label>
             <textarea name="address" id="address" placeholder="PO box is not allowed"></textarea>
-            <input type="checkbox" name="consent" id="consent" value="test"/>
-            <label for="consent">I agree with all possible terms and conditions</label>
+            <label><input type="checkbox" name="consent" id="consent" value="test"/>I agree with all possible terms and conditions</label>
             <button type="submit">Subscribe</button>
             <button type="reset">Reset</button>
             <button disabled>Can't click</button>
@@ -122,6 +121,7 @@
         <p>I would recommend to avoid this type of heading at all.</p>
         <h6>This is &lt;h6&gt;</h6>
         <p>I would recommend to avoid this type of heading at all.</p>
+        <p>Sup<sup>&reg;</sup> and Sub<sub>&reg;</sub> Elements</p>
         <h2>Lists</h2>
         <p>Just use standard <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> and <code>&lt;dl&gt;</code> tags:
         <ul>
@@ -162,7 +162,7 @@
         <p>Sometimes you want to let people know they should press a keyboard command like <kbd>ctrl + l</kbd>.</p>
         <h2>Images</h2>
         <figure>
-          <img src="http://placehold.it/900x500" />
+          <img src="http://placehold.it/900x500" alt="placeholder image 900 pixels wide by 500 pixels tall"/>
           <figcaption>A photo placeholder text</figcaption>
         </figure>
         <h2>Work in progress</h2>
@@ -176,14 +176,14 @@
         <nav>
           <ul>
             <li>
-              <small>Made by <a href="http://www.yegor256.com">Yegor Bugayenko</a>, 2015 - 2017</small>
+              <small>Made by <a href="http://www.yegor256.com">Yegor Bugayenko</a>, 2015-2017</small>
             </li>
           </ul>
         </nav>
         <nav>
           <ul>
             <li><small><a href="https://github.com/yegor256/tacit">GitHub</a></small></li>
-            <li><small><a href="https://yegor256.github.io/tacit/tacit-1.1.1.min.css">Download</a></small></li>
+            <li><small><a href="https://yegor256.github.io/tacit/tacit-1.2.0.min.css">Download</a></small></li>
             <li><small><a href="https://opensource.org/licenses/MIT">MIT license</a></small></li>
           </ul>
         </nav>
