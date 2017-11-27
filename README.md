@@ -70,6 +70,9 @@ our [issues](https://github.com/yegor256/tacit/issues) list.
 ## Built with Tacit framework
 
 - [whoismining.com](http://whoismining.com) Who is mining checks if a website is mining crypto currency
+- [jare.io](http://www.jare.io) Free and instance CDN
+- [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
+- [jpeek.org](http://www.jpeek.org) Java projects code cohesion analizer
 
 ## Got questions?
 
