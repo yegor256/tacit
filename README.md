@@ -1,4 +1,4 @@
-<img src="./images/tacit_logo.svg" height="100px">
+<img src="./images/tacit_logo.png" height="100px">
 
 [![Managed by Zerocracy](http://www.0crat.com/badge/C7BNDNSNR.svg)](http://www.0crat.com/p/C7BNDNSNR)
 [![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/tacit)](http://www.rultor.com/p/yegor256/tacit)
