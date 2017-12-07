@@ -45,6 +45,8 @@ release:
     # We'll gonna need these files later...
     mv dist/tacit-css-${tag}.min.css /tmp
     mv index.html /tmp
+    mv tacit_logo.png /tmp
+    mv tacit_logo.svg /tmp
 
     # Checkout to gh-pages and reset any modifications
     branch=$(git rev-parse --abbrev-ref HEAD)
@@ -57,11 +59,15 @@ release:
     cp tacit-css-${tag}.min.css tacit-css.min.css
     cp tacit-css-${tag}.min.css tacit.min.css
     mv /tmp/index.html .
+    mv /tmp/tacit_logo.png .
+    mv /tmp/tacit_logo.svg .
 
     git add tacit-css-${tag}.min.css
     git add tacit-css.min.css
     git add tacit.min.css
     git add index.html
+    git add tacit_logo.png
+    git add tacit_logo.svg
 
     # Commit and change the branch to master
     git commit --allow-empty -am "${tag}"
