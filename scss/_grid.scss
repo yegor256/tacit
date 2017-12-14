@@ -152,6 +152,10 @@ blockquote {
     font-size: .75 * $em;
     margin: 0;
   }
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 img {
