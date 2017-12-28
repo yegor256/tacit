@@ -75,6 +75,7 @@ our [issues](https://github.com/yegor256/tacit/issues) list.
 - [jare.io](http://www.jare.io) Free and instance CDN
 - [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
 - [jpeek.org](http://www.jpeek.org) Java projects code cohesion analizer
+- [socatar.com](https://socatar.com/) Web service to use profile photos in your page
 
 ## Got questions?
 
