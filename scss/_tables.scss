@@ -31,6 +31,7 @@ th {
   border-bottom: (.06 * $em) solid $gray;
   overflow: auto;
   padding: .825 * $em $em;
+  vertical-align: top;
 }
 
 thead th {
@@ -40,6 +41,5 @@ thead th {
 
 table {
   display: block;
-  max-width: 100%;
   overflow-x: auto;
 }

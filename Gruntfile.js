@@ -22,6 +22,9 @@
  * SOFTWARE.
  */
 
+const fs = require('fs')
+const child_process = require('child_process')
+
 module.exports = function (grunt) {
   'use strict';
   grunt.util.linefeed = '\n';
@@ -67,17 +70,26 @@ module.exports = function (grunt) {
         allFiles: [
           'scss/*.scss'
         ]
-      },
-      shell: {
-        checkYear: {
-	         command: 'git ls-files LICENSE "*.scss" "*.html" "*.js" | xargs -L1 grep -q 2015-' + new Date().getFullYear()
-        }
       }
     }
   );
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
-  grunt.registerTask('default', ['sasslint', 'sass:dist', 'shell']);
-  grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'shell']);
+
+  grunt.registerTask('checkYear', 'Checks the year patterns in copyright lines in source files.', () => {
+    const pattern = `2015-${new Date().getFullYear()}`
+    const invalidFiles = child_process.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(file => {
+      return !fs.readFileSync(file).toString().includes(pattern)
+    })
+
+    invalidFiles.forEach(file => {
+      grunt.log.error(`The file, ${file}, does not include the pattern: ${pattern}`)
+    })
+
+    return invalidFiles.length === 0
+  })
+
+  grunt.registerTask('default', ['sasslint', 'sass:dist', 'checkYear']);
+  grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'checkYear']);
   grunt.registerTask('dev', ['sasslint', 'sass:dev', 'watch']);
 }
 

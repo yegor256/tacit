@@ -5,3 +5,4 @@
 * text=auto eol=lf
 *.java ident
 *.xml ident
+*.png binary

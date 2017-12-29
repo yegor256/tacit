@@ -7,7 +7,7 @@
     <meta name="description" content="CSS Framework for Dummies"/>
     <link rel="stylesheet" href="tacit.min.css"/>
     <title>tacit</title>
-    <link rel="shortcut icon" type="image/gif" href="logo.gif"/>
+    <link rel="icon" type="image/png" href="./tacit_logo.png"/>
   </head>
   <body>
     <section>
@@ -24,6 +24,9 @@
       </aside>
 
       <article>
+        <figure>
+          <img src="./tacit_logo.svg" alt="tacit logo" style="height: 100px;"/>
+        </figure>
         <p>
           <strong>Tacit</strong> is a CSS framework for <em>dummies</em>, who want their
           web services to look attractive but have almost zero
@@ -68,8 +71,8 @@
             <label><input type="radio" id="unls
               er" name="age" value="under"/> I'm under 18</label>
             <label><input type="radio" id="over" name="age" value="over"/> I'm over 18</label>
-            <label for="sex">Your favorite food:</label>
-            <select multiple="multiple" name="food">
+            <label for="food">Your favorite food:</label>
+            <select multiple="multiple" name="food" id="food">
               <optgroup label="Italian">
                 <option value="1">Pizza</option>
                 <option value="2">Spaghetti</option>
@@ -170,7 +173,7 @@
         <p>Sometimes you want to let people know they should press a keyboard command like <kbd>ctrl + l</kbd>.</p>
         <h2>Images</h2>
         <figure>
-          <img src="http://placehold.it/900x500" />
+          <img src="http://placehold.it/900x500" alt="placeholder image 900 pixels wide by 500 pixels tall"/>
           <figcaption>A photo placeholder text</figcaption>
         </figure>
         <h2>Work in progress</h2>
