@@ -70,7 +70,7 @@ module.exports = function (grunt) {
       },
       shell: {
         checkYear: {
-	  command: 'git ls-files LICENSE "*.scss" "*.html" "*.js" | xargs -L1 grep -q 2015-' + new Date().getFullYear()
+	         command: 'git ls-files LICENSE "*.scss" "*.html" "*.js" | xargs -L1 grep -q 2015-' + new Date().getFullYear()
         }
       }
     }
