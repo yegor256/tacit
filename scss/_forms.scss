@@ -48,6 +48,12 @@ button {
   }
 }
 
+input,
+select,
+label {
+  margin-right: .2 * $em;
+}
+
 option {
   @extend %sans-serif;
 }
