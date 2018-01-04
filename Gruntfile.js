@@ -80,11 +80,9 @@ module.exports = function (grunt) {
     const invalidFiles = child_process.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(file => {
       return !fs.readFileSync(file).toString().includes(pattern)
     })
-
     invalidFiles.forEach(file => {
       grunt.log.error(`The file, ${file}, does not include the pattern: ${pattern}`)
     })
-
     return invalidFiles.length === 0
   })
 

@@ -53,7 +53,7 @@
         <h2>Forms</h2>
         <form method="get" action="#">
           <fieldset>
-            <legend>Here is a simple form:</legend>
+            <legend>Here is a simple form with <code>&lt;fieldset&gt;</code>:</legend>
             <label for="email">Your email:</label>
             <input name="email" type="text" id="email" size="25" placeholder="must be unique"/>
             <label for="sex">Your gender:</label>
@@ -84,6 +84,10 @@
             <button type="reset">Reset</button>
             <button disabled>Can't click</button>
           </fieldset>
+        </form>
+        <p>This is a one-line form without <code>&lt;fieldset&gt;</code>:</p>
+        <form>
+          <label>Add funds:</label><input type="text" size="10" placeholder="e.g. $10"/><button type="submit">Pay</button>
         </form>
         <h2>Tables</h2>
         <p>
