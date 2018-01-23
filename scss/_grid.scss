@@ -94,9 +94,10 @@ nav {
     text-align: center;
 
     li {
-      display: inline;
+      display: inline-block;
       margin-left: .5 * $em;
       margin-right: .5 * $em;
+      vertical-align: middle;
 
       &:first-child {
         margin-left: 0;
