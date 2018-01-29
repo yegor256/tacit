@@ -3,3 +3,7 @@ errors:
 # alerts:
 #   github:
 #     - yegor256
+
+tags:
+  - pdd
+  - bug
