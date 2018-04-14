@@ -72,7 +72,7 @@ section {
 
 article {
   background: $white;
-  border: .1 * $em solid lighten($black, 85);
+  border: 1px solid lighten($black, 85);
   border-radius: .4 * $em;
   padding: 2.4 * $em;
 }
