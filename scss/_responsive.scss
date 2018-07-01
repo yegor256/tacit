@@ -26,7 +26,12 @@
   }
 
   article {
-    border-radius: 0;
+    border: 0;
+    padding: $em;
+  }
+
+  header,
+  footer {
     padding: $em;
   }
 

@@ -36,5 +36,8 @@
     "grunt-sass": "^2.0.0",
     "grunt-sass-lint": "^0.2.4",
     "load-grunt-tasks": "3.4.0"
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
   }
 }

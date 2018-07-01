@@ -69,11 +69,16 @@ section {
   width: 50 * $em;
 }
 
+article,
+header,
+footer {
+  padding: 2.4 * $em;
+}
+
 article {
   background: $white;
   border: 1px solid lighten($black, 85);
   border-radius: .4 * $em;
-  padding: 2.4 * $em;
 }
 
 header {
