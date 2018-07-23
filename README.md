@@ -106,6 +106,8 @@ our [issues](https://github.com/yegor256/tacit/issues) list.
 - [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
 - [jpeek.org](http://www.jpeek.org) Java projects code cohesion analizer
 - [socatar.com](https://socatar.com/) Web service to use profile photos in your page
+- [filfreire.com](https://filfreire.com/)[@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
+- [moneeee.tech](https://moneeee.tech/) joke app to know how much money you're making during a boring meeting
 
 ## Got questions?
 
