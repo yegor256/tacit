@@ -23,61 +23,62 @@
 @import 'defs';
 
 @media only screen and (max-width: 760px), (min-width: 768px) and (max-width: 1024px) {
-    table,
-    tbody,
-    th,
-    td,
-    tr {
-        display: block;
-    }
-    thead {
-        display: contents;
-    }
-    thead tr {
-        background-color: lighten($gray, 15);
-    }
+  table,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
 
-    tr {
-        border: 1px solid #ccc;
-        margin-bottom: .5rem;
-    }
+  thead {
+    display: contents;
+  }
 
-    td {
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-    }
+  thead tr {
+    background-color: lighten($gray, 15);
+  }
 
-    td:before {
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-    }
+  tr {
+    border: 1px solid $gray;
+    margin-bottom: .5rem;
+  }
+
+  td {
+    border: 0;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    left: 6px;
+    padding-right: 10px;
+    position: absolute;
+    top: 6px;
+    white-space: nowrap;
+    width: 45%;
+  }
 }
 
 th {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 td,
 th {
-    border-bottom: (.06 * $em) solid $gray;
-    overflow: auto;
-    padding: .825 * $em $em;
-    text-align: left;
-    vertical-align: top;
+  border-bottom: (.06 * $em) solid $gray;
+  overflow: auto;
+  padding: .825 * $em $em;
+  text-align: left;
+  vertical-align: top;
 }
 
 thead th {
-    border-bottom-width: .12 * $em;
-    padding-bottom: .35 * $em;
+  border-bottom-width: .12 * $em;
+  padding-bottom: .35 * $em;
 }
 
 table {
-    display: table;
-    overflow-x: auto;
+  display: table;
+  overflow-x: auto;
 }
