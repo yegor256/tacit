@@ -31,7 +31,7 @@
     display: block;
   }
 
-  thead {
+  body thead {
     display: none;
   }
 
@@ -43,6 +43,11 @@
   body td {
     border: 0;
     display: inline-block;
+  }
+
+  td {
+    border: 0;
+    padding-left: 50%;
     position: relative;
   }
 
@@ -67,6 +72,11 @@ th {
   padding: .825 * $em $em;
   text-align: left;
   vertical-align: top;
+}
+
+thead th {
+  border-bottom-width: .12 * $em;
+  padding-bottom: .35 * $em;
 }
 
 table {
