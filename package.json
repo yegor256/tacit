@@ -31,13 +31,13 @@
   ],
   "homepage": "https://github.com/yegor256/tacit",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-watch": "1.0.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^2.0.0",
     "grunt-sass-lint": "^0.2.4",
     "load-grunt-tasks": "3.4.0"
   },
   "dependencies": {
-    "npm": "^6.1.0"
+    "npm": "^6.2.0"
   }
 }
