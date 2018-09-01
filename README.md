@@ -100,14 +100,23 @@ our [issues](https://github.com/yegor256/tacit/issues) list.
 | Safari (iOS)      | -       | Yes        |
 | Internet Explorer | >= 11   | Yes        |
 
-## Built with Tacit framework
+
+## Built on top of Tacit framework
+
+Tacit's goal is to be super simple and always with the same look-and-feel.
+If you want something more custom, like a different theme, feel free to make it on top of Tacit. Here are some frameworks built on top of Tacit:
+
+- [kacit](https://github.com/Kimeiga/kacit) Kacit is the Tacit CSS classless framework but with a yellow accent and Georgia font
+
+
+## Usecases of Tacit framework
 
 - [jare.io](http://www.jare.io) Free and instance CDN
 - [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
 - [jpeek.org](http://www.jpeek.org) Java projects code cohesion analizer
 - [socatar.com](https://socatar.com/) Web service to use profile photos in your page
-- [filfreire.com](https://filfreire.com/)[@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
-- [moneeee.tech](https://moneeee.tech/) joke app to know how much money you're making during a boring meeting
+- [filfreire.com](https://filfreire.com/) [@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
+- [moneeee](https://filfreire.com/Moneeee/) joke app to know how much money you're making during a boring meeting
 
 ## Got questions?
 
