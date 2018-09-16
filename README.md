@@ -107,7 +107,7 @@ Tacit's goal is to be super simple and always with the same look-and-feel.
 If you want something more custom, like a different theme, feel free to make it on top of Tacit. Here are some frameworks built on top of Tacit:
 
 - [kacit](https://github.com/Kimeiga/kacit) Kacit is the Tacit CSS classless framework but with a yellow accent and Georgia font
-
+- [Bahunya](https://github.com/kimeiga/bahunya) is a CSS framework with responsive typography, navbar, syntax highlighting, and much more, inspired by Tacit
 
 ## Usecases of Tacit framework
 
