@@ -116,6 +116,7 @@ If you want something more custom, like a different theme, feel free to make it 
 - [socatar.com](https://socatar.com/) Web service to use profile photos in your page
 - [filfreire.com](https://filfreire.com/) [@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
 - [moneeee](https://filfreire.com/Moneeee/) joke app to know how much money you're making during a boring meeting
+- [soalition.com](https://www.soalition.com/hello) a social coalition management web app for online writers.
 
 ## Got questions?
 
