@@ -26,12 +26,12 @@ which you can find [here](https://github.com/yegor256/tacit/releases)):
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@1.3.6/dist/tacit-css-1.3.6.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@VERSION/dist/tacit-css-VERSION.min.css"/>
   </head>
 </html>
 ```
 
-Or simply download [`tacit-css.min.css`](https://cdn.jsdelivr.net/gh/yegor256/tacit@1.3.6/dist/tacit-css-1.3.6.min.css)
+Or simply download [`tacit-css.min.css`](https://cdn.jsdelivr.net/gh/yegor256/tacit@VERSION/dist/tacit-css-VERSION.min.css)
 and use together with your HTML by adding:
 
 ```html
