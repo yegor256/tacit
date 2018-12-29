@@ -19,8 +19,8 @@ compliant with HTML5 and they will look OK.
 
 Details are here: [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
- Just add it to your HTML <!-- (replace `VERSION` with the latest version number,
-which you can find [here](https://github.com/yegor256/tacit/releases)): -->
+ Just add it to your HTML (replace `VERSION` with the latest version number,
+which you can find [here](https://github.com/yegor256/tacit/releases)): 
 
 ```html
 <!DOCTYPE html>
