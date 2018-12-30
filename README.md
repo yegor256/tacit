@@ -26,7 +26,7 @@ which you can find [here](https://github.com/yegor256/tacit/releases)):
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@VERSION/dist/tacit-css-VERSION.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
   </head>
 </html>
 ```
