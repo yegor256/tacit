@@ -2,7 +2,7 @@ assets:
   s3cfg: zerocracy/home#assets/s3cfg
   npmrc: zerocracy/home#assets/npmrc
 install: |
-  sudo gem install --no-ri pdd
+  sudo gem install --no-document pdd
   npm install --no-color
 architect:
   - yegor256
