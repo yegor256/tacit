@@ -17,10 +17,7 @@
     "css"
   ],
   "author": "Yegor Bugayenko",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/yegor256/tacit"
-  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yegor256/tacit/issues"
   },
