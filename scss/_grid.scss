@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2018 Yegor Bugayenko
+// Copyright (c) 2015-2019 Yegor Bugayenko
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,6 @@
   box-sizing: border-box;
   margin: 0;
   max-width: 100%;
-  outline: 0;
   padding: 0;
   vertical-align: baseline;
 }
@@ -79,14 +78,6 @@ article {
   background: $white;
   border: 1px solid lighten($black, 85);
   border-radius: .4 * $em;
-}
-
-header {
-  margin-bottom: 2 * $em;
-}
-
-footer {
-  margin-top: 2 * $em;
 }
 
 nav {

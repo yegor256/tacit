@@ -11,7 +11,6 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
 [![NPM version](https://badge.fury.io/js/tacit-css.svg)](http://badge.fury.io/js/tacit-css)
 [![Bower](https://img.shields.io/bower/v/tacit.svg)](https://github.com/yegor256/tacit/releases)
-[![Dependencies](https://www.versioneye.com/user/projects/561ac7cea193340f2f00122f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561ac7cea193340f2f00122f)
 
 **Tacit** is a primitive CSS framework for dummies, like myself, who
 don't know anything about graphic design but want their web services to
@@ -100,14 +99,24 @@ our [issues](https://github.com/yegor256/tacit/issues) list.
 | Safari (iOS)      | -       | Yes        |
 | Internet Explorer | >= 11   | Yes        |
 
-## Built with Tacit framework
+
+## Built on top of Tacit framework
+
+Tacit's goal is to be super simple and always with the same look-and-feel.
+If you want something more custom, like a different theme, feel free to make it on top of Tacit. Here are some frameworks built on top of Tacit:
+
+- [kacit](https://github.com/Kimeiga/kacit) Kacit is the Tacit CSS classless framework but with a yellow accent and Georgia font
+- [Bahunya](https://github.com/kimeiga/bahunya) is a CSS framework with responsive typography, navbar, syntax highlighting, and much more, inspired by Tacit
+
+## Usecases of Tacit framework
 
 - [jare.io](http://www.jare.io) Free and instance CDN
 - [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
 - [jpeek.org](http://www.jpeek.org) Java projects code cohesion analizer
 - [socatar.com](https://socatar.com/) Web service to use profile photos in your page
-- [filfreire.com](https://filfreire.com/)[@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
-- [moneeee.tech](https://moneeee.tech/) joke app to know how much money you're making during a boring meeting
+- [filfreire.com](https://filfreire.com/) [@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
+- [moneeee](https://filfreire.com/Moneeee/) joke app to know how much money you're making during a boring meeting
+- [soalition.com](https://www.soalition.com/hello) a social coalition management web app for online writers.
 
 ## Got questions?
 
@@ -121,7 +130,7 @@ Tacit's logo was designed by Akshay Vinchurkar ([@akshayvinchurkar](https://gith
 
 ## License (MIT)
 
-Copyright (c) 2015-2018 Yegor Bugayenko
+Copyright (c) 2015-2019 Yegor Bugayenko
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
