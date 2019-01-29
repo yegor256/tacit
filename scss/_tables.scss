@@ -22,45 +22,6 @@
 
 @import 'defs';
 
-@media only screen and (max-width: 760px), (min-width: 768px) and (max-width: 1024px) {
-  table,
-  tbody,
-  th,
-  td,
-  tr {
-    display: block;
-  }
-
-  body thead {
-    display: none;
-  }
-
-  tr {
-    display: inline-block;
-    margin-bottom: .5rem;
-  }
-
-  body td {
-    border: 0;
-    display: inline-block;
-  }
-
-  td {
-    border: 0;
-    padding-left: 50%;
-    position: relative;
-  }
-
-  td::before {
-    left: 6px;
-    padding-right: 10px;
-    position: absolute;
-    top: 6px;
-    white-space: nowrap;
-    width: 45%;
-  }
-}
-
 th {
   font-weight: 600;
 }
