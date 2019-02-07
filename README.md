@@ -31,7 +31,7 @@ which you can find [here](https://github.com/yegor256/tacit/releases)):
 </html>
 ```
 
-Or simply download [`tacit-css.min.css`](https://raw.githubusercontent.com/yegor256/tacit/gh-pages/tacit-css.min.css)
+Or simply download [`tacit-css.min.css`](https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css)
 and use together with your HTML by adding:
 
 ```html
