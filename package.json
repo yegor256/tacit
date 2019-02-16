@@ -35,6 +35,8 @@
     "load-grunt-tasks": "3.4.0"
   },
   "dependencies": {
-    "npm": "^6.2.0"
+    "css-validator": "^0.8.1",
+    "npm": "^6.2.0",
+    "path": "^0.12.7"
   }
 }

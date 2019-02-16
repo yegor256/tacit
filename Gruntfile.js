@@ -73,7 +73,7 @@ module.exports = function (grunt) {
       }
     }
   );
-  require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
+  require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
   grunt.registerTask('checkYear', 'Checks the year patterns in copyright lines in source files.', () => {
     const pattern = `2015-${new Date().getFullYear()}`
@@ -86,8 +86,29 @@ module.exports = function (grunt) {
     return invalidFiles.length === 0
   })
 
-  grunt.registerTask('default', ['sasslint', 'sass:dist', 'checkYear']);
-  grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'checkYear']);
+
+  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', function () {
+
+    const path = require('path');
+    var validate = require('css-validator');
+    const srcPath = path.join(__dirname, 'tacit.min.css');
+
+    const css = grunt.file.read(srcPath);
+    const options = { text: `${css}` }
+    var done = this.async();
+    validate(options, function (error, data) {
+      if (data.validity) {
+        done(true);
+      } else {
+        done(false);
+      }
+
+    })
+
+  })
+
+
+  grunt.registerTask('default', ['sasslint', 'sass:dist', 'checkYear', 'validate']);
+  grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'checkYear', 'validate']);
   grunt.registerTask('dev', ['sasslint', 'sass:dev', 'watch']);
 }
-
