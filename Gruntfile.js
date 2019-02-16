@@ -91,19 +91,31 @@ module.exports = function (grunt) {
 
     const path = require('path');
     var validate = require('css-validator');
-    const srcPath = path.join(__dirname, 'tacit.min.css');
 
-    const css = grunt.file.read(srcPath);
-    const options = { text: `${css}` }
-    var done = this.async();
-    validate(options, function (error, data) {
-      if (data.validity) {
-        done(true);
-      } else {
-        done(false);
-      }
+    const glob = require('glob');
+
+    let srcPath = '';
+    let css = '';
+    glob("*.css", {}, function (err, files) {
+
+      files.map(file => {
+        srcPath = path.join(__dirname + '/dist', file);
+        css = grunt.file.read(srcPath);
+        var done = this.async();
+        validate({ text: `${css}` }, function (error, data) {
+          if (data.validity) {
+            done(true);
+          } else {
+            done(false);
+          }
+
+        });
+      })
 
     })
+
+
+
 
   })
 
