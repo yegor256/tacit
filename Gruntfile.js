@@ -85,19 +85,13 @@ module.exports = function (grunt) {
     })
     return invalidFiles.length === 0
   })
-
-
   grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', function () {
-
     const path = require('path');
     var validate = require('css-validator');
-
     const glob = require('glob');
-
     let srcPath = '';
     let css = '';
     glob("*.css", {}, function (err, files) {
-
       files.map(file => {
         srcPath = path.join(__dirname + '/dist', file);
         css = grunt.file.read(srcPath);
@@ -108,18 +102,11 @@ module.exports = function (grunt) {
           } else {
             done(false);
           }
-
         });
       })
 
     })
-
-
-
-
   })
-
-
   grunt.registerTask('default', ['sasslint', 'sass:dist', 'checkYear', 'validate']);
   grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'checkYear', 'validate']);
   grunt.registerTask('dev', ['sasslint', 'sass:dev', 'watch']);
