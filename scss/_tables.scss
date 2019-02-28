@@ -66,16 +66,18 @@ table {
       padding: .3 * $em .2 * $em;
 
       @media all and (max-width: 1024px) {
-        display: inline-block;
         border: 0;
+        display: inline-block;
       }
     }
 
-    th, td {
+    th,
+    td {
       font-size: 65%;
     }
 
-    span, code {
+    span,
+    code {
       font-size: 80%;
     }
 
