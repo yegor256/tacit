@@ -29,7 +29,6 @@ th {
 td,
 th {
   border-bottom: (.06 * $em) solid $gray;
-  overflow: auto;
   padding: .825 * $em $em;
   text-align: left;
   vertical-align: top;
@@ -42,5 +41,51 @@ thead th {
 
 table {
   display: table;
-  overflow-x: auto;
+  width: 100%;
+
+  @media all and (max-width: 1024px) {
+    display: none;
+  }
+
+  thead {
+    @media all and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  tr {
+    border-bottom-width: .12 * $em;
+
+    th {
+      border-bottom-width: .12 * $em;
+    }
+
+    td,
+    th {
+      overflow: hidden;
+      padding: .3 * $em .2 * $em;
+
+      @media all and (max-width: 1024px) {
+        display: inline-block;
+        border: 0;
+      }
+    }
+
+    th, td {
+      font-size: 65%;
+    }
+
+    span, code {
+      font-size: 80%;
+    }
+
+    @media all and (max-width: 1024px) {
+      display: inline-block;
+      margin: .6 * $em 0;
+    }
+  }
+
+  @media all and (max-width: 1024px) {
+    display: inline-block;
+  }
 }
