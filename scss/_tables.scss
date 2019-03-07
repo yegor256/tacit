@@ -71,16 +71,6 @@ table {
       }
     }
 
-    th,
-    td {
-      font-size: 65%;
-    }
-
-    span,
-    code {
-      font-size: 80%;
-    }
-
     @media all and (max-width: 1024px) {
       display: inline-block;
       margin: .6 * $em 0;
