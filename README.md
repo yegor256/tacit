@@ -43,6 +43,18 @@ and use together with your HTML by adding:
 </html>
 ```
 
+Of course, it is [responsive](https://en.wikipedia.org/wiki/Responsive_web_design)
+and mobile-friendly, but you have to add this line too:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+</html>
+```
+
 This blog post explains it in even more details:
 [Tacit, a CSS Framework Without Classes](http://www.yegor256.com/2015/04/13/tacit-css-framework-for-dummies.html).
 
