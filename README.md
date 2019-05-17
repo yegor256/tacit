@@ -39,7 +39,7 @@ and use together with your HTML by adding:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="tacit.min.css"/>
+    <link rel="stylesheet" href="tacit-css.min.css"/>
   </head>
 </html>
 ```
@@ -136,7 +136,6 @@ If you want something more custom, like a different theme, feel free to make it 
 
 If you have questions or general suggestions, don't hesitate to submit
 a new [Github issue](https://github.com/yegor256/tacit/issues/new).
-
 
 ## Logo
 
