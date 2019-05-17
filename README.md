@@ -12,6 +12,8 @@
 [![NPM version](https://badge.fury.io/js/tacit-css.svg)](http://badge.fury.io/js/tacit-css)
 [![Bower](https://img.shields.io/bower/v/tacit.svg)](https://github.com/yegor256/tacit/releases)
 
+[![Hits-of-Code](https://hitsofcode.com/github/yegor256/tacit)](https://hitsofcode.com/view/github/yegor256/tacit)
+
 **Tacit** is a primitive CSS framework for dummies, like myself, who
 don't know anything about graphic design but want their web services to
 look eatable. No classes, no layouts. Just design plain and simple web pages
