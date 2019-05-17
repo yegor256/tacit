@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  background: darken($white, 4);
+  background: $white;
   color: lighten($black, 10);
   padding: 2 * $em;
 }
