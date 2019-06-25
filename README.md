@@ -123,10 +123,10 @@ If you want something more custom, like a different theme, feel free to make it 
 
 ## Usecases of Tacit framework
 
-- [jare.io](http://www.jare.io) Free and instance CDN
+- [jare.io](http://www.jare.io) Free and instant CDN
 - [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
 - [wts.zold.io](http://wts.zold.io) Web Wallets of Zold cryptocurrency
-- [jpeek.org](http://www.jpeek.org) Java projects code cohesion analizer
+- [jpeek.org](http://www.jpeek.org) Java projects code cohesion analyzer
 - [socatar.com](https://socatar.com/) Web service to use profile photos in your page
 - [filfreire.com](https://filfreire.com/) [@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
 - [moneeee](https://filfreire.com/Moneeee/) joke app to know how much money you're making during a boring meeting
