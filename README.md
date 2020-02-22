@@ -132,6 +132,7 @@ If you want something more custom, like a different theme, feel free to make it 
 - [moneeee](https://filfreire.com/Moneeee/) joke app to know how much money you're making during a boring meeting
 - [soalition.com](https://www.soalition.com/hello) a social coalition management web app for online writers.
 - [golang.cafe](https://golang.cafe) Go (golang) job board with no recruiters and clear salary ranges.
+- [tinyfts](https://github.com/dbohdan/tinyfts) Very small standalone full text search HTTP/SCGI server
 
 ## Got questions?
 
