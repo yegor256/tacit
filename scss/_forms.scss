@@ -27,11 +27,8 @@ fieldset {
   flex-direction: row;
   flex-wrap: wrap;
 
-  button,
   label,
-  input,
-  select,
-  textarea {
+  legend {
     display: block;
   }
 
