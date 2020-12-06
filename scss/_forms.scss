@@ -27,6 +27,11 @@ fieldset {
   flex-direction: row;
   flex-wrap: wrap;
 
+  label,
+  legend {
+    display: block;
+  }
+
   legend {
     margin: $em 0;
   }
