@@ -23,10 +23,6 @@
 @import 'defs';
 
 fieldset {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
   label,
   legend {
     display: block;
