@@ -21,7 +21,7 @@
 // SOFTWARE.
 
 // sizes
-$em: 18px;
+$em: (18 / 16) * 1rem;
 
 // fonts
 $sans-serif: system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;

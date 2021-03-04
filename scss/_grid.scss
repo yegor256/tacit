@@ -33,7 +33,6 @@
 
 html,
 body {
-  @extend %sans-serif;
   width: 100%;
 }
 
@@ -42,6 +41,7 @@ html {
 }
 
 body {
+  @extend %sans-serif;
   background: $white;
   color: lighten($black, 10);
   padding: 2 * $em;
