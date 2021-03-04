@@ -38,7 +38,7 @@ textarea,
 select,
 button {
   @extend %sans-serif;
-  border-radius: .2 * $em;
+  border-radius: .2 * $spacing;
   display: inline-block;
   padding: .55 * $em;
 
@@ -147,7 +147,7 @@ input[type="radio"] {
   flex-grow: 0;
   height: 1.65 * $em;
   margin-left: 0;
-  margin-right: .5 * $em;
+  margin-right: .5 * $spacing;
   vertical-align: middle;
 
   + label {
@@ -156,5 +156,5 @@ input[type="radio"] {
 }
 
 select[multiple] {
-  min-width: 15 * $em;
+  min-width: 15 * $spacing;
 }

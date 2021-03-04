@@ -22,17 +22,17 @@
 
 @media (max-width: $mobile-width) {
   body {
-    padding: $em 0;
+    padding: $spacing 0;
   }
 
   article {
     border: 0;
-    padding: $em;
+    padding: $spacing;
   }
 
   header,
   footer {
-    padding: $em;
+    padding: $spacing;
   }
 
   textarea,
