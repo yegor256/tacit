@@ -28,6 +28,7 @@ const child_process = require('child_process')
 module.exports = function (grunt) {
   'use strict';
   grunt.util.linefeed = '\n';
+  grunt.loadNpmTasks('grunt-css-purge');
   grunt.initConfig(
     {
       pkg: grunt.file.readJSON('package.json'),
@@ -70,7 +71,19 @@ module.exports = function (grunt) {
         allFiles: [
           'scss/*.scss'
         ]
-      }
+      },
+      css_purge: {
+        dist: {
+          options: {},
+          src: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+        },
+        uncompressed: {
+          options: {},
+          src: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+        },
+      },
     }
   );
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
@@ -107,7 +120,7 @@ module.exports = function (grunt) {
 
     })
   })
-  grunt.registerTask('default', ['sasslint', 'sass:dist', 'checkYear', 'validate']);
-  grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'checkYear', 'validate']);
-  grunt.registerTask('dev', ['sasslint', 'sass:dev', 'watch']);
+  grunt.registerTask('default', ['sasslint', 'sass:dist', 'css_purge', 'checkYear', 'validate']);
+  grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'checkYear', 'validate']);
+  grunt.registerTask('dev', ['sasslint', 'sass:dev', 'css_purge', 'watch']);
 }
