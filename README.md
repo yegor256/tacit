@@ -1,7 +1,5 @@
 <img src="./tacit_logo.png" height="100px">
 
-[![Donate via Zerocracy](https://www.0crat.com/contrib-badge/C7BNDNSNR.svg)](https://www.0crat.com/contrib/C7BNDNSNR)
-
 [![Managed by Zerocracy](https://www.0crat.com/badge/C7BNDNSNR.svg)](https://www.0crat.com/p/C7BNDNSNR)
 [![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/tacit)](http://www.rultor.com/p/yegor256/tacit)
 
