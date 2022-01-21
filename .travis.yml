@@ -1,5 +1,4 @@
 language: node_js
-env: CFLAGS="-Werror"
 git:
   depth: 10
 node_js:
