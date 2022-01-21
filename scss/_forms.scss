@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2019 Yegor Bugayenko
+// Copyright (c) 2015-2021 Yegor Bugayenko
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,10 @@
 @import 'defs';
 
 fieldset {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  label,
+  legend {
+    display: block;
+  }
 
   legend {
     margin: $em 0;
@@ -37,7 +38,7 @@ textarea,
 select,
 button {
   @extend %sans-serif;
-  border-radius: .2 * $em;
+  border-radius: .2 * $spacing;
   display: inline-block;
   padding: .55 * $em;
 
@@ -146,7 +147,7 @@ input[type="radio"] {
   flex-grow: 0;
   height: 1.65 * $em;
   margin-left: 0;
-  margin-right: .5 * $em;
+  margin-right: .5 * $spacing;
   vertical-align: middle;
 
   + label {
@@ -155,5 +156,5 @@ input[type="radio"] {
 }
 
 select[multiple] {
-  min-width: 15 * $em;
+  min-width: 15 * $spacing;
 }

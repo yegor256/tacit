@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2019 Yegor Bugayenko
+// Copyright (c) 2015-2021 Yegor Bugayenko
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -36,7 +36,7 @@ pre {
   border-left: .1 * $em solid lighten($green, 25);
   line-height: 1.4 * $em;
   overflow: auto;
-  padding-left: $em;
+  padding-left: $spacing;
 
   code {
     background: none;
@@ -49,7 +49,7 @@ pre {
 code,
 kbd {
   background: lighten($green, 60);
-  border-radius: .2 * $em;
+  border-radius: .2 * $spacing;
   color: $green;
   display: inline-block;
   line-height: $em;

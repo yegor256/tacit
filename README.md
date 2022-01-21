@@ -1,18 +1,17 @@
 <img src="./tacit_logo.png" height="100px">
 
-[![Donate via Zerocracy](https://www.0crat.com/contrib-badge/C7BNDNSNR.svg)](https://www.0crat.com/contrib/C7BNDNSNR)
-
 [![Managed by Zerocracy](https://www.0crat.com/badge/C7BNDNSNR.svg)](https://www.0crat.com/p/C7BNDNSNR)
 [![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/tacit)](http://www.rultor.com/p/yegor256/tacit)
 
 [![Build Status](https://img.shields.io/travis/yegor256/tacit/master.svg)](https://travis-ci.org/yegor256/tacit)
 [![PDD status](http://www.0pdd.com/svg?name=yegor256/tacit)](http://www.0pdd.com/p?name=teamed/yegor256/tacit)
-[![Build status](https://ci.appveyor.com/api/projects/status/9imw0l5gu82awubp?svg=true)](https://ci.appveyor.com/project/yegor256/tacit)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
 [![NPM version](https://badge.fury.io/js/tacit-css.svg)](http://badge.fury.io/js/tacit-css)
 [![Bower](https://img.shields.io/bower/v/tacit.svg)](https://github.com/yegor256/tacit/releases)
 
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/ffcode/blob/master/LICENSE.txt)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/tacit)](https://hitsofcode.com/view/github/yegor256/tacit)
+![Lines of code](https://img.shields.io/tokei/lines/github/yegor256/tacit)
 
 **Tacit** is a primitive CSS framework for dummies, like myself, who
 don't know anything about graphic design but want their web services to
@@ -131,6 +130,8 @@ If you want something more custom, like a different theme, feel free to make it 
 - [filfreire.com](https://filfreire.com/) [@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
 - [moneeee](https://filfreire.com/Moneeee/) joke app to know how much money you're making during a boring meeting
 - [soalition.com](https://www.soalition.com/hello) a social coalition management web app for online writers.
+- [golang.cafe](https://golang.cafe) Go (golang) job board with no recruiters and clear salary ranges.
+- [tinyfts](https://github.com/dbohdan/tinyfts) Very small standalone full text search HTTP/SCGI server
 
 ## Got questions?
 

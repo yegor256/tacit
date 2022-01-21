@@ -3,6 +3,6 @@ env: CFLAGS="-Werror"
 git:
   depth: 10
 node_js:
-  - 4
+  - 8
 install:
   - npm install
