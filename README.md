@@ -1,4 +1,4 @@
-<img src="./tacit_logo.png" height="100px">
+<img alt="logo" src="./tacit_logo.png" height="100px">
 
 [![Managed by Zerocracy](https://www.0crat.com/badge/C7BNDNSNR.svg)](https://www.0crat.com/p/C7BNDNSNR)
 [![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/tacit)](http://www.rultor.com/p/yegor256/tacit)
@@ -8,7 +8,6 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
 [![NPM version](https://badge.fury.io/js/tacit-css.svg)](http://badge.fury.io/js/tacit-css)
 [![Bower](https://img.shields.io/bower/v/tacit.svg)](https://github.com/yegor256/tacit/releases)
-
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/ffcode/blob/master/LICENSE.txt)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/tacit)](https://hitsofcode.com/view/github/yegor256/tacit)
 ![Lines of code](https://img.shields.io/tokei/lines/github/yegor256/tacit)
