@@ -1,8 +1,9 @@
+docker:
+  image: yegor256/rultor-image:1.9.1
 assets:
-  s3cfg: yegor256/home#assets/s3cfg
   npmrc: yegor256/home#assets/npmrc
 install: |
-  sudo gem install --no-document pdd
+  pdd --source=$(pwd) --verbose --file=/dev/null
   npm install --no-color
 architect:
   - yegor256
@@ -10,17 +11,9 @@ architect:
 merge:
   script: |
     npm run rultor --no-color
-    pdd --source=$(pwd) --verbose --file=/dev/null
   commanders:
     - yegor256
     - filfreire
-deploy:
-  script: |
-    npm test
-    pdd --source=$(pwd) --verbose --file=tacit.xml
-    s3cmd --no-progress put tacit.xml --config=../s3cfg s3://pdd.teamed.io/tacit.xml
-  commanders:
-    - yegor256
 release:
   commanders:
     - yegor256
