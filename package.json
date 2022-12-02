@@ -33,7 +33,7 @@
     "grunt-css-purge": "^1.1.0",
     "grunt-sass": "^2.0.0",
     "grunt-sass-lint": "^0.2.4",
-    "load-grunt-tasks": "3.4.0"
+    "load-grunt-tasks": "5.1.0"
   },
   "dependencies": {
     "css-validator": "^0.8.1",
