@@ -65,7 +65,7 @@ sending us your pull request please run full Grunt build:
 
 ```
 $ npm install
-$ npm test
+$ grunt
 ```
 
 To develop it locally, open `index.html` in a browser and then run:
