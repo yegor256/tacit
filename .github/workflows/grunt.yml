@@ -1,0 +1,20 @@
+name: grunt
+on:
+  push:
+  pull_request:
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        java: [17]
+        node: [16]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node }}
+    - run: npm install
+    - run: npm install --force -g grunt-cli
+    - run: grunt

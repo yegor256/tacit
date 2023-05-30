@@ -1,0 +1,5 @@
+renovate.json
+node_modules/
+package-lock.json
+tacit_logo.png
+tacit_logo.svg
