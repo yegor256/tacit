@@ -77,18 +77,6 @@ $ npm run dev
 Now you can make changes to `.scss` files and refresh the page in the browser.
 CSS will be recompiled automatically on every change you make.
 
-### Commit messages guidelines
-
-* Every commit/PR should preferably be linked to a Github issue. If it's not, it's recommended to create an Issue first and then commit and open a PR;
-* Commit messages should follow this pattern:
-
-```
- #<issue-number> - short description
-
-(optional) * bullet-points with more details if necessary
-```
-* If the pattern is not followed - commit messages should at the very least reference the `#<issue-number>`.
-
 ## Browser/OS Compatibility
 
 The following list is of tested browsers for compatibility.
