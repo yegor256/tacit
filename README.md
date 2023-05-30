@@ -119,11 +119,6 @@ If you want something more custom, like a different theme, feel free to make it 
 - [golang.cafe](https://golang.cafe) Go (golang) job board with no recruiters and clear salary ranges.
 - [tinyfts](https://github.com/dbohdan/tinyfts) Very small standalone full text search HTTP/SCGI server
 
-## Got questions?
-
-If you have questions or general suggestions, don't hesitate to submit
-a new [Github issue](https://github.com/yegor256/tacit/issues/new).
-
 ## Logo
 
 Tacit's logo was designed by Akshay Vinchurkar ([@akshayvinchurkar](https://github.com/akshayvinchurkar))
