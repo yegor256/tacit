@@ -103,7 +103,7 @@ module.exports = function (grunt) {
   grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', function () {
     const path = require('path');
     var validate = require('css-validator');
-    const glob = require('glob');
+    const {glob} = require('glob');
     let srcPath = '';
     let css = '';
     glob("*.css", {}, function (err, files) {
