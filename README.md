@@ -11,10 +11,10 @@
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/tacit)](https://hitsofcode.com/view/github/yegor256/tacit)
 ![Lines of code](https://img.shields.io/tokei/lines/github/yegor256/tacit)
 
-**Tacit** is a primitive CSS framework for dummies, like myself, who
+**Tacit** is a primitive [CSS](https://en.wikipedia.org/wiki/CSS) framework for dummies, like myself, who
 don't know anything about graphic design but want their web services to
-look eatable. No classes, no layouts. Just design plain and simple web pages
-compliant with HTML5 and they will look OK.
+look eatable. No classes, no layouts, just design plain and simple web pages
+compliant with [HTML5](https://en.wikipedia.org/wiki/HTML5) and they will look OK.
 
 Details are here: [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
