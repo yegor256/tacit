@@ -18,7 +18,7 @@ compliant with [HTML5](https://en.wikipedia.org/wiki/HTML5) and they will look O
 
 Details are here: [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
-Just add it to your HTML:
+Add this to your HTML:
 
 ```html
 <!DOCTYPE html>
@@ -29,7 +29,7 @@ Just add it to your HTML:
 </html>
 ```
 
-Or simply download [`tacit-css.min.css`](https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css)
+Otherwise, simply download [`tacit-css.min.css`](https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css)
 and use together with your HTML by adding:
 
 ```html
