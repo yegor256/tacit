@@ -55,7 +55,8 @@ module.exports = function (grunt) {
         uncompressed: {
           options: {
             sourceMap: false,
-            outputStyle: 'expanded'
+            outputStyle: 'expanded',
+            implementation: require('node-sass')
           },
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
