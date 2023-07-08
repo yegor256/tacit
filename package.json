@@ -35,7 +35,7 @@
     "grunt-sass-lint": "0.2.4",
     "load-grunt-tasks": "5.1.0",
     "css-validator": "0.11.0",
-    "glob": "10.3.1",
+    "glob": "10.3.2",
     "npm": "9.8.0",
     "node-sass": "9.0.0",
     "path": "0.12.7"
