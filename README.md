@@ -14,9 +14,9 @@ don't know anything about graphic design but want their web services to
 look edible. No classes, no layouts, just design plain and simple web pages
 compliant with [HTML5](https://en.wikipedia.org/wiki/HTML5), and they will look OK.
 
-Details are here: [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
+The details are here: [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
-Add this to your HTML:
+Simply add this to your HTML:
 
 ```html
 <!DOCTYPE html>
@@ -27,8 +27,8 @@ Add this to your HTML:
 </html>
 ```
 
-Otherwise, simply download [`tacit-css.min.css`](https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css)
-and use together with your HTML by adding:
+Otherwise, download [`tacit-css.min.css`](https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css)
+and use it together with your HTML by adding the following:
 
 ```html
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ This blog post explains it in even more details:
 
 The following list is of tested browsers for compatibility.
 We don't have any guarantees of compatibility for other browsers,
-but as soon as possible will verify and add more to the list.
+but as soon as possible we will verify and add more to the list.
 Some of these browsers present minor issues that are reported in the
 our [issues](https://github.com/yegor256/tacit/issues) list.
 
