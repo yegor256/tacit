@@ -11,8 +11,8 @@
 
 **Tacit** is a primitive [CSS](https://en.wikipedia.org/wiki/CSS) framework for dummies, like myself, who
 don't know anything about graphic design but want their web services to
-look eatable. No classes, no layouts, just design plain and simple web pages
-compliant with [HTML5](https://en.wikipedia.org/wiki/HTML5) and they will look OK.
+look edible. No classes, no layouts, just design plain and simple web pages
+compliant with [HTML5](https://en.wikipedia.org/wiki/HTML5), and they will look OK.
 
 Details are here: [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
