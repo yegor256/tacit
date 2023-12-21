@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - uses: maxonfjvipon/pdd-action@master
+      - uses: volodya-lombrozo/pdd-action@master
