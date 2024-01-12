@@ -49,7 +49,8 @@ module.exports = function (grunt) {
             implementation: require('node-sass')
           },
           files: {
-            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss'
+            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss',
+            'dist/<%= pkg.name %>.min.css': 'scss/main.scss'
           }
         },
         uncompressed: {
@@ -59,7 +60,8 @@ module.exports = function (grunt) {
             implementation: require('node-sass')
           },
           files: {
-            'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
+            'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss',
+            'dist/<%= pkg.name %>.css': 'scss/main.scss'
           }
         }
       },
@@ -77,13 +79,17 @@ module.exports = function (grunt) {
       css_purge: {
         dist: {
           options: {},
-          src: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
-          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+          files: {
+            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+            'dist/<%= pkg.name %>.min.css': 'dist/<%= pkg.name %>.min.css'
+          }
         },
         uncompressed: {
           options: {},
-          src: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
-          dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+          files: {
+            'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+            'dist/<%= pkg.name %>.css': 'dist/<%= pkg.name %>.css'
+          }
         },
       },
     }
