@@ -1,5 +1,5 @@
 docker:
-  image: yegor256/rultor-image:1.20.0
+  image: yegor256/rultor-image:1.22.0
 assets:
   npmrc: yegor256/home#assets/npmrc
 install: |
@@ -15,6 +15,7 @@ merge:
     - yegor256
     - filfreire
 release:
+  pre: false
   commanders:
     - yegor256
   script: |-

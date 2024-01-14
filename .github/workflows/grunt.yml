@@ -3,10 +3,10 @@ on:
   push:
   pull_request:
 jobs:
-  build:
+  grunt:
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest, macos-latest]
+        os: [windows-2022, ubuntu-22.04, macos-12]
         java: [17]
         node: [16]
     runs-on: ${{ matrix.os }}
