@@ -34,6 +34,8 @@ release:
     git add -f dist/tacit-css-${tag}.min.css
     git add -f dist/tacit-css-${tag}.min.css.map
     git add -f dist/tacit-css-${tag}.css
+    git add -f dist/tacit-css.min.css
+    git add -f dist/tacit-css.css
     git commit -am "Added CSS files for ${tag}"
 
     # We'll gonna need these files later...
