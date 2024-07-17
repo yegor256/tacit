@@ -86,28 +86,28 @@ If you want something more custom, like a different theme,
 feel free to make it on top of Tacit. Here are some frameworks
 built on top of Tacit:
 
-- [kacit](https://github.com/Kimeiga/kacit) Kacit is the
+* [kacit](https://github.com/Kimeiga/kacit) Kacit is the
 Tacit CSS classless framework but with a yellow accent and Georgia font
-- [Bahunya](https://github.com/kimeiga/bahunya) is a CSS framework
+* [Bahunya](https://github.com/kimeiga/bahunya) is a CSS framework
 with responsive typography, navbar, syntax highlighting, and much more,
 inspired by Tacit
 
 ## Usecases of Tacit framework
 
-- [jare.io](http://www.jare.io) Free and instant CDN
-- [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
-- [wts.zold.io](http://wts.zold.io) Web Wallets of Zold cryptocurrency
-- [jpeek.org](http://www.jpeek.org) Java projects code cohesion analyzer
-- [socatar.com](https://socatar.com/) Web service to use profile
+* [jare.io](http://www.jare.io) Free and instant CDN
+* [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
+* [wts.zold.io](http://wts.zold.io) Web Wallets of Zold cryptocurrency
+* [jpeek.org](http://www.jpeek.org) Java projects code cohesion analyzer
+* [socatar.com](https://socatar.com/) Web service to use profile
 photos in your page
-- [filfreire.com](https://filfreire.com/)
+* [filfreire.com](https://filfreire.com/)
 [@filfreire](https://github.com/filfreire)'s personal blog
 on software testing and development
-- [moneeee](https://filfreire.com/Moneeee/) joke app to know
+* [moneeee](https://filfreire.com/Moneeee/) joke app to know
 how much money you're making during a boring meeting
-- [golang.cafe](https://golang.cafe) Go (golang) job board
+* [golang.cafe](https://golang.cafe) Go (golang) job board
 with no recruiters and clear salary ranges.
-- [tinyfts](https://github.com/dbohdan/tinyfts) Very small
+* [tinyfts](https://github.com/dbohdan/tinyfts) Very small
 standalone full text search HTTP/SCGI server
 
 ## How to contribute
