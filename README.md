@@ -1,4 +1,4 @@
-<img alt="logo" src="./tacit_logo.png" height="100px">
+# CSS Framework for Dummies
 
 [![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/tacit)](http://www.rultor.com/p/yegor256/tacit)
 
@@ -9,12 +9,15 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/ffcode/blob/master/LICENSE.txt)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/tacit)](https://hitsofcode.com/view/github/yegor256/tacit)
 
-**Tacit** is a primitive [CSS](https://en.wikipedia.org/wiki/CSS) framework for dummies, like myself, who
+**Tacit** is a primitive [CSS](https://en.wikipedia.org/wiki/CSS) framework
+for dummies, like myself, who
 don't know anything about graphic design but want their web services to
 look edible. No classes, no layouts, just design plain and simple web pages
-compliant with [HTML5](https://en.wikipedia.org/wiki/HTML5), and they will look OK.
+compliant with [HTML5](https://en.wikipedia.org/wiki/HTML5), and they
+will look OK.
 
-The details are here: [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
+The details are here:
+[yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
 Simply add this to your HTML:
 
@@ -27,7 +30,7 @@ Simply add this to your HTML:
 </html>
 ```
 
-Otherwise, download [`tacit-css.min.css`](https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css)
+Otherwise, download [`tacit-css.min.css`][CDN]
 and use it together with your HTML by adding the following:
 
 ```html
@@ -39,7 +42,8 @@ and use it together with your HTML by adding the following:
 </html>
 ```
 
-Of course, it is [responsive](https://en.wikipedia.org/wiki/Responsive_web_design)
+Of course, it is
+[responsive](https://en.wikipedia.org/wiki/Responsive_web_design)
 and mobile-friendly, but you have to add this line too:
 
 ```html
@@ -52,7 +56,7 @@ and mobile-friendly, but you have to add this line too:
 ```
 
 This blog post explains it in even more details:
-[Tacit, a CSS Framework Without Classes](http://www.yegor256.com/2015/04/13/tacit-css-framework-for-dummies.html).
+[Tacit, a CSS Framework Without Classes][blog].
 
 ## Browser/OS Compatibility
 
@@ -78,10 +82,15 @@ our [issues](https://github.com/yegor256/tacit/issues) list.
 ## Built on top of Tacit framework
 
 Tacit's goal is to be super simple and always with the same look-and-feel.
-If you want something more custom, like a different theme, feel free to make it on top of Tacit. Here are some frameworks built on top of Tacit:
+If you want something more custom, like a different theme,
+feel free to make it on top of Tacit. Here are some frameworks
+built on top of Tacit:
 
-- [kacit](https://github.com/Kimeiga/kacit) Kacit is the Tacit CSS classless framework but with a yellow accent and Georgia font
-- [Bahunya](https://github.com/kimeiga/bahunya) is a CSS framework with responsive typography, navbar, syntax highlighting, and much more, inspired by Tacit
+- [kacit](https://github.com/Kimeiga/kacit) Kacit is the
+Tacit CSS classless framework but with a yellow accent and Georgia font
+- [Bahunya](https://github.com/kimeiga/bahunya) is a CSS framework
+with responsive typography, navbar, syntax highlighting, and much more,
+inspired by Tacit
 
 ## Usecases of Tacit framework
 
@@ -89,12 +98,17 @@ If you want something more custom, like a different theme, feel free to make it 
 - [wring.io](http://www.wring.io) GitHub notification filtering hosted inbox
 - [wts.zold.io](http://wts.zold.io) Web Wallets of Zold cryptocurrency
 - [jpeek.org](http://www.jpeek.org) Java projects code cohesion analyzer
-- [socatar.com](https://socatar.com/) Web service to use profile photos in your page
-- [filfreire.com](https://filfreire.com/) [@filfreire](https://github.com/filfreire)'s personal blog on software testing and development
-- [moneeee](https://filfreire.com/Moneeee/) joke app to know how much money you're making during a boring meeting
-- [soalition.com](https://www.soalition.com/hello) a social coalition management web app for online writers.
-- [golang.cafe](https://golang.cafe) Go (golang) job board with no recruiters and clear salary ranges.
-- [tinyfts](https://github.com/dbohdan/tinyfts) Very small standalone full text search HTTP/SCGI server
+- [socatar.com](https://socatar.com/) Web service to use profile
+photos in your page
+- [filfreire.com](https://filfreire.com/)
+[@filfreire](https://github.com/filfreire)'s personal blog
+on software testing and development
+- [moneeee](https://filfreire.com/Moneeee/) joke app to know
+how much money you're making during a boring meeting
+- [golang.cafe](https://golang.cafe) Go (golang) job board
+with no recruiters and clear salary ranges.
+- [tinyfts](https://github.com/dbohdan/tinyfts) Very small
+standalone full text search HTTP/SCGI server
 
 ## How to contribute
 
@@ -103,15 +117,15 @@ your changes and apply them to the `master` branch shortly, provided
 they don't violate our quality standards. To avoid frustration, before
 sending us your pull request please run full Grunt build:
 
-```
-$ npm install
-$ grunt
+```bash
+npm install
+grunt
 ```
 
 To develop it locally, open `index.html` in a browser and then run:
 
-```
-$ npm run dev
+```bash
+npm run dev
 ```
 
 Now you can make changes to `.scss` files and refresh the page in the browser.
@@ -119,4 +133,8 @@ CSS will be recompiled automatically on every change you make.
 
 ## Logo
 
-Tacit's logo was designed by Akshay Vinchurkar ([@akshayvinchurkar](https://github.com/akshayvinchurkar))
+Tacit's logo was designed by Akshay Vinchurkar
+([@akshayvinchurkar](https://github.com/akshayvinchurkar))
+
+[CDN]: https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css
+[blog]: http://www.yegor256.com/2015/04/13/tacit-css-framework-for-dummies.html
