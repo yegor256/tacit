@@ -66,7 +66,6 @@ but as soon as possible we will verify and add more to the list.
 Some of these browsers present minor issues that are reported in the
 our [issues](https://github.com/yegor256/tacit/issues) list.
 
-
 | Browser/OS        | Version | Compatible |
 |-------------------|---------|------------|
 | Chrome            | >= 60   | Yes        |
@@ -77,7 +76,6 @@ our [issues](https://github.com/yegor256/tacit/issues) list.
 | Chrome (iOS)      | >= 60   | Yes        |
 | Safari (iOS)      | -       | Yes        |
 | Internet Explorer | >= 11   | Yes        |
-
 
 ## Built on top of Tacit framework
 
