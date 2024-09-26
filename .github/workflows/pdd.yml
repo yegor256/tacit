@@ -30,7 +30,7 @@ name: pdd
       - master
 jobs:
   pdd:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: volodya-lombrozo/pdd-action@master
