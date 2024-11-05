@@ -29,4 +29,4 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
-      - uses: yegor256/copyrights-action@0.0.5
+      - uses: yegor256/copyrights-action@0.0.7
