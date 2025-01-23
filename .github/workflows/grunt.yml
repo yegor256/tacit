@@ -28,7 +28,7 @@ jobs:
   grunt:
     strategy:
       matrix:
-        os: [windows-2022, ubuntu-22.04, macos-12]
+        os: [windows-2022, ubuntu-24.04, macos-15]
         java: [17]
         node: [16]
     runs-on: ${{ matrix.os }}
