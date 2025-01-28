@@ -25,7 +25,8 @@ Simply add this to your HTML:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tacit-css@0.0.0/dist/tacit-css.min.css"/>
   </head>
 </html>
 ```

@@ -1,25 +1,22 @@
 {
-  "name": "tacit-css",
-  "version": "0.0.0",
-  "copyright": "2015",
-  "description": "CSS Framework for Dummies",
-  "main": "dist/tacit-css.css",
-  "scripts": {
-    "test": "grunt --no-color",
-    "rultor": "grunt rultor --no-color",
-    "dev": "grunt dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yegor256/tacit.git"
-  },
-  "keywords": [
-    "css"
-  ],
   "author": "Yegor Bugayenko",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yegor256/tacit/issues"
+  },
+  "copyright": "2015",
+  "description": "CSS Framework for Dummies",
+  "devDependencies": {
+    "css-validator": "0.11.0",
+    "glob": "11.0.0",
+    "grunt": "^1.4.3",
+    "grunt-contrib-watch": "1.1.0",
+    "grunt-css-purge": "1.1.0",
+    "grunt-sass": "3.1.0",
+    "grunt-sass-lint": "0.2.4",
+    "load-grunt-tasks": "5.1.0",
+    "node-sass": "9.0.0",
+    "npm": "10.9.1",
+    "path": "0.12.7"
   },
   "files": [
     "dist",
@@ -27,17 +24,20 @@
     "LICENSE"
   ],
   "homepage": "https://github.com/yegor256/tacit",
-  "devDependencies": {
-    "grunt": "^1.4.3",
-    "grunt-contrib-watch": "1.1.0",
-    "grunt-css-purge": "1.1.0",
-    "grunt-sass": "3.1.0",
-    "grunt-sass-lint": "0.2.4",
-    "load-grunt-tasks": "5.1.0",
-    "css-validator": "0.11.0",
-    "glob": "11.0.0",
-    "npm": "10.9.1",
-    "node-sass": "9.0.0",
-    "path": "0.12.7"
-  }
+  "keywords": [
+    "css"
+  ],
+  "license": "MIT",
+  "main": "dist/tacit-css.css",
+  "name": "tacit-css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yegor256/tacit.git"
+  },
+  "scripts": {
+    "dev": "grunt dev",
+    "rultor": "grunt rultor --no-color",
+    "test": "grunt --no-color"
+  },
+  "version": "0.0.0"
 }
