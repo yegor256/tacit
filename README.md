@@ -19,7 +19,9 @@ will look OK.
 The details are here:
 [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
-Simply add this to your HTML:
+Simply add this to your HTML (you may also add the
+[`integrity` attribute][SRI], generated
+by [srihash.org](https://www.srihash.org/)):
 
 ```html
 <!DOCTYPE html>
@@ -137,3 +139,4 @@ Tacit's logo was designed by Akshay Vinchurkar
 
 [CDN]: https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css
 [blog]: http://www.yegor256.com/2015/04/13/tacit-css-framework-for-dummies.html
+[SRI]: https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity
