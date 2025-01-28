@@ -31,7 +31,7 @@ jobs:
       - run: |-
           git fetch --tags --force && \
           latest=$(git tag --sort=creatordate | tail -1) && \
-          sed -E -i "s/tacit-css@[0-9]+\.[0-9]+\.[0-9]+/tacit-css@${latest}/g" README.md
+          sed -E -i "s/tacit-css@[0-9.]+/tacit-css@${latest}/g" README.md
       - uses: peter-evans/create-pull-request@v7
         with:
           commit-message: 'new version in README'
