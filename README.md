@@ -20,7 +20,7 @@ The details are here:
 [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
 Simply add this to your HTML (you may also add the
-[`integrity` attribute][SRI], generated
+[`integrity`][SRI] attribute, generated
 by [srihash.org](https://www.srihash.org/)):
 
 ```html
