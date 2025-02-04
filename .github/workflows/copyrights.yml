@@ -26,6 +26,7 @@ name: copyrights
   pull_request:
 jobs:
   copyrights:
+    timeout-minutes: 15
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
