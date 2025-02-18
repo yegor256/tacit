@@ -20,6 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 ---
+# yamllint disable rule:line-length
 docker:
   image: yegor256/rultor-image:1.23.1
 assets:
