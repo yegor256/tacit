@@ -3,7 +3,7 @@
 ---
 # yamllint disable rule:line-length
 docker:
-  image: yegor256/rultor-image:1.23.1
+  image: yegor256/rultor-image:1.24.0
 assets:
   npmrc: yegor256/home#assets/npmrc
 install: |
