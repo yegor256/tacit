@@ -4,6 +4,11 @@
 version = 1
 [[annotations]]
 path = [
+    "**.json",
+    "**.md",
+    "**.png",
+    "**.svg",
+    "**.txt",
     "**/*.csv",
     "**/*.jpg",
     "**/*.json",
@@ -13,14 +18,14 @@ path = [
     "**/*.svg",
     "**/*.txt",
     "**/*.vm",
+    "**/.DS_Store",
     "**/.gitignore",
+    "**/.pdd",
     "**/CNAME",
+    ".DS_Store",
     ".gitattributes",
     ".gitignore",
-    ".gitleaksignore",
     ".pdd",
-    ".xcop",
-    "Gemfile.lock",
     "README.md",
     "renovate.json",
 ]
