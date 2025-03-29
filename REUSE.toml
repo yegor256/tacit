@@ -4,6 +4,8 @@
 version = 1
 [[annotations]]
 path = [
+    ".npmignore",
+    ".sasslintrc",
     "**.json",
     "**.md",
     "**.png",
