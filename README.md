@@ -66,7 +66,7 @@ This blog post explains it in even more detail:
 The following list contains tested browsers for compatibility.
 We don't have any guarantees of compatibility for other browsers,
 but we will verify and add more to the list as soon as possible.
-Some of these browsers present minor issues that are reported in our 
+Some of these browsers present minor issues that are reported in our
 [issues](https://github.com/yegor256/tacit/issues) list.
 
 | Browser/OS        | Version | Compatible |
