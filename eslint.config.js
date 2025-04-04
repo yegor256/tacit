@@ -16,10 +16,11 @@ module.exports = [
     },
     rules: {
       ...configs.all.rules,
-      'no-undef': 'off',
       'indent': ['error', 2],
-      'max-lines-per-function': 'off',
       'max-len': ['error', { code: 200 }]
+      'max-lines-per-function': 'off',
+      'no-magic-numbers': 'off,'
+      'no-undef': 'off',
     }
   }
 ];

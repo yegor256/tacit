@@ -5,6 +5,9 @@
 
 const fs = require('fs')
 const cp = require('child_process')
+const path = require('path');
+const validate = require('css-validator');
+const {glob} = require('glob');
 
 module.exports = function (grunt) {
   grunt.util.linefeed = '\n';
@@ -77,7 +80,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
   grunt.registerTask('checkYear', 'Checks the year patterns in copyright lines in source files.', () => {
-    const pattern = `2015-${new Date().getFullYear()}`
+    const pattern = `2015-${new Date().getFullYear()}`;
     const invalidFiles = cp.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(file => {
       return !fs.readFileSync(file).toString().includes(pattern)
     })
@@ -87,17 +90,13 @@ module.exports = function (grunt) {
     return invalidFiles.length === 0
   })
   grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', function () {
-    const path = require('path');
-    var validate = require('css-validator');
-    const {glob} = require('glob');
-    let srcPath = '';
-    let css = '';
-    glob("*.css", {}, function (err, files) {
+    let srcPath = '', css = '';
+    glob("*.css", {}, (err, files) => {
       files.map(file => {
         srcPath = path.join(__dirname + '/dist', file);
         css = grunt.file.read(srcPath);
         var done = this.async();
-        validate({ text: `${css}` }, function (error, data) {
+        validate({ text: `${css}` }, (error, data) => {
           if (data.validity) {
             done(true);
           } else {
@@ -105,7 +104,6 @@ module.exports = function (grunt) {
           }
         });
       })
-
     })
   })
   grunt.registerTask('default', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'checkYear', 'validate']);
