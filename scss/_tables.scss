@@ -40,7 +40,7 @@ table {
     border-bottom-width: .12 * $em;
 
     &:hover {
-      background-color: lighten($gray, 10);
+      background-color: lighten($gray, 5);
     }
 
     th {
