@@ -39,6 +39,10 @@ table {
   tr {
     border-bottom-width: .12 * $em;
 
+    &:hover {
+      background-color: lighten($gray, 10);
+    }
+
     th {
       border-bottom-width: .12 * $em;
     }

@@ -20,6 +20,7 @@ module.exports = [
       'max-len': ['error', { code: 200 }],
       'max-lines-per-function': 'off',
       'no-magic-numbers': 'off',
+      camelcase
       'no-undef': 'off'
     }
   }

@@ -16,18 +16,18 @@ module.exports = function (grunt) {
     {
       css_purge: {
         dist: {
-          options: {},
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
             'dist/<%= pkg.name %>.min.css': 'dist/<%= pkg.name %>.min.css'
-          }
+          },
+          options: {}
         },
         uncompressed: {
-          options: {},
           files: {
             'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
             'dist/<%= pkg.name %>.css': 'dist/<%= pkg.name %>.css'
-          }
+          },
+          options: {}
         },
       },
       pkg: grunt.file.readJSON('package.json'),
@@ -80,22 +80,22 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
   grunt.registerTask('checkYear', 'Checks the year patterns in copyright lines in source files.', () => {
-    const pattern = `2015-${new Date().getFullYear()}`;
-    const invalidFiles = cp.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(file => {
-      return !fs.readFileSync(file).toString().includes(pattern)
-    })
+    const pattern = `2015-${new Date().getFullYear()}`,
+      invalidFiles = cp.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(
+        file => !fs.readFileSync(file).toString().includes(pattern)
+      );
     invalidFiles.forEach(file => {
       grunt.log.error(`The file, ${file}, does not include the pattern: ${pattern}`)
     })
     return invalidFiles.length === 0
   })
-  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', function () {
-    let srcPath = '', css = '';
+  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', () => {
+    let css = '', srcPath = '';
     glob("*.css", {}, (err, files) => {
-      files.map(file => {
-        srcPath = path.join(__dirname + '/dist', file);
+      files.forEach(file => {
+        const done = this.async();
+        srcPath = path.join(`${__dirname}/dist`, file);
         css = grunt.file.read(srcPath);
-        var done = this.async();
         validate({ text: `${css}` }, (error, data) => {
           if (data.validity) {
             done(true);
