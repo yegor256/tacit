@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: Copyright (c) 2015-2025 Yegor Bugayenko
+# SPDX-License-Identifier: MIT
+---
+# yamllint disable rule:line-length
+name: eslint
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  eslint:
+    timeout-minutes: 15
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install -g eslint@9.17.0
+      - run: npm install @eslint/js
+      - run: eslint
