@@ -9,6 +9,8 @@ const path = require('path');
 const validate = require('css-validator');
 const {glob} = require('glob');
 
+const pattern = `2015-${new Date().getFullYear()}`;
+
 module.exports = (grunt) => {
   grunt.util.linefeed = '\n';
   grunt.loadNpmTasks('grunt-css-purge');
@@ -81,8 +83,8 @@ module.exports = (grunt) => {
 
   grunt.registerTask('checkYear', 'Checks the year patterns in copyright lines in source files.', () => {
     const invalidFiles = cp.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(
-        file => !fs.readFileSync(file).toString().includes(pattern)
-      ), pattern = `2015-${new Date().getFullYear()}`;
+      file => !fs.readFileSync(file).toString().includes(pattern)
+    );
     invalidFiles.forEach(file => {
       grunt.log.error(`The file, ${file}, does not include the pattern: ${pattern}`)
     })
