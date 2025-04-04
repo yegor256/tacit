@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-const fs = require('fs')
-const cp = require('child_process')
+const fs = require('fs');
+const cp = require('child_process');
 const path = require('path');
 const validate = require('css-validator');
-const {glob} = require('glob');
-const pattern = `2015-${new Date().getFullYear()}`;
+const {glob} = require('glob'),
+  pattern = `2015-${new Date().getFullYear()}`;
 
 module.exports = (grunt) => {
   grunt.util.linefeed = '\n';
@@ -78,6 +78,7 @@ module.exports = (grunt) => {
       },
     }
   );
+
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
   grunt.registerTask('checkYear', 'Checks the year patterns in copyright lines in source files.', () => {
@@ -85,10 +86,11 @@ module.exports = (grunt) => {
       file => !fs.readFileSync(file).toString().includes(pattern)
     );
     invalidFiles.forEach(file => {
-      grunt.log.error(`The file, ${file}, does not include the pattern: ${pattern}`)
-    })
+      grunt.log.error(`The file, ${file}, does not include the pattern: ${pattern}`);
+    });
     return invalidFiles.length === 0
-  })
+  });
+
   grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', () => {
     let css = '', srcPath = '';
     glob("*.css", {}, (err, files) => {
@@ -103,9 +105,10 @@ module.exports = (grunt) => {
             done(false);
           }
         });
-      })
-    })
-  })
+      });
+    });
+  });
+
   grunt.registerTask('default', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'checkYear', 'validate']);
   grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'checkYear', 'validate']);
   grunt.registerTask('dev', ['sasslint', 'sass:dev', 'css_purge', 'watch']);
