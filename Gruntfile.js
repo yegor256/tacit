@@ -89,7 +89,7 @@ module.exports = (grunt) => {
     })
     return invalidFiles.length === 0
   })
-  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', function() {
+  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', () => {
     let css = '', srcPath = '';
     glob("*.css", {}, (err, files) => {
       files.forEach(file => {
