@@ -8,7 +8,6 @@ const cp = require('child_process')
 const path = require('path');
 const validate = require('css-validator');
 const {glob} = require('glob');
-
 const pattern = `2015-${new Date().getFullYear()}`;
 
 module.exports = (grunt) => {
@@ -90,7 +89,7 @@ module.exports = (grunt) => {
     })
     return invalidFiles.length === 0
   })
-  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', () => {
+  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', function() {
     let css = '', srcPath = '';
     glob("*.css", {}, (err, files) => {
       files.forEach(file => {
