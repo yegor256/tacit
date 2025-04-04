@@ -5,7 +5,11 @@
 name: copyrights
 'on':
   push:
+    branches:
+      - master
   pull_request:
+    branches:
+      - master
 jobs:
   copyrights:
     timeout-minutes: 15

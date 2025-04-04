@@ -5,9 +5,14 @@
 name: grunt
 'on':
   push:
+    branches:
+      - master
   pull_request:
+    branches:
+      - master
 jobs:
   grunt:
+    timeout-minutes: 15
     strategy:
       matrix:
         os: [windows-2022, ubuntu-24.04, macos-15]
