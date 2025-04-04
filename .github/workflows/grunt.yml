@@ -24,6 +24,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
+      - run: pip install setuptools
       - run: npm install
       - run: npm install --force -g grunt-cli
       - run: grunt
