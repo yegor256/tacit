@@ -7,7 +7,6 @@
 [![PDD status](http://www.0pdd.com/svg?name=yegor256/tacit)](http://www.0pdd.com/p?name=teamed/yegor256/tacit)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
 [![NPM version](https://badge.fury.io/js/tacit-css.svg)](http://badge.fury.io/js/tacit-css)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/ffcode/blob/master/LICENSE.txt)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/tacit)](https://hitsofcode.com/view/github/yegor256/tacit)
 
 **Tacit** is a primitive [CSS](https://en.wikipedia.org/wiki/CSS) framework
@@ -59,16 +58,16 @@ and mobile-friendly, but you have to add this line too:
 </html>
 ```
 
-This blog post explains it in even more details:
+This blog post explains it in even more detail:
 [Tacit, a CSS Framework Without Classes][blog].
 
 ## Browser/OS Compatibility
 
-The following list is of tested browsers for compatibility.
+The following list contains tested browsers for compatibility.
 We don't have any guarantees of compatibility for other browsers,
-but as soon as possible we will verify and add more to the list.
-Some of these browsers present minor issues that are reported in the
-our [issues](https://github.com/yegor256/tacit/issues) list.
+but we will verify and add more to the list as soon as possible.
+Some of these browsers present minor issues that are reported in our 
+[issues](https://github.com/yegor256/tacit/issues) list.
 
 | Browser/OS        | Version | Compatible |
 |-------------------|---------|------------|
@@ -105,7 +104,7 @@ photos in your page
 * [filfreire.com](https://filfreire.com/)
 [@filfreire](https://github.com/filfreire)'s personal blog
 on software testing and development
-* [moneeee](https://filfreire.com/Moneeee/) joke app to know
+* [moneeee](https://filfreire.com/Moneeee/) joke app to track
 how much money you're making during a boring meeting
 * [golang.cafe](https://golang.cafe) Go (golang) job board
 with no recruiters and clear salary ranges.
