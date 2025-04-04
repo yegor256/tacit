@@ -19,7 +19,7 @@ module.exports = [
       'indent': ['error', 2],
       'max-len': ['error', { code: 200 }],
       'max-lines-per-function': 'off',
-      'no-magic-numbers': 'off,'
+      'no-magic-numbers': 'off',
       'no-undef': 'off'
     }
   }
