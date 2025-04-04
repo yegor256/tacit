@@ -4,59 +4,13 @@
  */
 
 const fs = require('fs')
-const child_process = require('child_process')
+const cp = require('child_process')
 
 module.exports = function (grunt) {
-  'use strict';
   grunt.util.linefeed = '\n';
   grunt.loadNpmTasks('grunt-css-purge');
   grunt.initConfig(
     {
-      pkg: grunt.file.readJSON('package.json'),
-      sass: {
-        dev: {
-          options: {
-            sourceMap: true,
-            outputStyle: 'compressed'
-          },
-          files: {
-            'tacit.min.css': 'scss/main.scss'
-          }
-        },
-        dist: {
-          options: {
-            sourceMap: true,
-            outputStyle: 'compressed',
-            implementation: require('node-sass')
-          },
-          files: {
-            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss',
-            'dist/<%= pkg.name %>.min.css': 'scss/main.scss'
-          }
-        },
-        uncompressed: {
-          options: {
-            sourceMap: false,
-            outputStyle: 'expanded',
-            implementation: require('node-sass')
-          },
-          files: {
-            'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss',
-            'dist/<%= pkg.name %>.css': 'scss/main.scss'
-          }
-        }
-      },
-      watch: {
-        sass: {
-          files: 'scss/{,*/}*.scss',
-          tasks: ['sass:dev']
-        }
-      },
-      sasslint: {
-        allFiles: [
-          'scss/*.scss'
-        ]
-      },
       css_purge: {
         dist: {
           options: {},
@@ -73,13 +27,58 @@ module.exports = function (grunt) {
           }
         },
       },
+      pkg: grunt.file.readJSON('package.json'),
+      sass: {
+        dev: {
+          files: {
+            'tacit.min.css': 'scss/main.scss'
+          },
+          options: {
+            outputStyle: 'compressed',
+            sourceMap: true
+          }
+        },
+        dist: {
+          files: {
+            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss',
+            'dist/<%= pkg.name %>.min.css': 'scss/main.scss'
+          },
+          options: {
+            implementation: require('node-sass'),
+            outputStyle: 'compressed',
+            sourceMap: true
+          }
+        },
+        uncompressed: {
+          files: {
+            'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss',
+            'dist/<%= pkg.name %>.css': 'scss/main.scss'
+          },
+          options: {
+            implementation: require('node-sass'),
+            outputStyle: 'expanded',
+            sourceMap: false
+          }
+        }
+      },
+      sasslint: {
+        allFiles: [
+          'scss/*.scss'
+        ]
+      },
+      watch: {
+        sass: {
+          files: 'scss/{,*/}*.scss',
+          tasks: ['sass:dev']
+        }
+      },
     }
   );
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
   grunt.registerTask('checkYear', 'Checks the year patterns in copyright lines in source files.', () => {
     const pattern = `2015-${new Date().getFullYear()}`
-    const invalidFiles = child_process.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(file => {
+    const invalidFiles = cp.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(file => {
       return !fs.readFileSync(file).toString().includes(pattern)
     })
     invalidFiles.forEach(file => {
