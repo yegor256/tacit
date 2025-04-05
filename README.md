@@ -126,7 +126,7 @@ grunt
 To develop it locally, open `index.html` in a browser and then run:
 
 ```bash
-npm run dev
+grunt dev
 ```
 
 Now you can make changes to `.scss` files and refresh the page in the browser.
@@ -142,6 +142,7 @@ docker run -it --rm -v "$(pwd):/tacit" yegor256/python /bin/bash
 cd tacit
 /usr/bin/install-node.sh
 npm install
+npm install --force -g grunt-cli
 grunt
 ```
 
