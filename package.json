@@ -36,7 +36,7 @@
   },
   "scripts": {
     "dev": "grunt dev",
-    "rultor": "grunt rultor --no-color",
+    "grunt": "grunt --no-color",
     "test": "grunt --no-color"
   },
   "version": "0.0.0"

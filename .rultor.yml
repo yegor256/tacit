@@ -30,7 +30,7 @@ release:
 
     # Perform build
     git rm -rf dist/ --ignore-unmatch
-    npm run rultor --no-color
+    npm run grunt --no-color
 
     # Current branch is __rultor
 

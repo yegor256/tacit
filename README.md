@@ -139,7 +139,7 @@ on Apple Silicon MacBook), you may try to use Docker:
 ```bash
 docker run -it --rm -v "$(pwd):/tacit" yegor256/python /bin/bash
 # Now, inside the container:
-cd tacit
+cd /tacit
 /usr/bin/install-node.sh
 npm install
 npm install --force -g grunt-cli

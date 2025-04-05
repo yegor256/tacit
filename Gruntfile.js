@@ -111,6 +111,5 @@ module.exports = (grunt) => {
   });
 
   grunt.registerTask('default', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'checkYear', 'validate']);
-  grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'checkYear', 'validate']);
   grunt.registerTask('dev', ['sasslint', 'sass:dev', 'css_purge', 'watch']);
 }
