@@ -9,7 +9,6 @@ th {
 
 td,
 th {
-  border-bottom: (.06 * $em) solid $gray;
   padding: .825 * $em $em;
   text-align: left;
   vertical-align: top;
@@ -17,8 +16,19 @@ th {
 }
 
 thead th {
-  border-bottom-width: .12 * $em;
+  border-bottom: .12 * $em solid $gray;
+  border-left: .06 * $em solid lighten($black, 80);
   padding-bottom: .35 * $em;
+
+  &:first-child {
+    border-left: 0;
+  }
+}
+
+tbody tr {
+  &:hover {
+    background-color: lighten($black, 98);
+  }
 }
 
 table {
@@ -38,10 +48,6 @@ table {
 
   tr {
     border-bottom-width: .12 * $em;
-
-    &:hover {
-      background-color: lighten($black, 98);
-    }
 
     th {
       border-bottom-width: .12 * $em;
