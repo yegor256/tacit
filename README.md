@@ -132,6 +132,20 @@ npm run dev
 Now you can make changes to `.scss` files and refresh the page in the browser.
 CSS will be recompiled automatically on every change you make.
 
+If installation fails
+([fails for me](https://github.com/sass/node-sass/issues/3184)
+on Apple Silicon MacBook), you may try to use Docker:
+
+```bash
+docker run -it --rm -v "$(pwd):/tacit" yegor256/python /bin/bash
+# Now, inside the container:
+cd tacit
+/usr/bin/install-node.sh
+npm install
+grunt
+```
+
+
 ## Logo
 
 Tacit's logo was designed by Akshay Vinchurkar

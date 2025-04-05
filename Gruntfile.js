@@ -38,6 +38,7 @@ module.exports = (grunt) => {
             'tacit.min.css': 'scss/main.scss'
           },
           options: {
+            implementation: require('node-sass'),
             outputStyle: 'compressed',
             sourceMap: true
           }
