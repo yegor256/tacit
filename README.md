@@ -1,12 +1,12 @@
 # CSS Framework for Dummies
 
-[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/tacit)](http://www.rultor.com/p/yegor256/tacit)
+[![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/tacit)](https://www.rultor.com/p/yegor256/tacit)
 
 [![grunt](https://github.com/yegor256/tacit/actions/workflows/grunt.yml/badge.svg)](https://github.com/yegor256/tacit/actions/workflows/grunt.yml)
 [![JSDeliver stats](https://data.jsdelivr.com/v1/package/npm/tacit-css/badge)](https://www.jsdelivr.com/package/npm/tacit-css)
-[![PDD status](http://www.0pdd.com/svg?name=yegor256/tacit)](http://www.0pdd.com/p?name=teamed/yegor256/tacit)
+[![PDD status](https://www.0pdd.com/svg?name=yegor256/tacit)](https://www.0pdd.com/p?name=teamed/yegor256/tacit)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
-[![NPM version](https://badge.fury.io/js/tacit-css.svg)](http://badge.fury.io/js/tacit-css)
+[![NPM version](https://badge.fury.io/js/tacit-css.svg)](https://badge.fury.io/js/tacit-css)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/tacit)](https://hitsofcode.com/view/github/yegor256/tacit)
 
 **Tacit** is a primitive [CSS](https://en.wikipedia.org/wiki/CSS) framework
