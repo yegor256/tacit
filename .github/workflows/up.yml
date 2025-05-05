@@ -17,6 +17,7 @@ jobs:
           sed -E -i "s/tacit-css@[0-9.]+/tacit-css@${latest}/g" README.md
       - uses: peter-evans/create-pull-request@v7
         with:
+          sign-commits: true
           commit-message: 'new version in README'
           delete-branch: true
           title: 'New version in README'
