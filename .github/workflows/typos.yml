@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: Copyright (c) 2015-2025 Yegor Bugayenko
+# SPDX-License-Identifier: MIT
+---
+name: typos
+'on':
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  typos:
+    timeout-minutes: 15
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: crate-ci/typos@v1.32.0

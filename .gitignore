@@ -1,7 +1,7 @@
-*.iml
 .DS_Store
 .idea/
 .sass-cache/
+*.iml
 dist/
 node_modules/
 package-lock.json
