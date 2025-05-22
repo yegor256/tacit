@@ -6,8 +6,8 @@
   "copyright": "2015",
   "description": "CSS Framework for Dummies",
   "devDependencies": {
-    "css-validator": "0.11.0",
     "@eslint/js": "^9.27.0",
+    "css-validator": "0.11.0",
     "eslint": "^9.27.0",
     "glob": "11.0.1",
     "grunt": "^1.4.3",

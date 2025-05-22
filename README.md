@@ -146,7 +146,6 @@ npm install --force -g grunt-cli
 grunt
 ```
 
-
 ## Logo
 
 Tacit's logo was designed by Akshay Vinchurkar
