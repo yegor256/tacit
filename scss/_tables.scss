@@ -17,7 +17,7 @@ th {
 
 thead th {
   border-bottom: .12 * $em solid $gray;
-  border-left: .06 * $em solid lighten($black, 80);
+  border-left: .06 * $em solid safe-adjust-lightness($black, 80);
   padding-bottom: .35 * $em;
 
   &:first-child {
@@ -27,7 +27,7 @@ thead th {
 
 tbody tr {
   &:hover {
-    background-color: lighten($black, 98);
+    background-color: safe-adjust-lightness($black, 98);
   }
 }
 
