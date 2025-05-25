@@ -21,7 +21,9 @@ module.exports = (grunt) => {
             'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
             'dist/<%= pkg.name %>.min.css': 'dist/<%= pkg.name %>.min.css'
           },
-          options: {}
+          options: {
+            shorten: false
+          }
         },
         uncompressed: {
           files: {
@@ -38,7 +40,7 @@ module.exports = (grunt) => {
             'tacit.min.css': 'scss/main.scss'
           },
           options: {
-            implementation: require('node-sass'),
+            implementation: require('sass'),
             outputStyle: 'compressed',
             sourceMap: true
           }
@@ -49,7 +51,7 @@ module.exports = (grunt) => {
             'dist/<%= pkg.name %>.min.css': 'scss/main.scss'
           },
           options: {
-            implementation: require('node-sass'),
+            implementation: require('sass'),
             outputStyle: 'compressed',
             sourceMap: true
           }
@@ -60,7 +62,7 @@ module.exports = (grunt) => {
             'dist/<%= pkg.name %>.css': 'scss/main.scss'
           },
           options: {
-            implementation: require('node-sass'),
+            implementation: require('sass'),
             outputStyle: 'expanded',
             sourceMap: false
           }

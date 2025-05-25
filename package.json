@@ -16,7 +16,7 @@
     "grunt-sass": "4.0.0",
     "grunt-sass-lint": "0.2.4",
     "load-grunt-tasks": "5.1.0",
-    "node-sass": "9.0.0",
+    "sass": "^1.89.0",
     "npm": "11.4.1",
     "path": "0.12.7"
   },
