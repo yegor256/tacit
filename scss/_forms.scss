@@ -61,8 +61,8 @@ label {
 input[type="submit"],
 input[type="reset"],
 button {
-  background: darken($white, 5);
-  color: darken($gray, 25);
+  background: safe-adjust-lightness($white, -5);
+  color: safe-adjust-lightness($gray, -25);
   cursor: pointer;
   display: inline;
   margin-bottom: $em;
@@ -71,16 +71,15 @@ button {
   text-align: center;
 
   &:hover {
-    background: darken($white, 15);
+    background: safe-adjust-lightness($white, -15);
     color: $black;
   }
 
   &[disabled] {
-    background: darken($white, 10);
-    color: darken($gray, 10);
+    background: safe-adjust-lightness($white, -10);
+    color: safe-adjust-lightness($gray, -10);
     cursor: not-allowed;
   }
-
 }
 
 input[type="submit"],
@@ -89,8 +88,8 @@ button[type="submit"] {
   color: $white;
 
   &:hover {
-    background: darken($blue, 15);
-    color: darken($white, 25);
+    background: safe-adjust-lightness($blue, -15);
+    color: safe-adjust-lightness($white, -25);
   }
 }
 

@@ -1,0 +1,14 @@
+// SPDX-FileCopyrightText: Copyright (c) 2015-2025 Yegor Bugayenko
+// SPDX-License-Identifier: MIT
+
+@use "sass:color";
+
+/// Adjusts lightness of a color by a percentage.
+/// Positive `$percent` lightens, negative darkens.
+/// 
+/// @param {Color} $color - Base color.
+/// @param {Number} $percent - Percent to adjust lightness (e.g. 15 or -15).
+/// @return {Color} - Modified color.
+@function safe-adjust-lightness($color, $percent) {
+  @return color.adjust($color, $lightness: $percent * 1%);
+}
