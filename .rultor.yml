@@ -14,7 +14,7 @@ architect:
   - filfreire
 merge:
   script: |
-    npm run rultor --no-color
+    npm test --no-color
   commanders:
     - yegor256
     - filfreire
