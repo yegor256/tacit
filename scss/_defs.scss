@@ -3,7 +3,7 @@
 
 // sizes
 $em: calc(18 / 16) * 1rem;
-$spacing: 18px;
+$spacing: $em;
 
 // fonts
 $sans-serif: system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
