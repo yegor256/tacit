@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.13.7"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: ${{ matrix.node }}
       - run: pip install --upgrade setuptools
