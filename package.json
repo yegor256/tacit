@@ -41,5 +41,5 @@
     "grunt": "grunt --no-color",
     "test": "grunt --no-color"
   },
-  "version": "0.0.0"
+  "version": "1.9.2"
 }
