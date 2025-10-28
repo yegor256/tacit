@@ -52,8 +52,7 @@ table {
       @media all and (max-width: 1024px) {
         border: 0;
         border-right: .06 * $em solid color.scale($black, $lightness: 80%);
-        display: inline;
-        padding: 0;
+        display: inline-block;
         padding-left: .6 * $em;
         padding-right: .6 * $em;
 
