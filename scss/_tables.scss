@@ -1,48 +1,34 @@
 // SPDX-FileCopyrightText: Copyright (c) 2015-2025 Yegor Bugayenko
 // SPDX-License-Identifier: MIT
 
+@use 'sass:color';
 @use 'defs' as *;
-
-th {
-  font-weight: 600;
-}
-
-td,
-th {
-  padding: .825 * $em $em;
-  text-align: left;
-  vertical-align: top;
-  word-wrap: break-word;
-}
-
-thead th {
-  border-bottom: .12 * $em solid $gray;
-  border-left: .06 * $em solid safe-adjust-lightness($black, 80);
-  padding-bottom: .35 * $em;
-
-  &:first-child {
-    border-left: 0;
-  }
-}
-
-tbody tr {
-  &:hover {
-    background-color: safe-adjust-lightness($black, 98);
-  }
-}
 
 table {
   display: table;
   table-layout: fixed;
   width: 100%;
 
-  @media all and (max-width: 1024px) {
-    display: none;
-  }
-
   thead {
+    th {
+      border-bottom: .12 * $em solid $gray;
+      border-left: .06 * $em solid color.scale($black, $lightness: 80%);
+      font-weight: 600;
+      padding-bottom: .35 * $em;
+
+      &:first-child {
+        border-left: 0;
+      }
+    }
+
     @media all and (max-width: 1024px) {
       display: none;
+    }
+  }
+
+  tbody tr {
+    &:hover {
+      background-color: color.scale($black, $lightness: 98%);
     }
   }
 
@@ -53,10 +39,14 @@ table {
     th {
       overflow: hidden;
       padding: .3 * $em .2 * $em;
+      text-align: left;
+      vertical-align: top;
+      word-wrap: break-word;
 
       @media all and (max-width: 1024px) {
         border: 0;
-        display: inline-block;
+        display: inline;
+        padding: 0;
       }
     }
 
