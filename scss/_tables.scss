@@ -9,6 +9,12 @@ table {
   table-layout: fixed;
   width: 100%;
 
+  col {
+    @media all and (max-width: 1024px) {
+      width: auto !important; // sass-lint:disable-line no-important
+    }
+  }
+
   thead {
     th {
       border-bottom: .12 * $em solid $gray;
