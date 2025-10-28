@@ -1,6 +1,8 @@
 // SPDX-FileCopyrightText: Copyright (c) 2015-2025 Yegor Bugayenko
 // SPDX-License-Identifier: MIT
 
+@use 'defs' as *;
+
 @media (max-width: $mobile-width) {
   body {
     padding: $spacing 0;

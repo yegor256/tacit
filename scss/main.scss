@@ -1,13 +1,13 @@
 // SPDX-FileCopyrightText: Copyright (c) 2015-2025 Yegor Bugayenko
 // SPDX-License-Identifier: MIT
 
-@import 'defs';
-@import 'functions';
-@import 'common';
-@import 'tables';
-@import 'forms';
-@import 'pre';
-@import 'headings';
-@import 'typography';
-@import 'grid';
-@import 'responsive';
+@use 'defs' as *;
+@use 'functions';
+@use 'common';
+@use 'tables';
+@use 'forms';
+@use 'pre';
+@use 'headings';
+@use 'typography';
+@use 'grid';
+@use 'responsive';
