@@ -61,12 +61,12 @@ table {
     }
 
     @media all and (max-width: 1024px) {
-      display: inline-block;
+      display: block;
       margin: .6 * $em 0;
     }
   }
 
   @media all and (max-width: 1024px) {
-    display: inline-block;
+    display: block;
   }
 }
