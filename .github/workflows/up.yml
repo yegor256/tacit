@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - run: |-
-          git fetch --tags --force && \
-          latest=$(git tag --sort=creatordate | tail -1) && \
-          sed -E -i "s/tacit-css@[0-9.]+/tacit-css@${latest}/g" README.md  && \
+          git fetch --tags --force
+          latest=$(git tag --sort=creatordate | tail -1)
+          sed -E -i "s/tacit-css@[0-9.]+/tacit-css@${latest}/g" README.md
           sri=$(curl -fsSL --compressed "https://cdn.jsdelivr.net/npm/tacit-css@${latest}/dist/tacit-css.min.css" \
               | openssl dgst -sha384 -binary | openssl base64 -A)
           sri_esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g') && \
