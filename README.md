@@ -19,10 +19,6 @@ will look OK.
 The details are here:
 [yegor256.github.io/tacit](https://yegor256.github.io/tacit/)
 
-Simply add this to your HTML (you may also add the
-[`integrity`][SRI] attribute, generated
-by [srihash.org](https://www.srihash.org/)):
-
 ```html
 <!DOCTYPE html>
 <html>
