@@ -20,7 +20,7 @@ jobs:
           sri=$(curl -fsSL --compressed "https://cdn.jsdelivr.net/npm/tacit-css@${latest}/dist/tacit-css.min.css" \
               | openssl dgst -sha384 -binary | openssl base64 -A)
           esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g')
-          sed -E -i "s/integrity=\"[^\"]*\"/integrity=\"sha384-${esc}\"/g" README.md
+          sed -E -i "s|integrity=\"[^\"]*\"|integrity=\"sha384-$esc\"|g" README.md
       - uses: peter-evans/create-pull-request@v7
         with:
           sign-commits: true
