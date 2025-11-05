@@ -13,6 +13,7 @@ const {glob} = require('glob'),
 module.exports = (grunt) => {
   grunt.util.linefeed = '\n';
   grunt.loadNpmTasks('grunt-css-purge');
+  grunt.loadNpmTasks('grunt-file-append');
   grunt.initConfig(
     {
       css_purge: {
@@ -32,6 +33,32 @@ module.exports = (grunt) => {
           },
           options: {}
         },
+      },
+      file_append: {
+        default_options: {
+          files: [
+            {
+              input: 'dist/<%= pkg.name %>.css',
+              output: 'dist/<%= pkg.name %>.css',
+              prepend: "/* <%= pkg.name %> <%= pkg.version %> */",
+            },
+            {
+              input: 'dist/<%= pkg.name %>.min.css',
+              output: 'dist/<%= pkg.name %>.min.css',
+              prepend: "/* <%= pkg.name %> <%= pkg.version %> */",
+            },
+            {
+              input: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+              output: 'dist/<%= pkg.name %>-<%= pkg.version %>.css',
+              prepend: "/* <%= pkg.name %> <%= pkg.version %> */",
+            },
+            {
+              input: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+              output: 'dist/<%= pkg.name %>-<%= pkg.version %>.min.css',
+              prepend: "/* <%= pkg.name %> <%= pkg.version %> */",
+            }
+          ]
+        }
       },
       pkg: grunt.file.readJSON('package.json'),
       sass: {
@@ -112,6 +139,6 @@ module.exports = (grunt) => {
     });
   });
 
-  grunt.registerTask('default', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'checkYear', 'validate']);
+  grunt.registerTask('default', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'file_append', 'checkYear', 'validate']);
   grunt.registerTask('dev', ['sasslint', 'sass:dev', 'css_purge', 'watch']);
 }
