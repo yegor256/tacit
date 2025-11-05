@@ -14,7 +14,7 @@
     "grunt-contrib-watch": "1.1.0",
     "grunt-css-purge": "1.1.0",
     "grunt-file-append": "^0.0.7",
-    "grunt-sass": "4.0.0",
+    "grunt-sass": "4.0.1",
     "grunt-sass-lint": "0.2.4",
     "load-grunt-tasks": "5.1.0",
     "npm": "11.6.2",
