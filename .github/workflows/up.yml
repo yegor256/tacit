@@ -18,10 +18,7 @@ jobs:
           sri=$(curl -fsSL --compressed "https://cdn.jsdelivr.net/npm/tacit-css@${latest}/dist/tacit-css.min.css" \
               | openssl dgst -sha384 -binary | openssl base64 -A)
           sri_esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g') && \
-          sed -E -i '/cdn\.jsdelivr\.net\/npm\/tacit-css@[0-9]+\.[0-9]+\.[0-9]+\/dist\/tacit-css\.min\.css/{
-            s/[[:space:]]+integrity="[^"]*"//g; s/[[:space:]]+crossorigin="[^"]*"//g;
-            s|(tacit-css\.min\.css"[^>/]*)(\s*/?>)|\1 integrity="sha384-'"$sri_esc"'" crossorigin="anonymous"\2|;
-          }' README.md
+          sed -E -i '/integrity="[^"]*"/integrity="sha384-'"${sri_esc}"'/g' README.md
       - uses: peter-evans/create-pull-request@v7
         with:
           sign-commits: true
