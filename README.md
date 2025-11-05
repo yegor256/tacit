@@ -28,7 +28,7 @@ by [srihash.org](https://www.srihash.org/)):
 <html>
   <head>
     <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tacit-css@1.9.3/dist/tacit-css.min.css"/>
+      href="https://cdn.jsdelivr.net/npm/tacit-css@1.9.3/dist/tacit-css.min.css" integrity="sha384-NzI5kHQ7+DeiX+Zzd9MnGjKdzoIK3pVGizKBNZ/mLOyjTp0wEisoMe+or1rwuV4p" crossorigin="anonymous"/>
   </head>
 </html>
 ```
