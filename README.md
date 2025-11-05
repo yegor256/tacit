@@ -151,4 +151,3 @@ Tacit's logo was designed by Akshay Vinchurkar
 
 [CDN]: https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css
 [blog]: http://www.yegor256.com/2015/04/13/tacit-css-framework-for-dummies.html
-[SRI]: https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity

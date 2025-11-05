@@ -5,6 +5,8 @@
 name: up
 'on':
   push:
+    branches:
+      - master
 jobs:
   up:
     timeout-minutes: 15
@@ -17,8 +19,8 @@ jobs:
           sed -E -i "s/tacit-css@[0-9.]+/tacit-css@${latest}/g" README.md
           sri=$(curl -fsSL --compressed "https://cdn.jsdelivr.net/npm/tacit-css@${latest}/dist/tacit-css.min.css" \
               | openssl dgst -sha384 -binary | openssl base64 -A)
-          sri_esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g') && \
-          sed -E -i 's/integrity="[^"]*"/integrity="sha384-'${sri_esc}'"/g' README.md
+          esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g')
+          sed -E -i 's/integrity="[^"]*"/integrity="sha384-'${esc}'"/g' README.md
       - uses: peter-evans/create-pull-request@v7
         with:
           sign-commits: true
