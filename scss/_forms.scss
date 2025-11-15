@@ -13,6 +13,14 @@ fieldset {
   legend {
     margin: $em 0;
   }
+
+  input,
+  label,
+  select,
+  textarea,
+  button {
+    margin-bottom: $em;
+  }
 }
 
 input,
@@ -48,7 +56,6 @@ textarea {
 
 label {
   display: inline-block;
-  margin-bottom: .7 * $em;
 
   + * {
     page-break-before: always;
@@ -66,7 +73,6 @@ button {
   color: safe-adjust-lightness($gray, -25);
   cursor: pointer;
   display: inline;
-  margin-bottom: $em;
   margin-right: .4 * $em;
   padding: .3625 * $em 1.3 * $em;
   text-align: center;
@@ -92,12 +98,6 @@ button[type="submit"] {
     background: safe-adjust-lightness($blue, -15);
     color: safe-adjust-lightness($white, -25);
   }
-}
-
-input,
-select,
-textarea {
-  margin-bottom: $em;
 }
 
 input[type="text"],
