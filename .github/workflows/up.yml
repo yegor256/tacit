@@ -21,7 +21,7 @@ jobs:
               | openssl dgst -sha384 -binary | openssl base64 -A)
           esc=$(printf '%s' "$sri" | sed 's/[&]/\\&/g')
           sed -E -i "s|integrity=\"[^\"]*\"|integrity=\"sha384-$esc\"|g" README.md
-      - uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v8
         with:
           sign-commits: true
           commit-message: 'new version in README'
