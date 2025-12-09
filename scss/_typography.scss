@@ -56,9 +56,9 @@ sup {
 }
 
 sup {
-  top: -.5em;
+  top: -.5 * $em;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -.25 * $em;
 }
