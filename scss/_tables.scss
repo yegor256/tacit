@@ -10,7 +10,7 @@ table {
   width: 100%;
 
   col {
-    @media all and (max-width: 1024px) {
+    @media all and (max-width: $tablet-width) {
       width: auto !important; // sass-lint:disable-line no-important
     }
   }
@@ -27,7 +27,7 @@ table {
       }
     }
 
-    @media all and (max-width: 1024px) {
+    @media all and (max-width: $tablet-width) {
       display: none;
     }
   }
@@ -49,7 +49,7 @@ table {
       vertical-align: top;
       word-wrap: break-word;
 
-      @media all and (max-width: 1024px) {
+      @media all and (max-width: $tablet-width) {
         border: 0;
         border-right: .06 * $em solid safe-adjust-lightness($black, 80);
         display: inline-block;
@@ -66,13 +66,13 @@ table {
       }
     }
 
-    @media all and (max-width: 1024px) {
+    @media all and (max-width: $tablet-width) {
       display: block;
       margin: .6 * $em 0;
     }
   }
 
-  @media all and (max-width: 1024px) {
+  @media all and (max-width: $tablet-width) {
     display: block;
   }
 }
