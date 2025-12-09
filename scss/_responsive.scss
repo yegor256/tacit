@@ -5,17 +5,17 @@
 
 @media (max-width: $mobile-width) {
   body {
-    padding: $spacing 0;
+    padding: $em 0;
   }
 
   article {
     border: 0;
-    padding: $spacing;
+    padding: $em;
   }
 
   header,
   footer {
-    padding: $spacing;
+    padding: $em;
   }
 
   textarea,

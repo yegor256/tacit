@@ -28,7 +28,7 @@ body {
   @extend %sans-serif;
   background: $white;
   color: safe-adjust-lightness($black, 10);
-  padding: 2 * $spacing;
+  padding: 2 * $em;
 }
 
 p,
@@ -49,18 +49,18 @@ address {
 section {
   margin-left: auto;
   margin-right: auto;
-  width: 50 * $spacing;
+  width: 50 * $em;
 }
 
 aside {
   float: right;
-  width: 285px;
+  width: 16 * $em;
 }
 
 article,
 header,
 footer {
-  padding: 2.4 * $spacing;
+  padding: 2.4 * $em;
 }
 
 article {
@@ -77,8 +77,8 @@ nav {
 
     li {
       display: inline-block;
-      margin-left: .5 * $spacing;
-      margin-right: .5 * $spacing;
+      margin-left: .5 * $em;
+      margin-right: .5 * $em;
       vertical-align: middle;
 
       &:first-child {
@@ -94,7 +94,7 @@ nav {
 
 ol,
 ul {
-  margin-left: 1.75 * $spacing;
+  margin-left: 1.75 * $em;
 }
 
 li {

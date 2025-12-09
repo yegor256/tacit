@@ -18,7 +18,7 @@ pre {
   border-left: .1 * $em solid safe-adjust-lightness($green, 25);
   line-height: 1.4 * $em;
   overflow: auto;
-  padding-left: $spacing;
+  padding-left: $em;
 
   code {
     background: none;
@@ -31,7 +31,7 @@ pre {
 code,
 kbd {
   background: safe-adjust-lightness($green, 60);
-  border-radius: .2 * $spacing;
+  border-radius: .2 * $em;
   color: $green;
   display: inline-block;
   line-height: $em;

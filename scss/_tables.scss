@@ -1,8 +1,8 @@
 // SPDX-FileCopyrightText: Copyright (c) 2015-2025 Yegor Bugayenko
 // SPDX-License-Identifier: MIT
 
-@use 'sass:color';
 @use 'defs' as *;
+@use 'functions' as *;
 
 table {
   display: table;
@@ -18,7 +18,7 @@ table {
   thead {
     th {
       border-bottom: .12 * $em solid $gray;
-      border-left: .06 * $em solid color.scale($black, $lightness: 80%);
+      border-left: .06 * $em solid safe-adjust-lightness($black, 80);
       font-weight: 600;
       padding-bottom: .35 * $em;
 
@@ -34,7 +34,7 @@ table {
 
   tbody tr {
     &:hover {
-      background-color: color.scale($black, $lightness: 98%);
+      background-color: safe-adjust-lightness($black, 98);
     }
   }
 
@@ -51,7 +51,7 @@ table {
 
       @media all and (max-width: 1024px) {
         border: 0;
-        border-right: .06 * $em solid color.scale($black, $lightness: 80%);
+        border-right: .06 * $em solid safe-adjust-lightness($black, 80);
         display: inline-block;
         padding-left: .6 * $em;
         padding-right: .6 * $em;
