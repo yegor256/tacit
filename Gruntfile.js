@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2015-2025 Yegor Bugayenko
+ * SPDX-FileCopyrightText: Copyright (c) 2015-2026 Yegor Bugayenko
  * SPDX-License-Identifier: MIT
  */
 
