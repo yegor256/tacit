@@ -62,3 +62,25 @@ sup {
 sub {
   bottom: -.25 * $em;
 }
+
+details {
+  &[open] {
+    padding-bottom: .5 * $em;
+
+    summary {
+      margin-bottom: .5 * $em;
+    }
+  }
+
+  summary {
+    background: $yellow;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: -.5 * $em;
+    padding: .5 * $em;
+
+    & > * {
+      display: inline;
+    }
+  }
+}
