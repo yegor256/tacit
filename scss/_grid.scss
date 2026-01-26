@@ -134,6 +134,7 @@ blockquote {
     color: $gray;
     font-size: .75 * $em;
     margin: 0;
+    padding: (.25 * $em) $em (.25 * $em) (.88 * $em);
   }
 
   p {
