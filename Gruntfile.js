@@ -112,7 +112,7 @@ module.exports = (grunt) => {
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
   grunt.registerTask('checkYear', 'Checks the year patterns in copyright lines in source files.', () => {
-    const invalidFiles = cp.execSync('git ls-files LICENSE "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(
+    const invalidFiles = cp.execSync('git ls-files LICENSE.txt "*.scss" "*.html" "*.js"').toString().trim().split('\n').filter(
       file => !fs.readFileSync(file).toString().includes(pattern)
     );
     invalidFiles.forEach(file => {
