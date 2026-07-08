@@ -20,4 +20,4 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-      - uses: DavidAnson/markdownlint-cli2-action@v23.2.0
+      - uses: DavidAnson/markdownlint-cli2-action@v24.0.0
