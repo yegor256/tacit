@@ -15,9 +15,9 @@ test.describe('cross-browser computed styles', () => {
     await expect(h1).toHaveCSS('font-weight', '500');
   });
 
-  test('table fills width', async ({page}) => {
+  test('table uses fixed layout', async ({page}) => {
     const table = page.locator('table');
-    await expect(table).toHaveCSS('width', '100%');
+    await expect(table).toHaveCSS('table-layout', 'fixed');
   });
 
   test('text inputs are inline blocks', async ({page}) => {

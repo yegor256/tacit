@@ -11,7 +11,7 @@ test.describe('index page visual regression', () => {
   });
 
   test('full page renders', async ({page}) => {
-    await expect(page).toHaveScreenshot('index-full', {fullPage: true});
+    await expect(page).toHaveScreenshot('index-full.png', {fullPage: true});
   });
 });
 
@@ -21,14 +21,14 @@ test.describe('component visual regression', () => {
   });
 
   test('headings render', async ({page}) => {
-    await expect(page.locator('h1')).toHaveScreenshot('headings');
+    await expect(page.locator('h1')).toHaveScreenshot('headings.png');
   });
 
   test('table renders', async ({page}) => {
-    await expect(page.locator('table')).toHaveScreenshot('table');
+    await expect(page.locator('table')).toHaveScreenshot('table.png');
   });
 
   test('form renders', async ({page}) => {
-    await expect(page.locator('form').first()).toHaveScreenshot('form');
+    await expect(page.locator('form').first()).toHaveScreenshot('form.png');
   });
 });
