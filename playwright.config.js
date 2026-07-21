@@ -10,22 +10,32 @@ const {devices} = require('@playwright/test'),
     projects: [
       {
         name: 'chromium',
-        use: {...devices['Desktop Chrome']},
+        use: {
+          ...devices['Desktop Chrome'],
+          viewport: {height: 720, width: 1280},
+        },
       },
       {
         name: 'firefox',
-        use: {...devices['Desktop Firefox']},
+        use: {
+          ...devices['Desktop Firefox'],
+          viewport: {height: 720, width: 1280},
+        },
       },
       {
         name: 'webkit',
-        use: {...devices['Desktop Safari']},
+        use: {
+          ...devices['Desktop Safari'],
+          viewport: {height: 720, width: 1280},
+        },
       },
     ],
-    reporter: 'list',
+    reporter: [['list'], ['html', {open: 'never'}]],
     retries: 0,
     testDir: './tests',
     use: {
       baseURL: 'http://localhost:8080',
+      screenshot: 'only-on-failure',
       trace: 'on-first-retry',
     },
     webServer: {

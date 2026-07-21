@@ -40,6 +40,8 @@
   "scripts": {
     "dev": "grunt dev",
     "grunt": "grunt --no-color",
+    "playwright": "playwright test",
+    "playwright:update": "playwright test --update-snapshots",
     "test": "grunt --no-color"
   },
   "version": "0.0.0"
