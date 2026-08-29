@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: Copyright (c) 2015-2026 Yegor Bugayenko
+# SPDX-License-Identifier: MIT
+---
+# yamllint disable rule:line-length
+name: update-playwright-snapshots
+'on':
+  workflow_dispatch:
+jobs:
+  update:
+    timeout-minutes: 20
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm install --force -g grunt-cli
+      - run: grunt sass:dev
+      - run: npx playwright install --with-deps
+      - run: npx playwright test --update-snapshots
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tests/visual.spec.js-snapshots
+          git commit -m "chore: update playwright visual baselines" || true
+          git push || true

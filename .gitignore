@@ -9,3 +9,5 @@ package-lock.json
 tacit.min.css
 tacit.min.css.map
 target/
+test-results/
+playwright-report/
