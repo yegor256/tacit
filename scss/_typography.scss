@@ -64,19 +64,6 @@ sub {
 }
 
 details {
-  summary {
-    background: $yellow;
-    cursor: pointer;
-    font-weight: 600;
-    padding: (.25 * $em) (.5 * $em);
-  }
-
-  &[open] summary {
-    margin-bottom: .5 * $em;
-  }
-}
-
-details {
   &[open] {
     padding-bottom: .5 * $em;
 
