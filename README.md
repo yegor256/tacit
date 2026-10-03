@@ -3,6 +3,7 @@
 [![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/tacit)](https://www.rultor.com/p/yegor256/tacit)
 
 [![grunt](https://github.com/yegor256/tacit/actions/workflows/grunt.yml/badge.svg)](https://github.com/yegor256/tacit/actions/workflows/grunt.yml)
+[![playwright](https://github.com/yegor256/tacit/actions/workflows/playwright.yml/badge.svg)](https://github.com/yegor256/tacit/actions/workflows/playwright.yml)
 [![JSDeliver stats](https://data.jsdelivr.com/v1/package/npm/tacit-css/badge)](https://www.jsdelivr.com/package/npm/tacit-css)
 [![PDD status](https://www.0pdd.com/svg?name=yegor256/tacit)](https://www.0pdd.com/p?name=teamed/yegor256/tacit)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
@@ -120,6 +121,11 @@ sending us your pull request please run full Grunt build:
 npm install
 grunt
 ```
+
+Cross-browser regression tests are powered by Playwright. You don't need to
+install browsers locally; the GitHub Action auto-generates Linux baselines and
+re-runs tests automatically. To refresh baselines after an intentional visual
+change, run the `update-playwright-snapshots` workflow manually.
 
 To develop it locally, open `index.html` in a browser and then run:
 
