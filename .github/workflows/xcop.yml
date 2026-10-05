@@ -7,9 +7,23 @@ name: xcop
   push:
     branches:
       - master
+    paths:
+      - '**.xsl'
+      - '**.xml'
+      - '**.xhtml'
+      - '**.html'
+      - '**.xsd'
+      - '.github/workflows/xcop.yml'
   pull_request:
     branches:
       - master
+    paths:
+      - '**.xsl'
+      - '**.xml'
+      - '**.xhtml'
+      - '**.html'
+      - '**.xsd'
+      - '.github/workflows/xcop.yml'
 jobs:
   xcop:
     timeout-minutes: 15
