@@ -7,9 +7,15 @@ name: yamllint
   push:
     branches:
       - master
+    paths:
+      - '**.yml'
+      - '**.yaml'
   pull_request:
     branches:
       - master
+    paths:
+      - '**.yml'
+      - '**.yaml'
 jobs:
   yamllint:
     timeout-minutes: 15
