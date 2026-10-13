@@ -7,9 +7,13 @@ name: actionlint
   push:
     branches:
       - master
+    paths:
+      - '.github/**'
   pull_request:
     branches:
       - master
+    paths:
+      - '.github/**'
 jobs:
   actionlint:
     timeout-minutes: 15
