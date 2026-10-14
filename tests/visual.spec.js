@@ -20,8 +20,8 @@ test.describe('component visual regression', () => {
     await page.goto('/');
   });
 
-  test('headings render', async ({page}) => {
-    await expect(page.locator('h1')).toHaveScreenshot('headings.png');
+  test('h1 heading renders', async ({page}) => {
+    await expect(page.locator('h1')).toHaveScreenshot('h1.png');
   });
 
   test('table renders', async ({page}) => {

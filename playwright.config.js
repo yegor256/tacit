@@ -4,6 +4,8 @@
  */
 
 const {devices} = require('@playwright/test'),
+  // Not every machine has a `python` binary: use `py` on Windows, `python3` elsewhere.
+  cmdByPlatform = {win32: 'py -m http.server 8080'},
   config = {
     forbidOnly: Boolean(process.env.CI),
     fullyParallel: true,
@@ -39,7 +41,7 @@ const {devices} = require('@playwright/test'),
       trace: 'on-first-retry',
     },
     webServer: {
-      command: 'python -m http.server 8080',
+      command: cmdByPlatform[process.platform] || 'python3 -m http.server 8080',
       reuseExistingServer: true,
       url: 'http://localhost:8080',
     },

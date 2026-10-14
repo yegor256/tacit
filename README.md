@@ -122,10 +122,22 @@ npm install
 grunt
 ```
 
-Cross-browser regression tests are powered by Playwright. You don't need to
-install browsers locally; the GitHub Action auto-generates Linux baselines and
-re-runs tests automatically. To refresh baselines after an intentional visual
-change, run the `update-playwright-snapshots` workflow manually.
+Cross-browser regression tests are powered by Playwright. The GitHub
+Action installs the browsers, builds `tacit.min.css`, and runs the tests
+on every push, so you don't need anything locally for CI. To refresh
+baselines after an intentional visual change, run the
+`update-playwright-snapshots` workflow manually.
+
+To run the tests locally, install the browsers once and then run the tests
+(the `playwright` script builds `tacit.min.css` first):
+
+```bash
+npx playwright install --with-deps
+npm run playwright
+```
+
+Local screenshots on macOS or Windows won't match the Linux baselines, so
+visual tests are best checked in CI.
 
 To develop it locally, open `index.html` in a browser and then run:
 
