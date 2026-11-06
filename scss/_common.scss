@@ -1,6 +1,9 @@
 // SPDX-FileCopyrightText: Copyright (c) 2015-2026 Yegor Bugayenko
 // SPDX-License-Identifier: MIT
 
+// The `!important` flag is necessary here, because framework rules
+// like `input[type="submit"]` in _forms.scss have higher specificity
+// than `[hidden]`, and would otherwise keep hidden controls visible.
 [hidden] {
-  display: none;
+  display: none !important; // sass-lint:disable-line no-important
 }

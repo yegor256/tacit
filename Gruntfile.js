@@ -121,6 +121,17 @@ module.exports = (grunt) => {
     return invalidFiles.length === 0
   });
 
+  grunt.registerTask('checkHidden', 'Checks that compiled CSS keeps [hidden] elements hidden.', () => {
+    const invalidFiles = fs.readdirSync('dist').filter(
+      file => file.endsWith('.css') &&
+        !/\[hidden\]\s*\{\s*display:\s*none\s*!important\s*;?\s*\}/u.test(fs.readFileSync(path.join('dist', file)).toString())
+    );
+    invalidFiles.forEach(file => {
+      grunt.log.error(`The file, ${file}, does not keep [hidden] elements hidden with "display: none !important"`);
+    });
+    return invalidFiles.length === 0
+  });
+
   grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', () => {
     let css = '', srcPath = '';
     glob("*.css", {}, (err, files) => {
@@ -139,6 +150,6 @@ module.exports = (grunt) => {
     });
   });
 
-  grunt.registerTask('default', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'file_append', 'checkYear', 'validate']);
+  grunt.registerTask('default', ['sasslint', 'sass:dist', 'sass:uncompressed', 'css_purge', 'file_append', 'checkYear', 'checkHidden', 'validate']);
   grunt.registerTask('dev', ['sasslint', 'sass:dev', 'css_purge', 'watch']);
 }
