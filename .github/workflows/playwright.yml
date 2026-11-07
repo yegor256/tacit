@@ -6,13 +6,16 @@ name: playwright
 'on':
   push:
     branches:
-      - '**'
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   playwright:
     timeout-minutes: 20
     runs-on: ubuntu-24.04
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -22,16 +25,6 @@ jobs:
       - run: npm install --force -g grunt-cli
       - run: grunt sass:dev
       - run: npx playwright install --with-deps
-      - name: Generate visual baselines if missing
-        run: |
-          if [ ! -d "tests/visual.spec.js-snapshots" ]; then
-            npx playwright test --update-snapshots
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add tests/visual.spec.js-snapshots
-            git commit -m "chore: add playwright visual baselines" || true
-            git push || true
-          fi
       - run: npx playwright test
       - uses: actions/upload-artifact@v4
         if: failure()
