@@ -5,9 +5,8 @@
 
 const fs = require('fs');
 const cp = require('child_process');
-const path = require('path');
 const validate = require('css-validator');
-const {glob} = require('glob'),
+const { globSync } = require('glob'),
   pattern = `2015-${new Date().getFullYear()}`;
 
 module.exports = (grunt) => {
@@ -121,21 +120,48 @@ module.exports = (grunt) => {
     return invalidFiles.length === 0
   });
 
-  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', () => {
-    let css = '', srcPath = '';
-    glob("*.css", {}, (err, files) => {
-      files.forEach(file => {
-        const done = this.async();
-        srcPath = path.join(`${__dirname}/dist`, file);
-        css = grunt.file.read(srcPath);
-        validate({ text: `${css}` }, (error, data) => {
-          if (data.validity) {
-            done(true);
-          } else {
-            done(false);
-          }
-        });
-      });
+  grunt.registerTask('validate', 'validate css bundle with W3C Jigsaw', function validateTask() {
+    let failed = false,
+      remaining = 0;
+    const done = this.async(),
+      files = globSync('dist/*.css'),
+      report = (file, ok, message) => {
+        if (ok) {
+          grunt.log.ok(`${file} is valid`);
+        } else {
+          grunt.log.error(message);
+          failed = true;
+        }
+        remaining -= 1;
+        if (remaining === 0) {
+          done(!failed);
+        }
+      };
+    remaining = files.length;
+    if (remaining === 0) {
+      grunt.log.error('No CSS files found in dist/. Run the sass:dist task first.');
+      done(false);
+      return;
+    }
+    files.forEach((file) => {
+      let settled = false;
+      grunt.log.writeln(`Validating ${file}...`);
+      const onResult = (error, data) => {
+        if (settled) {
+          return;
+        }
+        settled = true;
+        if (error) {
+          report(file, false, `The file, ${file}, failed to validate: ${error.message || error}`);
+          return;
+        }
+        report(file, data.validity, `The file, ${file}, does not pass W3C CSS validation`);
+      };
+      try {
+        validate({ text: grunt.file.read(file) }, onResult);
+      } catch (error) {
+        onResult(error, null);
+      }
     });
   });
 
