@@ -9,7 +9,7 @@
     "@eslint/js": "^10.0.1",
     "css-validator": "0.11.0",
     "eslint": "^10.14.0",
-    "glob": "14.0.5",
+    "glob": "14.0.6",
     "grunt": "^1.6.3",
     "grunt-contrib-watch": "1.1.0",
     "grunt-css-purge": "1.1.0",
