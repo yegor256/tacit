@@ -6,20 +6,20 @@
   "copyright": "2015",
   "description": "CSS Framework for Dummies",
   "devDependencies": {
-    "@eslint/js": "^10.0.0",
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.61.1",
     "css-validator": "0.11.0",
-    "eslint": "^10.0.0",
-    "glob": "13.0.6",
-    "grunt": "^1.4.3",
+    "eslint": "^10.14.0",
+    "glob": "14.0.6",
+    "grunt": "^1.6.3",
     "grunt-contrib-watch": "1.1.0",
     "grunt-css-purge": "1.1.0",
     "grunt-file-append": "^0.0.7",
     "grunt-sass": "4.1.0",
     "grunt-sass-lint": "0.2.4",
     "load-grunt-tasks": "5.1.0",
-    "npm": "12.0.1",
-    "sass": "^1.89.0"
+    "npm": "12.2.2",
+    "sass": "^1.108.1"
   },
   "files": [
     "dist",

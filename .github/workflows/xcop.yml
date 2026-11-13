@@ -7,13 +7,27 @@ name: xcop
   push:
     branches:
       - master
+    paths:
+      - '**.xsl'
+      - '**.xml'
+      - '**.xhtml'
+      - '**.html'
+      - '**.xsd'
+      - '.github/workflows/xcop.yml'
   pull_request:
     branches:
       - master
+    paths:
+      - '**.xsl'
+      - '**.xml'
+      - '**.xhtml'
+      - '**.html'
+      - '**.xsd'
+      - '.github/workflows/xcop.yml'
 jobs:
   xcop:
     timeout-minutes: 15
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - uses: actions/checkout@v7
       - uses: g4s8/xcop-action@master
