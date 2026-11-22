@@ -8,7 +8,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "css-validator": "0.11.0",
-    "eslint": "^10.14.0",
+    "eslint": "^10.15.0",
     "glob": "14.0.6",
     "grunt": "^1.6.3",
     "grunt-contrib-watch": "1.1.0",
@@ -18,7 +18,7 @@
     "grunt-sass-lint": "0.2.4",
     "load-grunt-tasks": "5.1.0",
     "npm": "12.2.3",
-    "sass": "^1.108.1"
+    "sass": "^1.108.2"
   },
   "files": [
     "dist",
